@@ -1,0 +1,18 @@
+.pomodoro {
+    .icon {
+        color: $red;
+        font-size: 1.1em;
+        margin-top: -4px;
+    }
+    .state {
+        &.done {
+            color: $green;
+        }
+        &.working {
+            color: $cyan;
+        }
+        &.resting {
+            color: $orange;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.workspace {
+    // font-size: 1.3em;
+	.item {
+		min-height: 5em;
+
+        &:hover {
+            background-image: linear-gradient($background-darker, $background, $selection, $pink);
+        }
+        &.active {
+            background-color: $pink;
+            color: $background;
+        }
+        &.window {
+            color: $pink;
+        }
+        &.window:hover {
+            background-image: linear-gradient($background-darker, $background, $selection, $pink);
+        }
+	}
+}

@@ -1,0 +1,77 @@
+(defvar net-gui-p false)
+(defpoll net-state
+   :interval "5s"
+   :initial '{"connection": "", "data": []}'
+   "scripts/net state")
+;; (defpoll power-status :interval "5s"
+;;   :initial '{"linking": "no", "battery": [{"name": "BAT0", "value": 0}, {"name": "BAT1", "value": 0}], "aver": 0}'
+;;   "scripts/power")
+;; (defvar show-power "false")
+
+(defwidget net-icon []
+  (eventbox
+   ;; {EWW_NET}
+   :cursor "pointer"
+   :onclick "scripts/net gui"
+   " "
+   )
+  )
+
+(defwidget net []
+  (box
+   :space-evenly false
+   :orientation "v"
+   
+   (eventbox
+    (box
+     :orientation "v"
+     (label
+      :text {net-state["connection"] == "" ? "Disconnected": "Connected"}
+      )
+     (label
+      :text {net-state["connection"]}
+     )
+     ;; {EWW_NET["wlan0"]}
+    ))
+   
+   (box
+    :orientation "v"
+    (for entry in {net-state.data}
+         (eventbox
+          (box
+           :orientation "v"
+           (box
+            :space-evenly false
+            :spacing 50
+            :halign "fill"
+            (label
+             :halign "start"
+             :text {entry.name}
+             )
+            (label
+             :halign "end"
+             :text {entry.signal}
+             )
+            )
+           (box
+            (input)
+            (button))
+           )
+          ))
+    
+    )
+   ))
+  
+
+(defwindow net
+  :geometry (geometry
+             :x -15
+             :y 45
+             :width "300px"
+             :height "500px"
+             :anchor "top right")
+  ;; :windowtype "normal"
+  :stacking "fg"
+  
+  (net)
+  )

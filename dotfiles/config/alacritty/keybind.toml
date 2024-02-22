@@ -1,0 +1,7 @@
+[keyboard]
+bindings = [
+  {key = "W", mods = "Control", action= "Copy"},
+  {key = "Y", mods = "Control", action = "Paste"},
+  {key = "E", mods = "Alt", action = "ScrollPageUp"},
+  {key = "R", mods = "Alt", action = "ScrollPageDown"},
+]

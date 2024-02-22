@@ -1,0 +1,42 @@
+#!/usr/bin/elvish
+
+use str
+
+fn mpc_status {
+
+  var output = [
+    &title=(mpc-unix -f '%title%' current)
+    &artist=(mpc-unix -f '%artist%' current)
+    &state=(
+      if (str:contains (mpc-unix | slurp) "[playing]") {
+        put (num 1)
+      } else {
+        put (num 0)
+  })
+  ]
+  put $output | to-json
+
+}
+
+if (eq $args[0] "status") {
+  while $true {
+    try {
+      pgrep -x mpd >> /dev/null
+      mpc_status
+      mpc-unix idleloop | each {
+        |line|
+        mpc_status
+      }
+    } catch e {
+      sleep 1
+    }
+  }
+} elif (eq $args[0] "gui") {
+  emacs -f simple-mpc --name SIMPLEMPC &
+} elif (eq $args[0] "up") {
+  mpc-unix prev -q
+} elif (eq $args[0] "down") {
+  mpc-unix next -q
+} elif (eq $args[0] "toggle") {
+  mpc-unix toggle
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/elvish
+
+use re
+
+var AC_line = "/org/freedesktop/UPower/devices/line_power_AC"
+var BAT0 = "/org/freedesktop/UPower/devices/battery_BAT0"
+var BAT1 = "/org/freedesktop/UPower/devices/battery_BAT1"
+
+var link = (re:replace "(?s)^.*online:\\s+([a-z]*).*$" "$1" (upower -i $AC_line | slurp))
+var value0 = (re:replace "(?s)^.*percentage:\\s+([0-9]*).*$" "$1" (upower -i $BAT0 | slurp))
+var value1 = (re:replace "(?s)^.*percentage:\\s+([0-9]*).*$" "$1" (upower -i $BAT1 | slurp))
+var aver = (inexact-num (/ (+ $value0 $value1) 2))
+
+var ret = [
+  &linking=$link
+  &battery=[
+    [&name=BAT0 &value=(num $value0)]
+    [&name=BAT1 &value=(num $value1)]
+  ]
+  &aver=$aver
+]
+put $ret | to-json

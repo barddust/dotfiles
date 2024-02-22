@@ -1,0 +1,43 @@
+(defvar show-datetime true)
+(defvar show-date false)
+(defvar show-sec false)
+(defpoll cur :interval "1s" :initial "{}"
+  "scripts/datetime")
+
+(defwidget datetime []
+  (eventbox
+   :onhover "eww update show-date=true; eww update show-sec=true" 		
+   :onhoverlost "eww update show-date=false; eww update show-sec=false"
+   :onclick "emacs -f calendar &"
+   :cursor "pointer"
+   :class "datetime"
+   :visible show-datetime
+   :halign "center"
+   (box
+    :space-evenly "false"
+    
+    (revealer
+     :transition "slideleft"
+	 :reveal {show-date}
+	 :duration "400ms"
+     (label
+      :class "date"
+      :text "${cur["date"]} "
+      )
+     )
+    (label
+     :class "time"
+     :text {cur["time"]}
+     )
+    (revealer
+     :transition "slideright"
+	 :reveal {show-sec}
+	 :duration "400ms"
+     (label
+      :class "second"
+      :markup '<sup>:${cur["second"]}</sup>'
+      )
+     )
+    )
+   )
+  )

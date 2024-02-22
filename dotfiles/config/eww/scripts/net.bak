@@ -1,0 +1,42 @@
+#!/bin/zsh
+
+if [[ "$1" = "gui" ]]
+then
+    exists_p=$(eww get net-gui-p)
+    if [[ "$exists_p" = "false" ]]
+    then
+        eww open net
+        eww update net-gui-p=true
+    else
+        eww close net
+        eww update net-gui-p=false
+    fi
+elif [[ $1 = "state" ]]
+then
+    # Ethernet
+    IFS=$'\n'
+    lst=( $( nmcli -t -f SSID,SIGNAL device wifi ) )
+    IFS=':'
+    read -r first <<< "$lst[1]"
+    echo $first[2]
+    for each in ${lst[@]:2}
+    do
+        echo 1
+    done
+    unset IFS
+    # bar=$(IFS=, ; echo "${lst[*]}")
+    # for each in $lst[@]
+    # do
+    #     echo $each
+    # done
+    # echo "$bar"
+    # echo "{"
+    
+    # nmcli -t -f SSID,SIGNAL,SECURITY device wifi |
+        # while read -r line
+        # do
+            # arr=(${(s/:/)line})
+            # echo "{\"name\":\"${arr[1]}\",\"signal\":\"$arr[2]\"}"
+        # done
+    # echo "}"
+fi

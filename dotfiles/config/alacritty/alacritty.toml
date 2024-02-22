@@ -1,0 +1,24 @@
+import = [
+  "~/.config/alacritty/dracula.toml",
+  "~/.config/alacritty/keybind.toml",
+]
+
+[window]
+padding = { x = 10, y = 5}
+opacity = 0.9
+
+[font]
+normal = { family = "Code New Roman", style = "Regular" }
+size = 9
+
+[mouse]
+bindings = [
+  { mouse = "Right", action = "Paste" },
+]
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Block", blinking = "On"}
+blink_interval = 500

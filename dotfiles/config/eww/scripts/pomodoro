@@ -1,0 +1,49 @@
+#!/usr/bin/elvish
+
+use file
+
+var pomodoro-max-count = 4
+var pomodoro-work-time = (* 60 25)
+var pomodoro-break-time = (* 60 5)
+var pomodoro-rest-time = (* 60 15)
+var pomodoro-max-count-test = 2
+var pomodoro-work-time-test = 6
+var pomodoro-break-time-test = 2
+var pomodoro-rest-time-test = 4
+var pomodoro-count pomodoro-timer pomodoro-working = 1 0.0 $true
+var pomodoro-running = $false
+
+fn pomodoro-counter {
+  set pomodoro-timer = $pomodoro-work-time-test
+  while $true {
+    while (not $pomodoro-running) {
+      sleep 0.5
+    }
+    var last-p
+    if (<= $pomodoro-timer 0) {
+      set last-p = (== $pomodoro-count $pomodoro-max-count-test)
+      if $pomodoro-working {
+        if $last-p {
+          set pomodoro-timer = $pomodoro-rest-time-test 
+        } else {
+          set pomodoro-timer = $pomodoro-break-time-test
+        }
+        set pomodoro-working = $false
+      } else {
+        if $last-p {
+          break
+        } else {
+          set pomodoro-timer = $pomodoro-work-time-test
+          set pomodoro-count = (+ $pomodoro-count 1)
+        }
+        set pomodoro-working = $true
+      }
+    }
+    echo $pomodoro-working $pomodoro-count $pomodoro-timer
+    set pomodoro-timer = (- $pomodoro-timer 1)
+    sleep 1
+  }
+}
+
+pomodoro-counter &
+# echo $pomodoro-count

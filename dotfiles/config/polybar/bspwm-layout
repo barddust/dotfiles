@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function get-icon () {
+  if [[ $1 == "tiled" ]]; then
+    echo "󰖲 "
+  else
+    echo " "
+  fi
+}
+
+get-icon $(bspc query -T -d focused | jq -r ".userLayout")
+
+bspc subscribe desktop_layout desktop_focus node_focus | while read line
+do
+  IFS=' ' read -ra each <<< "$line"
+  if [[ ${each[0]} == "desktop_layout" ]]; then
+    get-icon ${each[3]};
+  else
+    get-icon $(bspc query -T -d ${echo[2]} | jq -r ".userLayout")
+  fi
+done

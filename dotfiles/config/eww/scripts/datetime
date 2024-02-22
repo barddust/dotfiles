@@ -1,0 +1,8 @@
+#!/bin/elvish 
+
+var sdate = [^
+&date=(date '+%Y-%m-%d,%a') ^
+&time=(date '+%H:%M') ^
+&second=(date '+%S') ^
+]
+put $sdate | to-json

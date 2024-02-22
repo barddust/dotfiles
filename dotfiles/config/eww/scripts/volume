@@ -1,0 +1,31 @@
+#!/usr/bin/elvish
+
+use re
+use str
+
+fn volume_get_state {
+  var ret = [
+    &mute=(re:replace "^Mute: ([a-z]+)$" "$1" (pactl get-sink-mute 0))
+    &value=(re:replace "^.*\\s([0-9]+)%.*$" "$1" (pactl get-sink-volume 0 | read-line))
+  ]
+  set ret[value] = (/ $ret[value] 5) 
+  put $ret | to-json
+}
+
+if (!= (count $args) 0) {
+  if (eq $args[0] "set") {
+    var vol = (* $args[1] 5)
+    pactl set-sink-volume 0 $vol"%" >> /dev/null
+  } elif (eq $args[0] "toggle") {
+    pactl set-sink-mute 0 toggle >> /dev/null
+  }
+} else {
+  volume_get_state
+  pactl subscribe | each {
+    |line|
+    if (str:contains $line "'change' on sink") {
+      volume_get_state
+    }
+    
+  }
+}

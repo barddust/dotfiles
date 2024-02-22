@@ -1,0 +1,32 @@
+
+.music {
+    margin: 0;
+    padding: 0;
+
+    .icon {
+        color: $cyan;
+
+        &.playing {
+            @keyframes playing {
+                from {
+                    color: $cyan;
+                }
+                to {
+                    color: $background;
+                }
+            }
+            animation-name: playing;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+    }
+
+    .info {
+        padding-right: 10px;
+        font-size: 0.9em;
+		color: $yellow;
+    }
+}

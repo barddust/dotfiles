@@ -1,0 +1,35 @@
+(deflisten pomodoro-status
+  :initial '{"count":4,"time":0,"working":false}'
+  "scripts/pomodoro.py server")
+(defvar pomodoro-counts "[1,2,3,4]")
+(defvar show-pomodoro false)
+
+(defwidget pomodoro []
+  (eventbox
+   :class "pomodoro"
+   :visible show-pomodoro
+   :onclick "scripts/pomodoro.py client toggle"
+   :onrightclick "scripts/pomodoro.py client reset"
+   :cursor "pointer"
+   (box
+    :space-evenly false
+    :spacing 10
+    (box
+     (for i in pomodoro-counts
+          (label
+           :class "icon"
+           :text {i < pomodoro-status["count"] || (i == pomodoro-status["count"] && pomodoro-status["working"] == false) ? " ": i == pomodoro-status["count"] && pomodoro-status["working"] == true ? " " : " "})
+          ))
+
+    (label
+     :width 50
+     :class "timer"
+     :text {pomodoro-status["time"]}
+     )
+    (label
+     :class {pomodoro-status["working"] == true ? "state working " : 4 != pomodoro-status["count"] ? "state resting ": "state done "}
+     :text {pomodoro-status["working"] == true ? "󰏫 " : 4 != pomodoro-status["count"] ? " ": "󰄬 "}
+     )
+    )
+   )
+  )

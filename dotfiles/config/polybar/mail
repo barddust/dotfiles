@@ -1,0 +1,8 @@
+#!/bin/bash
+
+inotifywait -r -m ~/Mail -e move -e modify |
+    while read -r directory action file; do
+        if [[ "$file" =~ .*new/$ ]]; then
+            echo "xml file"
+        fi
+    done

@@ -1,0 +1,28 @@
+#!/usr/bin/elvish 
+
+use str
+
+var mail_dir = ~/Mail
+
+fn get_mail_num {
+  var count = 0
+  fd '^new$' $mail_dir | each {
+    |path|
+    set count = (+ $count (ls $path | wc -l))
+  }
+    echo $count
+}
+
+get_mail_num
+var num = (get_mail_num)
+
+inotifywait -e create,delete,modify,move -rmq --include 'new' $mail_dir | each {
+  |line|
+  var num = (get_mail_num)
+  echo [(str:split " " $line)][2]
+  if (eq [(str:split " " $line)][2] "MOVED_TO") {
+    notify-send "NEW MAILs" "$num unread mails."
+  }
+  echo $num
+}
+

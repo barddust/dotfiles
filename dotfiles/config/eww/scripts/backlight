@@ -1,0 +1,12 @@
+#! /bin/elvish 
+
+use math
+
+if (!= (count $args) 0) {
+  var bl = (* $args[0] 5)
+  brightnessctl set $bl"%"
+} else {
+  var bl_value = (brightnessctl get)
+  var bl_max = (brightnessctl max)
+  echo (math:trunc (/ (* $bl_value 100) $bl_max 5))
+}

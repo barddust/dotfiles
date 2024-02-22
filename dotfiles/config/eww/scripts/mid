@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $1 == "up" ]]; then
+eww update show-pomodoro=false
+eww update show-datetime=true
+else
+eww update show-pomodoro=true
+eww update show-datetime=false
+fi

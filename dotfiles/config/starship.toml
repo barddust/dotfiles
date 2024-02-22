@@ -1,0 +1,46 @@
+
+
+# Prompt
+format =  '''
+$shell$directory$package$python$git_branch$cmd_duration
+$character'''
+add_newline = true
+palette = 'dracula'
+
+[character]
+success_symbol = '[󱦰](bold green)'
+error_symbol = '[󱦰](bold red)'
+
+[shell]
+disabled = false
+style = 'pink'
+zsh_indicator = "Zsh"
+
+[python]
+disabled = false
+symbol = '󰌠 '
+style = 'cyan'
+
+[directory]
+style = 'purple'
+format = '[$path]($style)[$read_only]($read_only_style) '
+read_only = ' '
+truncate_to_repo = false
+
+[directory.substitutions]
+"~" = " "
+".config" = " "
+".emacs.d" = " "
+"Downloads" = " "
+
+[cmd_duration]
+min_time = 0
+format = 'in [$duration](yellow)'
+
+[palettes.dracula]
+red = '#ff5555'
+green = '#50fa7b'
+purple = '#bd93f9'
+cyan = '#8be9fd'
+pink = '#ff79c6'
+yellow = '#f1fa8c'

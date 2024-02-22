@@ -1,0 +1,31 @@
+#!/usr/bin/elvish
+
+use str
+
+if (== (count $args) 0) {
+  bspc subscribe desktop_focus | each {
+    |line|
+    var focusID = (bspc wm --dump-state | jq ".monitors[0].focusedDesktopId")
+    bspc wm --dump-state | jq ".monitors[0].desktops[] | select(.id == "$focusID") | .name" -r
+  }
+  
+  } else {
+  if (eq $args[0] "ne") {
+    bspc subscribe node_focus node_remove node_transfer |
+    each {
+      |line|
+      var nonempty = []
+      range 1 11 | each {
+        |i|
+        try {
+          bspc query -N --desktop $i >> /dev/null
+        } catch e {
+          set nonempty = (conj $nonempty "false")
+        } else {
+          set nonempty = (conj $nonempty "true")
+        }
+      }
+      printf "[%s]\n" (str:join , $nonempty)
+  }} elif (eq $args[0] "mt") {
+    bspc desktop --focus "^"$args[1]
+}}

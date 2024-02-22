@@ -1,0 +1,101 @@
+ZINIT_HOME="${HOME}/.zinit/zinit.git"
+[ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"
+[ ! -d $ZINIT_HOME/.git ] && git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+
+# initial Zinit's hash definition
+declare -A ZINIT
+ZINIT[HOME_DIR]="${HOME}/.zinit"
+source "${ZINIT_HOME}/zinit.zsh"
+
+
+## ENV
+export all_proxy=http://127.0.0.1:7890
+export http_proxy=$all_proxy
+export https_proxy=$http_proxy
+export ftp_proxy=$http_proxy
+export rsync_proxy=$http_proxy
+export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+if ! [[ "${PATH}" =~ "^${HOME}/bin" ]]; then
+    export PATH="${HOME}/bin:${PATH}"
+fi
+
+
+## ALIAS
+alias l="lsd"
+alias ll="lsd -l"
+alias la="lsd -al"
+alias copy="xclip -selection clipboard"
+alias mv='mv -iv'
+alias rm='rm -iv'
+alias cp='cp -iv'
+
+## KEYBINDS
+bindkey -e
+bindkey "^[[H" beginning-of-line
+bindkey "^A" beginning-of-line
+bindkey "^B" end-of-line
+bindkey "^[[3;5~" delete-word
+bindkey "^H" backward-char
+bindkey "^L" forward-char
+bindkey "^R" forward-word
+bindkey "^E" backward-word
+bindkey "^Z" undo
+bindkey "^[z" redo
+bindkey "^[[Z" reverse-menu-complete
+
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+bindkey "^[p" up-line-or-beginning-search
+bindkey "^[n" down-line-or-beginning-search
+bindkey "^K" up-line-or-beginning-search
+bindkey "^J" down-line-or-beginning-search
+
+
+## COMPLETION
+zstyle ':completion:*' rehash true
+autoload -Uz compinit
+compinit
+
+
+## HISTORY
+setopt extended_history       # record timestamp of command in HISTFILE
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+setopt share_history          # share command history data
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=10000
+
+## PLUGIN
+zinit light dracula/zsh-syntax-highlighting
+zinit light zsh-users/zsh-syntax-highlighting
+
+zinit ice as"command" from"gh-r" \
+  atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+  atpull"%atclone" src"init.zsh"
+zinit light starship/starship
+
+zinit ice as"command" from"gh-r" \
+  atclone"./zoxide init zsh > init.zsh; ./zoxide completions zsh > _zoxide" \
+  atpull"%atclone" src"init.zsh" nocompile'!'
+zinit light ajeetdsouza/zoxide
+
+zinit snippet OMZP::archlinux
+zinit snippet OMZP::extract
+zinit snippet OMZP::git
+zinit snippet OMZP::python
+zinit snippet OMZP::sudo
+zinit snippet OMZP::systemd
+zinit snippet OMZL::clipboard.zsh
+zinit snippet OMZL::completion.zsh
+
+zinit for \
+    atload"zicompinit; zicdreplay" \
+    blockf \
+    lucid \
+    wait \
+  zsh-users/zsh-completions

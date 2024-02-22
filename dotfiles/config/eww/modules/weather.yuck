@@ -1,0 +1,43 @@
+(defvar show-weather false)
+(defvar weather-index "[1, 2, 3, 4]")
+(defpoll weathers :interval "1h"
+  :initial '[{"icon": "", "tooltip": ""}, {"icon": "", "tooltip": ""}, {"icon": "", "tooltip": ""}, {"icon": "", "tooltip": ""}, {"icon": "", "tooltip": ""}]'
+  "scripts/weather")
+
+
+;; TODO: Use a window
+(defwidget weather []
+  (eventbox
+   :onhover "${EWW_CMD} update show-weather=true" 		
+   :onhoverlost "${EWW_CMD} update show-weather=false"
+   :class "weather"
+   (box
+    :space-evenly false
+    :spacing 2
+    (label
+      :class "icon"
+      :text {weathers[0]["icon"]}
+      :tooltip {weathers[0]["tooltip"]}
+      :width 24
+      :height 24
+      )
+    (revealer
+     :transition "slideright"
+	 :reveal "${show-weather}"
+	 :duration "400ms"
+     :class "items"
+     (box
+      :space-evenly false
+      (for i in weather-index
+        (label
+         :class "item"
+         :text {weathers[i]["icon"]}
+         :tooltip {weathers[i]["tooltip"]}
+         )
+        )
+      )
+     )
+    
+    )
+   )
+  )

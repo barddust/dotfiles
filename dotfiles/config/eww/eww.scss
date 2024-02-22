@@ -1,0 +1,42 @@
+@import 'styles/color.scss';
+
+.bar {
+	background: $background;
+    font-family: FantasqueSansM Nerd Font;
+	font-size: 1.2em;
+    border-radius: 10px;
+	padding: 5px 10px;
+}
+
+scale trough {
+  all: unset;
+  background-color: $background;
+  border-radius: 5px;
+  highlight {
+      border-radius: 5px;
+  }
+  slider {
+      all: unset;
+      box-shadow: none;
+      transition: none;
+      min-height: 0.5em;
+      min-width: 10px;
+      border-radius: 5px;
+      &.disabled {
+          box-shadow: none;
+      }
+    }
+}
+
+@import 'styles/music.scss';
+@import 'styles/workspace.scss';
+@import 'styles/volume.scss';
+@import 'styles/system.scss';
+@import 'styles/datetime.scss';
+@import 'styles/weather.scss';
+@import 'styles/backlight.scss';
+@import 'styles/power.scss';
+@import 'styles/user.scss';
+@import 'styles/mpc.scss';
+@import 'styles/pomodoro.scss';
+

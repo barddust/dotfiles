@@ -1,0 +1,18 @@
+.volume {
+    color: $orange;
+
+    .icon {
+        font-size: 1.25em;
+    }
+    scale {
+        margin-right: 0;
+		font-size: 0.6em;
+        trough {
+            border: 2px solid $orange;
+            highlight {
+				border-radius: 0;
+                background-color: $orange;
+            }
+        }
+    }
+}

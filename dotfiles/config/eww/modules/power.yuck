@@ -1,0 +1,50 @@
+(defpoll power-status :interval "5s"
+  :initial '{"linking": "no", "battery": [{"name": "BAT0", "value": 0}, {"name": "BAT1", "value": 0}], "aver": 0}'
+  "scripts/power")
+(defvar show-power "false")
+
+(defwidget power []
+  (eventbox
+   :onhover "eww update show-power=true" 		
+   :onhoverlost "eww update show-power=false"
+   :class "power"
+   :tooltip '${power-status["aver"]}%'
+   (box
+    :space-evenly false
+    (revealer
+     :transition "slideleft"
+	 :reveal {show-power}
+	 :duration "400ms"
+     :class "items"
+	 (eventbox
+	  :tooltip '${power-status["aver"]}'
+	  :class "item"
+	  (progress
+	   :class "progress"
+	   :value {power-status["aver"]}
+       :orientation "h"
+       :flipped true
+       :width 100)
+	  )
+     )
+    (box
+     :class {power-status["aver"] <= 10 ? "critical-icon" : "icon"}
+     :width 24
+     :height 24
+     {power-status["linking"] == "yes" ?
+       " " :
+       power-status["aver"] <= 10 ?
+         " " :
+         power-status["aver"] <= 40 ?
+           " " :
+           power-status["aver"] <= 60 ?
+             " " :
+             power-status["aver"] <= 80 ?
+             " " :
+             " "}
+	 )
+    )
+   )
+  )
+
+

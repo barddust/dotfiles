@@ -1,0 +1,48 @@
+[general]
+accounts = outlook, newsletter
+
+[Account outlook]
+localrepository = outlook-local
+remoterepository = outlook-remote
+utf8foldernames = yes
+autorefresh = 30
+quick = 15
+
+[Repository outlook-local]
+type = Maildir
+localfolders = ~/Mail/outlook
+
+[Repository outlook-remote]
+type = IMAP
+remotehost = outlook.office365.com
+remoteport = 993
+remoteuser = mrdust1880@outlook.com
+remotepassfile = ~/.offlineimappass
+ssl = yes
+maxconnections = 5
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+folderfilter = lambda fn: fn in ["Inbox", "Junk", "Drafts", "Deleted", "Sent"]
+
+
+[Account newsletter]
+localrepository = newsletter-local
+remoterepository = newsletter-remote
+utf8foldernames = yes
+autorefresh = 30
+quick = 15
+postsynchook = mails=$(fd -p "new/.+" ~/Mail | wc -l); if [[ $mails -ne 0 ]]; then notify-send "Offlineimap" "$mails; new message(s)." fi
+
+[Repository newsletter-local]
+type = Maildir
+localfolders = ~/Mail/newsletter
+
+[Repository newsletter-remote]
+type = IMAP
+remotehost = outlook.office365.com
+remoteport = 993
+remoteuser = mrdust1880@outlook.com
+remotepassfile = ~/.offlineimappass
+ssl = yes
+maxconnections = 5
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+folderfilter = lambda fn: re.search("^nls", fn)

@@ -1,0 +1,40 @@
+(deflisten volume-state
+  :initial '{"mute":"no","value":0}'
+  "scripts/volume")
+(defvar show-volume false)
+
+(defwidget volume []
+  (eventbox
+   :class "volume"
+   :onhover "${EWW_CMD} update show-volume=true" 		
+   :onhoverlost "${EWW_CMD} update show-volume=false"
+   :tooltip '${volume-state["value"] * 5}%'
+   (box
+    :space-evenly false
+    (revealer
+     :transition "slideleft"
+     :reveal {show-volume}
+     :duration "400ms"
+     (scale
+      :class "bar"
+      :value {volume-state["value"]}
+      :min 0
+      :max 21
+      :round-digits 0
+      :width 100
+      :flipped true
+      :onchange "scripts/volume set {}"
+      :timeout "5s"
+      )
+     )
+    (eventbox
+     :class {volume-state["mute"] == "yes" ? 'icon mute': 'icon'}
+     :onclick "scripts/volume toggle"
+     :cursor "pointer"
+     :width "24"
+     :height "24"
+     {volume-state["mute"] == "yes" ? "󰝟 " : "󰕾 "}
+     )
+    )
+   )
+  )
