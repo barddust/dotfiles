@@ -1,0 +1,11 @@
+* dotfiles
+
+Dotfiles are managed by [[https://github.com/deadc0de6/dotdrop][Dotdrop]].
+
+Firstly, install dotdrop.
+
+Clone this repo to local as ~${HOME}/.config/dotdrop~.
+
+~dotdrop compare~ to see the difference. 
+
+Finally, ~dotdrop install~.
