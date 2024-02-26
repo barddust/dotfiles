@@ -47,6 +47,9 @@ dotfiles:
   f_starship.toml:
     src: config/starship.toml
     dst: ~/.config/starship.toml
+  d_qutebrowser:
+    src: config/qutebrowser
+    dst: ~/.config/qutebrowser
 profiles:
   mrdust:
     dotfiles:
@@ -63,3 +66,4 @@ profiles:
     - d_picom
     - d_polybar
     - f_starship.toml
+    - d_qutebrowser

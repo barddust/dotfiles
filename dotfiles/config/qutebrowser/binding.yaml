@@ -1,0 +1,182 @@
+normal:
+  <Ctrl-h>: "cmd-set-text -s :help"
+  <ctrl-l>: "cmd-set-text -s :open"
+  <ctrl-x><ctrl-c>: quit
+  +: zoom-in
+  -: zoom-out
+  =: zoom
+  .: cmd-repeat-last
+  /: cmd-set-text /
+  ":": "cmd-set-text :"
+  <Alt-x>: "cmd-set-text :"
+  <Alt-1>: tab-focus 1
+  <Alt-2>: tab-focus 2
+  <Alt-3>: tab-focus 3
+  <Alt-4>: tab-focus 4
+  <Alt-5>: tab-focus 5
+  <Alt-6>: tab-focus 6
+  <Alt-7>: tab-focus 7
+  <Alt-8>: tab-focus 8
+  <Alt-9>: tab-focus -1
+  <F5>: reload
+  <F11>: fullscreen
+  <F12>: devtools
+  <Ctrl-F5>: reload -f
+  <Ctrl-V>: mode-enter passthrough
+  <Escape>: clear-keychain ;; search ;; fullscreen --leave
+  <Return>: selection-follow
+  <Ctrl-s>: stop
+  b: "cmd-set-text -s :quickmark-load -t"
+  d: tab-close
+  e: tab-prev
+  f: hint
+  g: reload
+  cc: tab-clone
+  cd: download
+  cf: view-source
+  ch: history
+  h: scroll left
+  i: mode-enter insert
+  j: scroll down
+  k: scroll up
+  l: scroll right
+  m: quickmark-save
+  M: quickmark-del
+  n: scroll-page 0 0.8
+  o: "cmd-set-text -s :open "
+  O: "cmd-set-text -s :open {url}"
+  p: scroll-page 0 -0.8
+  r: tab-next
+  "<": scroll-to-perc 0
+  ">": scroll-to-perc
+  ".": search-next
+  ",": search-prev
+  t: "open -t ;; cmd-set-text -s :open"
+  v: mode-enter caret
+  ww: yank
+  x: spawn --userscript qute-keepassxc --insecure
+  wl: yank pretty-url
+  wt: yank title
+  wd: yank domain
+  F: hint links tab-bg
+  <Ctrl-f>: hint --rapid links tab-bg
+  H: tab-move -
+  K: back
+  J: forward
+  L: tab-move 
+
+command:
+  <Ctrl-e>: rl-backward-word
+  <Ctrl-Backspace>: rl-backward-kill-word
+  <Ctrl-Delete>: rl-kill-word
+  <Ctrl-r>: rl-forward-word
+  <Ctrl-a>: rl-beginning-of-line
+  <Ctrl-h>: rl-backward-char
+  <Ctrl-b>: rl-end-of-line
+  <Ctrl-l>: rl-forward-char
+  <Ctrl-y>: rl-yank
+  <Ctrl-w>: completion-item-yank
+  <Ctrl-d>: completion-item-del
+  <Alt-n>: command-history-next
+  <ALt-p>: command-history-prev
+  <Ctrl-Return>: command-accept --rapid
+  <Alt+w>: completion-item-yank --sel
+  <Ctrl-p>: completion-item-focus prev-category
+  <Ctrl-n>: completion-item-focus next-category
+  <Ctrl-j>: completion-item-focus --history next
+  <Ctrl-k>: completion-item-focus --history prev
+  <Up>: completion-item-focus --history prev
+  <Down>: completion-item-focus --history next
+  <Shift-Tab>: completion-item-focus prev
+  <Tab>: completion-item-focus next
+  <Escape>: mode-leave
+  <Ctrl-g>: mode-leave
+  <Return>: command-accept
+
+hint:
+  <Escape>: mode-leave
+  <Ctrl-g>: mode-leave
+  <Return>: hint-follow
+  <Shift-Return>: hint-follow -s
+  
+caret:
+  h: move-to-prev-char
+  j: move-to-next-line
+  k: move-to-prev-line
+  l: move-to-next-char
+  a: move-to-end-of-line
+  b: move-to-start-of-line
+  <Ctrl-Space>: selection-drop
+  <Escape>: mode-leave
+  <Ctrl-g>: mode-leave
+  <Return>: yank selection
+  <Space>: selection-toggle
+  H: scroll left
+  J: scroll down
+  K: scroll up
+  L: scroll right
+  V: selection-toggle --line
+  Y: yank selection -s
+  "[": move-to-start-of-prev-block
+  "]": move-to-start-of-next-block
+  gg: move-to-start-of-document
+  G: move-to-end-of-document
+  <Shift-,>: move-to-start-of-document
+  <Shift-.>: move-to-end-of-document
+  o: selection-reverse
+  v: selection-toggle
+  r: move-to-next-word
+  e: move-to-prev-word
+  y: yank selection
+  "{": move-to-end-of-prev-block
+  "}": move-to-end-of-next-block
+  
+insert:
+  <Escape>: mode-leave
+  <Ctrl-g>: mode-leave
+  <Shift-Escape>: fake-key <Escape>
+  <Ctrl-x>x: spawn --userscript qute-keepassxc --insecure
+
+passthrough:
+  <Shift-Escape>: mode-leave
+
+prompt:
+  <Ctrl-e>: rl-backward-word
+  <Ctrl-Backspace>: rl-backward-kill-word
+  <Ctrl-Delete>: rl-kill-word
+  <Ctrl-r>: rl-forward-word
+  <Ctrl-a>: rl-beginning-of-line
+  <Ctrl-h>: rl-backward-char
+  <Ctrl-b>: rl-end-of-line
+  <Ctrl-l>: rl-forward-char
+  <Ctrl-y>: rl-yank
+  # <Alt-E>: prompt-fileselect-external
+  # <Alt-Shift-Y>: prompt-yank --sel
+  <Alt-y>: prompt-yank
+  # <Ctrl-P>: prompt-open-download --pdfjs
+  # <Ctrl-Shift-W>: rl-filename-rubout
+  <Ctrl-x>: prompt-open-download
+  <Ctrl-j>: prompt-item-focus next
+  <Ctrl-k>: prompt-item-focus prev
+  <Up>: prompt-item-focus next
+  <Down>: prompt-item-focus prev
+  <Escape>: mode-leave
+  <Ctrl-g>: mode-leave
+  <Return>: prompt-accept
+  <Tab>: prompt-item-focus next
+  <Shift-Tab>: prompt-item-focus prev
+
+register:
+  <Escape>: mode-leave
+  <Ctrl-g>: mode-leave
+
+yesno:
+  <Alt-Shift-Y>: prompt-yank --sel
+  <Alt-Y>: prompt-yank
+  <Escape>: mode-leave
+  <Ctrl-g>: mode-leave
+  <Return>: prompt-accept
+  N: prompt-accept --save no
+  Y: prompt-accept --save yes
+  n: prompt-accept no
+  y: prompt-accept yes
