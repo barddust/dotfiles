@@ -8,6 +8,7 @@ config.load_autoconfig()
 
 c.content.proxy = "socks://127.0.0.1:7891"
 c.content.default_encoding = 'utf-8'
+c.content.javascript.clipboard = "access"
 
 c.url.default_page = "about:blank"
 c.url.start_pages = "about:blank"

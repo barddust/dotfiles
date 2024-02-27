@@ -1,30 +1,23 @@
-(include "./modules/mail.yuck")
-
 (defvar workspace-numbers "[1,2,3,4,5,6,7,8,9]")
-(defvar workspace-numbers-icons '[" "," "," "," "," "," "," "," "," "]')
-;; (defvar actived-workspace "1")󰾱 󱥂 󰍥 
-(deflisten actived-workspace
-  :initial "1"
+(defvar workspace-icons '[" "," "," "," "," "," "," "," "," "]')
+(deflisten workspaces :initial '[2,1,0,0,0,0,0,0,0]'
   "scripts/workspace")
-(deflisten non-empty-workspaces
-  :initial "[false, false, false, false, false, false, false, false ,false, false]"
-  "scripts/workspace ne")
+;; 2: current workspace
+;; 1: non-empty workspace
+;; 0: empty workspace
 
 (defwidget workspace []
   (box
-   :spacing 4
    :class "workspace"
-   (for i in workspace-numbers        
+   (for i in workspace-numbers
      (eventbox
-      :class "item${actived-workspace == i ? ' active' : non-empty-workspaces[i - 1] ? ' window' : ''}"
-      :cursor {actived-workspace == i ? "default" : "pointer"}
-      :onclick "scripts/workspace mt ${i}"
+      :class "item${workspaces[i - 1] == 2 ? ' window current' : workspaces[i - 1] == 1 ? ' window' : ''}"
+      :cursor {workspaces[i - 1] == 1 ? "pointer" : "default"}
+      :onclick "bspc desktop -f ${i}"
       :width 28
       :height 24
-      :style "border-radius: 5px"
-      {workspace-numbers-icons[i - 1]}
+      {workspace-icons[i - 1]}
       )
      )
-   (mail)
    )
   )

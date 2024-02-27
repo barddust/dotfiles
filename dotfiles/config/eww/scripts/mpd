@@ -1,0 +1,48 @@
+#!/bin/bash
+
+function assemble-status () {
+    echo '{"title":"'$1'","artist":"'$2'","state":'$3'}'
+}
+
+function get-status () {
+    state=$(mpc status "%state%")
+    if [[ $state == "stopped" ]]; then
+        assemble-status "" "" 1
+    else
+        title=$(mpc -f "%title%" current)
+        artist=$(mpc -f "%artist%" current)
+        if [[ $(mpc status "%state%") == "paused" ]]; then
+            assemble-status "$title" "$artist" "2"
+        else
+            assemble-status "$title" "$artist" "3"
+        fi
+    fi
+}
+
+if [[ $1 == "status" ]]; then
+    while :
+    do
+        assemble-status "" "" 0
+        mpc status >> /dev/null 2>&1
+        connect=$?
+        if [[ $connect == 0 ]]; then
+            get-status
+        fi
+        
+        while [[ $connect == 0 ]]
+        do
+            mpc idle >> /dev/null 2>&1
+            connect=$?
+            get-status
+        done
+        sleep 5
+    done
+elif [[ $1 == "up" ]]; then
+    mpc prev
+elif [[ $1 == "down" ]]; then
+    mpc next
+elif [[ $1 == "toggle" ]]; then
+    mpc toggle
+elif [[ $1 == "gui" ]]; then
+    emacs -f simple-mpc --name SIMPLEMPC
+fi

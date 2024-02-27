@@ -1,31 +1,28 @@
-#!/usr/bin/elvish
+#!/bin/bash
 
-use str
+function bspc-print () {
+    focusDid=$(bspc wm -d | jq ".monitors[0].focusedDesktopId")
+    focusName=$(bspc query -D --names -d ${focusDid})
+    echo -n "["
+    for i in $(seq 1 9);
+    do
+        if [[ $i == $focusName ]]; then
+            echo -n "2"
+        elif [[ -n $(bspc query -N -d ${i}) ]]; then
+            echo -n "1"
+        else
+            echo -n "0"
+        fi
+        if [[ $i -ne "9" ]]; then
+            echo -n ","
+        fi
+    done
+    echo "]"
+}
+bspc-print
+bspc subscribe node_focus desktop_focus |
+    while read line
+    do
+        bspc-print
+    done
 
-if (== (count $args) 0) {
-  bspc subscribe desktop_focus | each {
-    |line|
-    var focusID = (bspc wm --dump-state | jq ".monitors[0].focusedDesktopId")
-    bspc wm --dump-state | jq ".monitors[0].desktops[] | select(.id == "$focusID") | .name" -r
-  }
-  
-  } else {
-  if (eq $args[0] "ne") {
-    bspc subscribe node_focus node_remove node_transfer |
-    each {
-      |line|
-      var nonempty = []
-      range 1 11 | each {
-        |i|
-        try {
-          bspc query -N --desktop $i >> /dev/null
-        } catch e {
-          set nonempty = (conj $nonempty "false")
-        } else {
-          set nonempty = (conj $nonempty "true")
-        }
-      }
-      printf "[%s]\n" (str:join , $nonempty)
-  }} elif (eq $args[0] "mt") {
-    bspc desktop --focus "^"$args[1]
-}}

@@ -9,12 +9,10 @@
    :onhover "eww update show-date=true; eww update show-sec=true" 		
    :onhoverlost "eww update show-date=false; eww update show-sec=false"
    :onclick "emacs -f calendar &"
-   :cursor "pointer"
    :class "datetime"
-   :visible show-datetime
    :halign "center"
    (box
-    :space-evenly "false"
+    :space-evenly false
     
     (revealer
      :transition "slideleft"

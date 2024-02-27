@@ -1,22 +1,30 @@
-(include "./modules/music.yuck")
 (include "./modules/workspace.yuck")
-(include "./modules/volume.yuck")
-(include "./modules/system.yuck")
-(include "./modules/weather.yuck")
-(include "./modules/backlight.yuck")
-(include "./modules/power.yuck")
-(include "./modules/user.yuck")
+(include "./modules/mpd.yuck")
 (include "./modules/datetime.yuck")
-(include "./modules/pomodoro.yuck")
+(include "./modules/volume.yuck")
+(include "./modules/backlight.yuck")
+(include "./modules/ram.yuck")
+;; (include "./modules/weather.yuck")
+
+(include "./modules/battery.yuck")
 (include "./modules/net.yuck")
+;; (include "./modules/user.yuck")
+
+;; (include "./modules/pomodoro.yuck")
+
+
+(defvar test-var '{"a": [3,2,1], "b": 2}')
 
 (defwidget left []
   (box
    :halign "start"
-   :spacing 10
+   :space-evenly false
+   :spacing 15
    :class "container"
    (workspace)
-   ))
+   (mpd)
+   )
+  )
 
 (defwidget mid []
   (box
@@ -26,13 +34,13 @@
    (eventbox
     :onhover "eww update show-date=true; eww update show-sec=true" 		
     :onhoverlost "eww update show-date=false; eww update show-sec=false"
-    :onscroll "scripts/mid {}"
-    
     (overlay
      :width 200
      (datetime)
-     (pomodoro)
-     ))))
+     )
+    )
+   )
+  )
 
 (defwidget right []
   (box
@@ -40,14 +48,15 @@
    :halign "end"
    :spacing 10
    :class "container"
-   (net-icon)
-   (system)
-   (music)
-   ;; (weather)
-   (power)
-   (backlight)
+   (net)
+   (ram)
    (volume)
-   (user)))
+   (backlight)
+   (battery)
+   ;; (weather)
+   ;; (power)
+   ;; (user)
+   ))
 
 (defwidget bar []
   (centerbox
@@ -61,12 +70,10 @@
   :monitor 0
   :exclusive true
   :geometry (geometry
-             ;; :y "5"
-             ;; :width "1920px"
-             :width "100%"
-             ;; :height "20px"
-             :anchor "top center"
-             )
+             :y "8"
+             :width "1900px"
+             :height "35px"
+             :anchor "top center")
   :windowtype "dock"
   :wm-ignore true
   (bar)

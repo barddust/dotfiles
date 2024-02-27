@@ -1,35 +1,20 @@
-(deflisten backlight-value :initial "2"
+(deflisten backlight-value :initial "10"
   "scripts/backlight")
-(defvar show-backlight false)
 
 (defwidget backlight []
   (eventbox
    :class "backlight"
-   :onhover "eww update show-backlight=true" 		
-   :onhoverlost "eww update show-backlight=false"
-   :tooltip '${backlight-value * 5}%'
+   :onscroll "scripts/backlight {}"
+   :cursor "pointer"
    (box
     :space-evenly false
-    (revealer
-     :transition "slideleft"
-     :reveal {show-backlight}
-     :duration "400ms"
-     (scale
-      :class "bar"
-      :value {backlight-value}
-      :min 0
-      :max 21
-      :round-digits 0
-      :width 100
-      :flipped true
-      :onchange "scripts/backlight {}; eww update backlight-value={}"
-      )
-     )
+    :spacing 13
     (box
      :class "icon"
-     :width "24"
-     :height "24"
-	 "󰖨 "
+	 "󰖨"
+     )
+    (label
+     :text backlight-value
      )
     )
    )

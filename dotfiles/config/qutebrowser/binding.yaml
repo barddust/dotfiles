@@ -63,7 +63,7 @@ normal:
   H: tab-move -
   K: back
   J: forward
-  L: tab-move 
+  L: tab-move +
 
 command:
   <Ctrl-e>: rl-backward-word

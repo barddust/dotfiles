@@ -1,20 +1,23 @@
 .workspace {
-    // font-size: 1.3em;
-	.item {
-		min-height: 5em;
 
-        &:hover {
-            background-image: linear-gradient($background-darker, $background, $selection, $pink);
-        }
-        &.active {
-            background-color: $pink;
-            color: $background;
-        }
+	.item {
+        color: $comment;
+        
         &.window {
-            color: $pink;
-        }
-        &.window:hover {
-            background-image: linear-gradient($background-darker, $background, $selection, $pink);
+            color: $foreground;
+            
+            &:hover {
+                background-image: linear-gradient($background-darker, $background, $selection, $pink);
+            }
+            
+            &.current {
+                color: $pink;
+
+                &:hover {
+                    background: none;
+                }
+            }
+        
         }
 	}
 }
