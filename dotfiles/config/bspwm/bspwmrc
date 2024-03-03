@@ -25,14 +25,16 @@ bspc config borderless_monocle false
 bspc rule -a Emacs state=tiled
 bspc rule -a "Image Lounge" state=floating center=on
 bspc rule -a "Emacs:SIMPLEMPC" state=floating center=on rectangle="1080x720+0+0"
-bspc rule -a GoldenDict state=floating rectangle="400x500+1500+40"
 bspc rule -a Tk state=floating sticky=on
+bspc rule -a KeePassXC desktop=9 follow=on focus=on
+bspc rule -a qutebrowser desktop=1 follow=on focus=on
 
 ## Exec Once
 pgrep -x sxhkd > /dev/null || sxhkd &
 eww daemon
+eww open bar
 feh --bg-fill --no-fehbg ~/Pictures/wallpaper/v2-3ff3d6a85edb2f19d343668d24ed9269_r.jpg
-light-locker --no-late-locking --lock-on-suspend --lock-on-lid &
+light-locker --no-late-locking --no-lock-on-suspend --lock-on-lid &
 pgrep -f lxqt-policykit-agent > /dev/null || lxqt-policykit-agent > /dev/null &
 dunst > /dev/null &
 fcitx5 --replace -d > /dev/null
@@ -41,4 +43,3 @@ pgrep -x udiskie > /dev/null || udiskie -t &
 # ~/.config/polybar/launch.sh 
 pgrep -f jieba-server.py > /dev/null || ~/.pydev/bin/python ~/.emacs.d/elpa/jieba/jieba-server.py &
 pgrep -f "dict.+server.py" > /dev/null || ~/.pydev/bin/python ~/pyproj/dict/server.py
-eww open bar

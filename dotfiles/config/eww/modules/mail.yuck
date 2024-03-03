@@ -1,17 +1,22 @@
 (deflisten mail-num
   :initial 0
   "scripts/mail")
-(defvar mail-workspace-num 10)
 
 (defwidget mail []
   (eventbox
-   :class "item${actived-workspace == mail-workspace-num ? ' active' : non-empty-workspaces[mail-workspace-num - 1] ? ' window' : ''} mail"
-   :cursor {actived-workspace == mail-workspace-num ? "default" : "pointer"}
-   :onclick "scripts/workspace mt ${mail-workspace-num}"
-   :width 28
-   :height 24
-   :tooltip "${mail-num} unread mails"
-   :style "border-radius: 5px; font-size: 1.15em;"
-   {mail-num == 0 ? "󰇰 " : "󰧬 "}
+   :class "mail"
+   :onclick "emacs -f mu4e &"
+   :cursor "pointer"
+   (box
+    :spacing 15
+    :space-evenly false
+    (label
+     :class {mail-num > 0 ? "icon new": "icon"}     
+     :text {mail-num > 0 ? "󰧬" : "󰇰"}
+     )
+    (label     
+     :text {mail-num}
+      )
+    )
    )
   )

@@ -8,7 +8,7 @@ padding = { x = 10, y = 5}
 opacity = 0.9
 
 [font]
-normal = { family = "Code New Roman", style = "Regular" }
+normal = { family = "CodeNewRoman Nerd Font", style = "Regular" }
 size = 9
 
 [mouse]

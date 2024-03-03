@@ -27,7 +27,7 @@
 	  :text " ")
      (label
       :class "title"
-      :limit-width 15
+      ;; :limit-width 15
       :show-truncated false
       :text {mpd-status["title"]})
 	 (revealer

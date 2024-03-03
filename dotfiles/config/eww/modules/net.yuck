@@ -1,6 +1,6 @@
 (defpoll net-connect
   :initial 0
-  :interval 3
+  :interval 10
   "scripts/net")
 ;; 2 ether net
 ;; 1 wifi

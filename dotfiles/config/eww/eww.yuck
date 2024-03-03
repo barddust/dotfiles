@@ -4,16 +4,9 @@
 (include "./modules/volume.yuck")
 (include "./modules/backlight.yuck")
 (include "./modules/ram.yuck")
-;; (include "./modules/weather.yuck")
-
+(include "./modules/mail.yuck")
 (include "./modules/battery.yuck")
 (include "./modules/net.yuck")
-;; (include "./modules/user.yuck")
-
-;; (include "./modules/pomodoro.yuck")
-
-
-(defvar test-var '{"a": [3,2,1], "b": 2}')
 
 (defwidget left []
   (box
@@ -22,6 +15,7 @@
    :spacing 15
    :class "container"
    (workspace)
+   (mail)
    (mpd)
    )
   )
@@ -32,8 +26,6 @@
    :halign "center"
    :class "container"
    (eventbox
-    :onhover "eww update show-date=true; eww update show-sec=true" 		
-    :onhoverlost "eww update show-date=false; eww update show-sec=false"
     (overlay
      :width 200
      (datetime)
@@ -46,16 +38,13 @@
   (box
    :space-evenly false
    :halign "end"
-   :spacing 10
+   :spacing 15
    :class "container"
    (net)
    (ram)
    (volume)
    (backlight)
    (battery)
-   ;; (weather)
-   ;; (power)
-   ;; (user)
    ))
 
 (defwidget bar []

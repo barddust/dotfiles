@@ -30,7 +30,7 @@ remoterepository = newsletter-remote
 utf8foldernames = yes
 autorefresh = 30
 quick = 15
-postsynchook = mails=$(fd -p "new/.+" ~/Mail | wc -l); if [[ $mails -ne 0 ]]; then notify-send "Offlineimap" "$mails; new message(s)." fi
+postsynchook = mails=$(fd -p "new/.+" ~/Mail | wc -l); [[ $mails -ne 0 ]] && notify-send "Offlineimap" "$mails; new message(s)."; mu index
 
 [Repository newsletter-local]
 type = Maildir
