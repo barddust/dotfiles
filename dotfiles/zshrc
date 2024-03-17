@@ -9,6 +9,8 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 
 ## ENV
+path=('~/.local/bin' 
+      $path)
 export all_proxy=http://127.0.0.1:7890
 export http_proxy=$all_proxy
 export https_proxy=$http_proxy
@@ -23,7 +25,7 @@ fi
 ## ALIAS
 alias l="lsd"
 alias ll="lsd -l"
-alias la="lsd -al"
+alias la="lsd -Al"
 alias copy="xclip -selection clipboard"
 alias mv='mv -iv'
 alias rm='rm -iv'
@@ -71,18 +73,17 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
-bindkey -e
-bindkey "^[[H" beginning-of-line
-bindkey "^A" beginning-of-line
-bindkey "^B" end-of-line
-bindkey "^[[3;5~" delete-word
-bindkey "^H" backward-char
-bindkey "^L" forward-char
-bindkey "^R" forward-word
-bindkey "^E" backward-word
-bindkey "^Z" undo
-bindkey "^[z" redo
-bindkey "^[[Z" reverse-menu-complete
+bindkey -- "^[[H" beginning-of-line
+bindkey -- "^A" beginning-of-line
+bindkey -- "^B" end-of-line
+bindkey -- "^[[3;5~" delete-word
+bindkey -- "^H" backward-char
+bindkey -- "^L" forward-char
+bindkey -- "^R" forward-word
+bindkey -- "^E" backward-word
+bindkey -- "^Z" undo
+bindkey -- "^[z" redo
+bindkey -- "^[[Z" reverse-menu-complete
 
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search

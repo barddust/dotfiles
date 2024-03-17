@@ -7,6 +7,8 @@ config:
   link_dotfile_default: nolink
   link_on_import: nolink
   longkey: false
+  impignore:
+  - '*/__pycache__/*'
 dotfiles:
   f_zshrc:
     src: zshrc
@@ -14,21 +16,9 @@ dotfiles:
   f_offlineimaprc:
     src: offlineimaprc
     dst: ~/.offlineimaprc
-  d_alacritty:
-    src: config/alacritty
-    dst: ~/.config/alacritty
-  d_bspwm:
-    src: config/bspwm
-    dst: ~/.config/bspwm
   f_btop.conf:
     src: config/btop/btop.conf
     dst: ~/.config/btop/btop.conf
-  d_dunst:
-    src: config/dunst
-    dst: ~/.config/dunst
-  d_eww:
-    src: config/eww
-    dst: ~/.config/eww
   d_lsd:
     src: config/lsd
     dst: ~/.config/lsd
@@ -41,29 +31,29 @@ dotfiles:
   d_picom:
     src: config/picom
     dst: ~/.config/picom
-  d_polybar:
-    src: config/polybar
-    dst: ~/.config/polybar
   f_starship.toml:
     src: config/starship.toml
     dst: ~/.config/starship.toml
   d_qutebrowser:
     src: config/qutebrowser
     dst: ~/.config/qutebrowser
+  d_qtile:
+    src: config/qtile
+    dst: ~/.config/qtile
+  d_st:
+    src: st
+    dst: ~/.st
 profiles:
   mrdust:
     dotfiles:
     - f_zshrc
     - f_offlineimaprc
-    - d_alacritty
-    - d_bspwm
     - f_btop.conf
-    - d_dunst
-    - d_eww
     - d_lsd
     - f_mpd.conf
     - d_mpv
     - d_picom
-    - d_polybar
     - f_starship.toml
     - d_qutebrowser
+    - d_qtile
+    - d_st

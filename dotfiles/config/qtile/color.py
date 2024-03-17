@@ -1,0 +1,12 @@
+class Color:
+    Black = "#282a36"
+    DarkGray = "#44475a"
+    White = "#f8f8f2"
+    Gray = "#6272a4"
+    Cyan = "#8be9fd"
+    Green = "#50fa7b"
+    Orange = "#ffb86c"
+    Pink = "#ff79c6"
+    Purple = "#bd93f9"
+    Red = "#ff5555"
+    Yellow = "#f1fa8c"

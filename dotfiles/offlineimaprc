@@ -1,5 +1,6 @@
 [general]
 accounts = outlook, newsletter
+maxsyncaccounts = 1
 
 [Account outlook]
 localrepository = outlook-local
@@ -28,9 +29,9 @@ folderfilter = lambda fn: fn in ["Inbox", "Junk", "Drafts", "Deleted", "Sent"]
 localrepository = newsletter-local
 remoterepository = newsletter-remote
 utf8foldernames = yes
-autorefresh = 30
+autorefresh = 61
 quick = 15
-postsynchook = mails=$(fd -p "new/.+" ~/Mail | wc -l); [[ $mails -ne 0 ]] && notify-send "Offlineimap" "$mails; new message(s)."; mu index
+postsynchook = mu index; ~/.qtile/bin/qtile cmd-obj -o widget mailbox -f send_notification
 
 [Repository newsletter-local]
 type = Maildir
