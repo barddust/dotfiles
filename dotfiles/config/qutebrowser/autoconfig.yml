@@ -7,7 +7,11 @@
 config_version: 2
 settings:
   content.notifications.enabled:
+    https://app.tuta.com: true
     https://blog.csdn.net: false
     https://mail.tutanota.com: true
   content.register_protocol_handler:
+    https://app.tuta.com#url=%25s: true
+    https://mail.google.com?extsrc=mailto&url=%25s: true
     https://mail.tutanota.com#url=%25s: true
+    https://outlook.live.com?mailtouri=%25s: true

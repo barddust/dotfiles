@@ -102,7 +102,7 @@ groups = [
     Group("5",label=" "),
     Group("6",label=" "),
     Group("7",label=" "),
-    Group("8",label=" "),
+    Group("8",label=" "),
     Group("9",label=" "),
 ]
 
@@ -200,6 +200,8 @@ from libqtile.log_utils import logger
 def client_new_rules(window):
     wm_class = window.window.get_wm_class()
     # logger.warn(wm_class)
+    if not wm_class:
+        return
     
     if wm_class[0] == "qutebrowser":
         g = qtile.groups_map["1"]
@@ -207,7 +209,13 @@ def client_new_rules(window):
 
     elif wm_class[1] == "KeePassXC":
         g = qtile.groups_map["9"]
-        window.togroup(g.name, switch_group=True)
+        window.togroup(g.name)
+        g.toscreen()
+
+    elif wm_class[1] == "tutanota-desktop":
+        g = qtile.groups_map["8"]
+        window.togroup(g.name)
+        g.toscreen()
 
     elif wm_class[0] == "SIMPLEMPC":
         window.enable_floating()

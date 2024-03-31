@@ -101,7 +101,8 @@ class MPD(widget.base._TextBox):
             info = self.format_info.format(title=title, artist=artist)
             if self.maxchars > 0:
                 info = info[:self.maxchars]
-                
+
+            info = pangocffi.markup_escape_text(info)
             text =self.format.format(icon=icon, info=info)
 
         except:
@@ -510,16 +511,16 @@ mybar = bar.Bar(
         
         NetInterface(
             interfaces = ["enp0s31f6", "wlan0"],
-            update_interval=3
+            update_interval=3.7
         ),
         
         MySep(),
         
         widget.Memory(
             fmt="<span foreground=\"%s\">󰆼 </span>{}" % Color.Purple,
-            format="{MemUsed:.1f}{mm}/{MemFree:.1f}{mm}",
+            format="{MemUsed:.1f}{mm}/{MemTotal:.1f}{mm}",
             measure_mem="G",
-            update_interval=5,
+            update_interval=5.3,
         ),
         
         MySep(),
@@ -559,5 +560,5 @@ mybar = bar.Bar(
         
         MySep(),
     ],
-    32,
+    24,
     background=Color.Black)

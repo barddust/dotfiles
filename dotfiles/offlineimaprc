@@ -1,6 +1,7 @@
 [general]
 accounts = outlook, newsletter
 maxsyncaccounts = 1
+# pythonfile = ~/.offlineimap.py
 
 [Account outlook]
 localrepository = outlook-local
@@ -18,7 +19,7 @@ type = IMAP
 remotehost = outlook.office365.com
 remoteport = 993
 remoteuser = mrdust1880@outlook.com
-remotepassfile = ~/.offlineimappass
+remotepassfile = ~/.offlineimappass-outlook
 ssl = yes
 maxconnections = 5
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
@@ -42,7 +43,7 @@ type = IMAP
 remotehost = outlook.office365.com
 remoteport = 993
 remoteuser = mrdust1880@outlook.com
-remotepassfile = ~/.offlineimappass
+remotepassfile = ~/.offlineimappass-outlook
 ssl = yes
 maxconnections = 5
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
