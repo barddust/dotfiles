@@ -1,0 +1,30 @@
+patch:
+  schema_list:
+    - schema: dust_flypy
+  switcher:
+    hotkeys:
+      - Control+grave
+    save_options:
+      - full_shape
+      - ascii_punct
+      - simplification
+
+    # 用半角斜线而不是奇丑无比的全角斜线做分隔符。
+    option_list_separator: "/"
+
+  menu/page_size: 9
+
+  ascii_composer: # 设置caps、shift、control等键的作用
+    good_old_caps_lock: true # 若为true，caps只切换大小写
+    switch_key:
+      Shift_L: commit_code
+      Shift_R: noop
+      Control_L: noop
+      Control_R: noop
+      Caps_Lock: commit_code
+      Eisu_toggle: clear
+
+  key_binder/bindings:
+    - {accept: minus, send: Page_Up, when: has_menu}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    - {accept: "Control+g", send: Escape, when: composing}

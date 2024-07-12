@@ -1,0 +1,22 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# Dependencies:
+# - fcitx5-pinyin-moegirl-rime
+# - rime-pinyin-zhwiki
+# - rime-ice
+
+---
+name: dust_flypy
+version: "2023.09.11"
+sort: by_weight
+
+import_tables:
+  - cn_dicts/8105
+  - cn_dicts/base
+  - cn_dicts/ext
+  - cn_dicts/tencent
+  - dicts/others
+  - moegirl
+  - zhwiki
+...

@@ -1,0 +1,7 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin
+#@/db_type	userdb
+#@/rime_version	1.9.0
+#@/tick	1
+#@/user_id	bc54eb90-dfc3-4ad5-9cc1-8d1b050ca8b0
+ru 	如	c=1 d=1 t=1

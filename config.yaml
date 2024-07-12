@@ -9,6 +9,8 @@ config:
   longkey: false
   impignore:
   - '*/__pycache__/*'
+  - '*/rime/build/*'
+  - '*/rime/dicts/*'
 dotfiles:
   f_zshrc:
     src: zshrc
@@ -43,6 +45,9 @@ dotfiles:
   d_st:
     src: st
     dst: ~/.st
+  d_rime:
+    src: local/share/fcitx5/rime
+    dst: ~/.local/share/fcitx5/rime
 profiles:
   mrdust:
     dotfiles:
@@ -57,3 +62,4 @@ profiles:
     - d_qutebrowser
     - d_qtile
     - d_st
+    - d_rime
