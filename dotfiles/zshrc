@@ -31,6 +31,10 @@ alias mv='mv -iv'
 alias rm='rm -iv'
 alias cp='cp -iv'
 alias c='clear'
+alias dotdrop='/usr/bin/dotdrop -c ~/.config/dotdrop/config.yaml'
+
+alias typst-kuafu="typst watch --root ~/Kuafu/src"
+alias typst-polylux="typst watch --root ~/polylux"
 
 ## KEYBINDS
 # create a zkbd compatible hash;

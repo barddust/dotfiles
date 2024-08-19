@@ -14,9 +14,10 @@ from libqtile.command.base import expose_command
 from libqtile.utils import guess_terminal
 from color import Color
 from mpd.asyncio import MPDClient
+from mpd.base import ConnectionError
 from libqtile.utils import create_task, send_notification
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
+# from watchdog.observers import Observer
+# from watchdog.events import FileSystemEventHandler
 
 class MySep(widget.Sep):
     def __init__(self, padding=5):
@@ -34,7 +35,7 @@ class Date(widget.Clock):
     def __init__(self, **config):
         super().__init__(**config)
         self.format = self.short_format
-    
+
     def mouse_enter(self, x, y):
         self.date_format_to("long")
 
@@ -85,9 +86,11 @@ class MPD(widget.base._TextBox):
 
         await self.client.connect(self.host, self.port)
         await self._update()
-        async for events in self.client.idle(['player', 'playlist', 'output']):
-            await self._update()
-                
+        try:
+            async for events in self.client.idle(['player', 'playlist', 'output']):
+                await self._update()
+        except ConnectionError:
+            pass
 
     async def _update(self):
         info = await self.client.status()
@@ -205,7 +208,7 @@ class NetInterface(widget.base.InLoopPollText):
                     if intf.isup:
                         self.connected = True
                         self.wireless = interface.startswith("wlan")
-                        
+
                         if self.wireless:
                             out = subprocess.check_output(["nmcli","-f","GENERAL.CONNECTION","d","show",interface])
                             name = out.decode().split(" ")[-1].strip()
@@ -229,7 +232,7 @@ class NetInterface(widget.base.InLoopPollText):
 
     @expose_command()
     def gui(self):
-        cmd = [guess_terminal(),"-e","nmtui"] 
+        cmd = [guess_terminal(),"-e","nmtui"]
         subprocess.Popen(cmd)
 
 
@@ -240,7 +243,7 @@ class AppCompleter(widget.prompt.AbstractCompleter):
         "/usr/local/share/applications/",
         "~/.local/share/applications/",
     ]
-    
+
     def __init__(self, qtile) -> None:
         # self.qtile = qtile
         self.thisfinal = None  # type: str | None
@@ -260,7 +263,7 @@ class AppCompleter(widget.prompt.AbstractCompleter):
         ## TODO: sort by frequency
         if self.lookup is None:
             self.get_apps()
-            
+
             self.lookup = []
             self.offset = -1
 
@@ -280,22 +283,22 @@ class AppCompleter(widget.prompt.AbstractCompleter):
             fpath = os.path.expanduser(path)
             if os.path.isdir(fpath):
                 for each in os.listdir(fpath):
-                    
+
                     config = configparser.ConfigParser(interpolation=None)
                     config.read(os.path.join(fpath, each))
                     if not config.has_section("Desktop Entry"):
                         continue
-                    
+
                     sec = config["Desktop Entry"]
                     if sec.get("Hidden") or sec.get("NoDisplay"):
                         continue
-                    
+
                     name = sec.get("Name")
                     exec = sec.get("Exec")
-                    
+
                     if name and exec:
                         self.apps[name.lower()] = re.sub("%[a-zA-Z]", "", exec)
-            
+
 
 class AppLauncher(widget.Prompt):
     defaults = [
@@ -416,7 +419,7 @@ class MailBox(widget.base._TextBox):
             for each in os.listdir(fp1):
                 fp2 = os.path.join(fp1, each, "new")
                 self.news += len(os.listdir(fp2))
-        
+
     def _update(self):
         self._scan()
         text = self.format.format(
@@ -428,7 +431,7 @@ class MailBox(widget.base._TextBox):
     def finalize(self):
         super().finalize()
         self.running.clear()
-        
+
     @expose_command()
     def send_notification(self, _from=None):
         if self.news:
@@ -436,10 +439,11 @@ class MailBox(widget.base._TextBox):
                 "Offlineimap{}".format("[%s]" % _from if _from else ""),
                 "{}: new message(s)".format(self.news),
             )
-        
+
 
 mybar = bar.Bar(
     [
+
         MySep(),
 
         widget.GroupBox(
@@ -452,96 +456,96 @@ mybar = bar.Bar(
             margin_x=2,
             urgent_border=Color.Red,
         ),
-    
+
         MySep(),
 
-        widget.KeyboardLayout(
-            configured_keyboards=['us', 'us colemak'],
-            fmt="<span foreground=\"%s\">󰥻 </span>{}" % Color.Green,
-            display_map = {
-                "us": "qwerty",
-                "us colemak": "colemak"
-            },
+        # widget.KeyboardLayout(
+        #     configured_keyboards=['us', 'us colemak'],
+        #     fmt="<span foreground=\"%s\">󰥻 </span>{}" % Color.Green,
+        #     display_map = {
+        #         "us": "qwerty",
+        #         "us colemak": "colemak"
+        #     },
+        # ),
+
+        widget.CurrentLayout(
+            fmt="<span foreground=\"%s\"> </span>{}" % Color.Purple,
         ),
+
+        MySep(),
 
         widget.Chord(
             foreground=Color.Green,
             fmt="{}->",
         ),
-        
-        MySep(),
-        
-        widget.CurrentLayout(
-            fmt="<span foreground=\"%s\"> </span>{}" % Color.Purple,
-        ),
-        
-        MySep(),
-        
-        AppLauncher(
-            record_history=False,
-            prompt=" ",
-        ),
-        
+
+        # MySep(),
+
+        # AppLauncher(
+            # record_history=False,
+            # prompt=" ",
+        # ),
+
         widget.Spacer(),
-        
+
         Date(
-            fontsize=20,
+            fontsize=18,
         ),
-        
+
         widget.Spacer(),
-        
+
         MPD(
             font="LXGW WenKai",
             maxchars=20,
             format_info = "{title}",
+            fontsize=15,
             format_icon = "<span foreground=\"%s\">{}</span>" % Color.Cyan,
             state_icon= {
-                'pause': ' ',
-                'play': ' ',
-                'stop': ' '
+                'pause': '󰝛',
+                'play': '󰝚',
+                'stop': ''
             },
             no_connect = "<span foreground=\"%s\">NO CONNECTION</span>" % Color.Gray,
         ),
-        
+
         MySep(),
-        
-        MailBox(),
-        
+
+        # MailBox(),
+
+        # MySep(),
+
+        # NetInterface(
+        #     interfaces = ["enp0s31f6", "wlan0"],
+        #     update_interval=5.7
+        # ),
+
+        # MySep(),
+
+        # widget.Memory(
+        #     fmt="<span foreground=\"%s\">󰆼 </span>{}" % Color.Purple,
+        #     format="{MemUsed:.1f}{mm}/{MemTotal:.1f}{mm}",
+        #     measure_mem="G",
+        #     update_interval=5.3,
+        # ),
+
         MySep(),
-        
-        NetInterface(
-            interfaces = ["enp0s31f6", "wlan0"],
-            update_interval=3.7
-        ),
-        
-        MySep(),
-        
-        widget.Memory(
-            fmt="<span foreground=\"%s\">󰆼 </span>{}" % Color.Purple,
-            format="{MemUsed:.1f}{mm}/{MemTotal:.1f}{mm}",
-            measure_mem="G",
-            update_interval=5.3,
-        ),
-        
-        MySep(),
-        
+
         PulseVolume(
             emoji=True,
             emoji_list = ["󰸈", "󰕿", "󰖀", "󰕾"]
-            
         ),
-        
+
         MySep(),
-        
+
         widget.Backlight(
             fmt="<span foreground=\"%s\">󰖨 </span>{}" % Color.Orange,
             backlight_name="intel_backlight",
             change_command="brightnessctl set {0}%",
             step=5
         ),
-        
+
         MySep(),
-        
+
         widget.Battery(
             charge_char="<span foreground=\"{}\">󰂄</span>".format(Color.Green),
             full_char="<span foreground=\"{}\">󰁹</span>".format(Color.Green),
@@ -553,11 +557,11 @@ mybar = bar.Bar(
             low_percentage=0.2,
             low_foreground=Color.Red,
         ),
-        
+
         MySep(),
-        
+
         widget.Systray(),
-        
+
         MySep(),
     ],
     24,

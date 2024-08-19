@@ -6,7 +6,7 @@ from qutebrowser.utils import log
 
 config.load_autoconfig()
 
-# c.content.proxy = "socks://127.0.0.1:7891"
+c.content.proxy = "socks://127.0.0.1:7891"
 c.content.default_encoding = 'utf-8'
 c.content.javascript.clipboard = "access"
 c.content.autoplay = False
@@ -22,7 +22,7 @@ c.url.searchengines = {
     "anna": "https://annas-archive.org/search?q={}",
 }
 
-c.downloads.location.directory = os.path.expanduser("~/Downloads/") 
+c.downloads.location.directory = os.path.expanduser("~/Downloads/")
 c.downloads.location.prompt = False
 c.downloads.remove_finished = 5
 

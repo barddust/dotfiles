@@ -13,8 +13,9 @@ import os
 
 mod = "mod4"
 terminal = "st"
+multi_screen = True
 
-keys = [ 
+keys = [
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
     Key([mod], "j", lazy.layout.down(), desc="Move focus down"),
@@ -31,7 +32,7 @@ keys = [
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod], "a", lazy.window.kill(), desc="Kill focused window"),
+    # Key([mod], "a", lazy.window.kill(), desc="Kill focused window"),
     Key([mod], "f", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
 
@@ -42,13 +43,16 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.widget["pulsevolume"].decrease_vol()),
     Key([], "XF86AudioRaiseVolume", lazy.widget["pulsevolume"].increase_vol()),
     Key([], "XF86AudioMute", lazy.widget["pulsevolume"].mute()),
-    
+
 
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod], "r", lazy.spawncmd(widget="applauncher", complete="app")),    
+    # Key([mod], "r", lazy.spawncmd(widget="applauncher", complete="app")),
+    Key([mod], "r", lazy.spawn("rofi -show drun")),
     Key([mod], "e", lazy.spawn("emacs")),
-    Key([mod], "d", lazy.spawn("/home/mrdust/.pydev/bin/python /home/mrdust/pyproj/dict/client.py")),
+    # Key([mod], "d", lazy.spawn("/home/mrdust/.pydev/bin/python /home/mrdust/pyproj/dict/client.py")),
+    Key([mod], "d", lazy.spawn("goldendict")),
     Key([mod], "z", lazy.spawn("light-locker-command -l")),
+    Key([mod, "control"], "z", lazy.spawn("systemctl suspend")),
 
     KeyChord(
         [mod], "c", [
@@ -58,6 +62,7 @@ keys = [
 
             Key([], "p", lazy.spawn("flameshot gui")),
             Key([], "x", lazy.spawn("keepassxc")),
+            Key([], "m", lazy.spawn("tutanota-desktop")),
         ],
         name="command"
     ),
@@ -83,28 +88,46 @@ groups = [
     Group("1", label=" ",
           layouts=[
               layout.MonadTall(
-                  border_focus="#ff5555",
+                  border_focus=Color.Orange,
                   new_client_position="bottom",
                   ratio=0.6,
                   single_border_width=0,
               ),
               layout.Max()
-          ]),
+          ],
+          screen_affinity=0),
     Group("2",label=" ",
           layouts=[
               layout.Bsp(
-                  border_focus="#ff5555",
+                  border_focus=Color.Orange,
                   border_width=2,
-              )
-          ]),
-    Group("3",label=" "),
-    Group("4",label=" "),
-    Group("5",label=" "),
-    Group("6",label=" "),
-    Group("7",label=" "),
-    Group("8",label=" "),
-    Group("9",label=" "),
+              ),
+              layout.Max(),
+          ],
+          screen_affinity=1),
+    Group("3",label=" ",screen_affinity=0),
+    Group("4",label=" ",screen_affinity=0),
+    Group("5",label=" ",screen_affinity=1),
+    Group("6",label=" ",screen_affinity=0),
+    Group("7",label=" ",screen_affinity=0),
+    Group("8",label=" ",screen_affinity=0),
+    Group("9",label=" ",screen_affinity=0),
 ]
+
+def go_to_group(name: str):
+    "For multiple monitors"
+    def _inner(qtile):
+        if len(qtile.screens) == 1:
+            qtile.groups_map[name].toscreen()
+            return
+
+        if name in '15':
+            qtile.focus_screen(1)
+            qtile.groups_map[name].toscreen()
+        else:
+            qtile.focus_screen(0)
+            qtile.groups_map[name].toscreen()
+    return _inner
 
 for i in groups:
     keys.extend(
@@ -112,7 +135,7 @@ for i in groups:
             Key(
                 [mod],
                 i.name,
-                lazy.group[i.name].toscreen(),
+                lazy.function(go_to_group(i.name)) if multi_screen else lazy.group[i.name].toscreen(),
                 desc="Switch to group {}".format(i.name),
             ),
             Key(
@@ -131,17 +154,17 @@ for i in groups:
 layouts = [
     # layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     layout.Bsp(
-        border_focus="#ff5555",
+        border_focus=Color.Orange,
         fair=False,
         # margin=5,
     ),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
-    
+
     # layout.Matrix(),
     # layout.MonadTall(
-    #     border_focus="#ff5555",
+    #     border_focus=Color.Orange,
     #     new_client_position="bottom"
     # ),
     # layout.MonadWide(),
@@ -167,10 +190,18 @@ extension_defaults = widget_defaults.copy()
 screens = [
     Screen(
         top=mybar,
-        wallpaper="~/Pictures/wallpaper/v2-3ff3d6a85edb2f19d343668d24ed9269_r.jpg",
+        wallpaper="~/Pictures/samurai.png",
         wallpaper_mode="fill",
-    ),
+    )
 ]
+
+if multi_screen:
+    screens.append(
+        Screen(
+            wallpaper="~/Pictures/samurai.png",
+            wallpaper_mode="fill",
+        )
+    )
 
 
 ## ------------------------------
@@ -202,7 +233,7 @@ def client_new_rules(window):
     # logger.warn(wm_class)
     if not wm_class:
         return
-    
+
     if wm_class[0] == "qutebrowser":
         g = qtile.groups_map["1"]
         window.togroup(g.name, switch_group=True)
@@ -224,8 +255,14 @@ def client_new_rules(window):
     elif wm_class[0] == "tk":
         window.enable_floating()
 
-    
-    
+    elif wm_class[0] == "goldendict":
+        window.enable_floating()
+        window.set_size_floating(540, 360)
+        window.set_position_floating(1360,30)
+        # window.center()
+
+
+
 ## ------------------------------
 ## Floating
 ## ------------------------------
