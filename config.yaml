@@ -48,6 +48,9 @@ dotfiles:
   d_rime:
     src: local/share/fcitx5/rime
     dst: ~/.local/share/fcitx5/rime
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
 profiles:
   mrdust:
     dotfiles:
@@ -63,3 +66,4 @@ profiles:
     - d_qtile
     - d_st
     - d_rime
+    - d_rofi
