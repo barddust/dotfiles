@@ -2,7 +2,7 @@ from libqtile import bar, layout, qtile, widget, hook
 from libqtile.config import Click, Drag, Group, Match, Screen, KeyChord, Key, Rule
 from libqtile.lazy import lazy
 from bar import mybar
-from plugin import Notifier, TkDict
+from plugin import Notifier#, TkDict
 from color import Color
 
 import os
@@ -181,7 +181,7 @@ layouts = [
 ## ------------------------------
 
 widget_defaults = dict(
-    font="CodeNewRoman Nerd Font",
+    font="Maple Mono NF CN",
     fontsize=16,
     padding=3,
 )
@@ -277,6 +277,7 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
+        Match(wm_class="zenity"),
     ]
 )
 
@@ -284,21 +285,21 @@ floating_layout = layout.Floating(
 ## Misc
 ## ------------------------------
 
-notifier = Notifier(
-    font="LXGW WenKai",
-    width=300,
-    height=100,
-    y=50,
-    x=1600,
-    max_windows=4,
-    gap=10,
-    actions=False,
-    background=Color.Black,
-    foreground=(Color.White, Color.Yellow, Color.Red),
-    border=(Color.White, Color.Yellow, Color.Red),
-    border_width=2,
-    timeout=(3000, 5000, 0)
-)
+# notifier = Notifier(
+#     font="LXGW WenKai",
+#     width=300,
+#     height=100,
+#     y=50,
+#     x=1600,
+#     max_windows=4,
+#     gap=10,
+#     actions=False,
+#     background=Color.Black,
+#     foreground=(Color.White, Color.Yellow, Color.Red),
+#     border=(Color.White, Color.Yellow, Color.Red),
+#     border_width=2,
+#     timeout=(3000, 5000, 0)
+# )
 
 # tkdict = TkDict()
 

@@ -6,7 +6,8 @@ from qutebrowser.utils import log
 
 config.load_autoconfig()
 
-c.content.proxy = "socks://127.0.0.1:7891"
+# c.content.proxy = "socks://127.0.0.1:7891"
+# c.content.proxy = "http://127.0.0.1:7890"
 c.content.default_encoding = 'utf-8'
 c.content.javascript.clipboard = "access"
 c.content.autoplay = False
@@ -18,7 +19,7 @@ c.url.searchengines = {
     "DEFAULT": "https://duckduckgo.com/?q={}",
     "arch": "https://wiki.archlinux.org/?search={}",
     "google": "https://google.com/search?hl=en&q={}",
-    "github": "https://github.com/search?q={}&type=repositories",
+    "gh": "https://github.com/search?q={}&type=repositories",
     "anna": "https://annas-archive.org/search?q={}",
 }
 

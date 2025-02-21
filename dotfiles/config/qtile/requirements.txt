@@ -1,0 +1,4 @@
+psutil
+python-mpd2
+dbus-next
+pulsectl-asyncio

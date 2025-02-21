@@ -9,7 +9,7 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 
 ## ENV
-path=('~/.local/bin' 
+path=('~/.local/bin'
       $path)
 # export all_proxy=http://127.0.0.1:7890
 # export http_proxy=$all_proxy
@@ -31,7 +31,8 @@ alias mv='mv -iv'
 alias rm='rm -iv'
 alias cp='cp -iv'
 alias c='clear'
-alias dotdrop='/usr/bin/dotdrop -c ~/.config/dotdrop/config.yaml'
+alias dotdrop='/usr/bin/dotdrop -c ~/.config/dotfiles/config.yaml'
+alias ytmdl="/usr/bin/ytmdl --ytdl-config ~/yt-dlp.conf"
 
 alias typst-kuafu="typst watch --root ~/Kuafu/src"
 alias typst-polylux="typst watch --root ~/polylux"
@@ -71,11 +72,11 @@ key[Shift-Tab]="${terminfo[kcbt]}"
 # Finally, make sure the terminal is in application mode, when zle is
 # active. Only then are the values from $terminfo valid.
 if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
-	autoload -Uz add-zle-hook-widget
-	function zle_application_mode_start { echoti smkx }
-	function zle_application_mode_stop { echoti rmkx }
-	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
-	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
+    autoload -Uz add-zle-hook-widget
+    function zle_application_mode_start { echoti smkx }
+    function zle_application_mode_stop { echoti rmkx }
+    add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
+    add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
 bindkey -- "^[[H" beginning-of-line

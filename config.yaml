@@ -51,8 +51,11 @@ dotfiles:
   d_rofi:
     src: config/rofi
     dst: ~/.config/rofi
+  d_autostart:
+    src: config/autostart
+    dst: ~/.config/autostart
 profiles:
-  mrdust:
+  bardust:
     dotfiles:
     - f_zshrc
     - f_offlineimaprc
@@ -67,3 +70,4 @@ profiles:
     - d_st
     - d_rime
     - d_rofi
+    - d_autostart

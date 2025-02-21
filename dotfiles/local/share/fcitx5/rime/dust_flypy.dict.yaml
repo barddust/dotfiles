@@ -16,7 +16,7 @@ import_tables:
   - cn_dicts/base
   - cn_dicts/ext
   - cn_dicts/tencent
-  - dicts/others
+  - cn_dicts/others
   - moegirl
   - zhwiki
 ...

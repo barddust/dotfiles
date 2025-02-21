@@ -30,7 +30,7 @@ class MySep(widget.Sep):
 class Date(widget.Clock):
 
     short_format = "<span foreground=\"{}\" weight=\"bold\">%H:%M</span>".format(Color.Green)
-    long_format = "<span foreground=\"{}\">%Y-%m-%d</span> <span foreground=\"{}\">%H:%M</span><span foreground=\"{}\">:%S</span>".format(Color.Yellow, Color.Green, Color.Pink)
+    long_format = "<span foreground=\"{}\">%Y-%m-%d, %a</span> <span foreground=\"{}\">%H:%M</span><span foreground=\"{}\">:%S</span>".format(Color.Yellow, Color.Green, Color.Pink)
 
     def __init__(self, **config):
         super().__init__(**config)
@@ -494,19 +494,19 @@ mybar = bar.Bar(
 
         widget.Spacer(),
 
-        MPD(
-            font="LXGW WenKai",
-            maxchars=20,
-            format_info = "{title}",
-            fontsize=15,
-            format_icon = "<span foreground=\"%s\">{}</span>" % Color.Cyan,
-            state_icon= {
-                'pause': '󰝛',
-                'play': '󰝚',
-                'stop': ''
-            },
-            no_connect = "<span foreground=\"%s\">NO CONNECTION</span>" % Color.Gray,
-        ),
+        # MPD(
+        #     font="LXGW WenKai",
+        #    maxchars=20,
+        #    format_info = "{title}",
+        #    fontsize=15,
+        #    format_icon = "<span foreground=\"%s\">{}</span>" % Color.Cyan,
+        #    state_icon= {
+        #        'pause': '󰝛',
+        #        'play': '󰝚',
+        #        'stop': ''
+        #    },
+        #    no_connect = "<span foreground=\"%s\">NO CONNECTION</span>" % Color.Gray,
+        #),
 
         MySep(),
 

@@ -1,1226 +1,693 @@
 # Rime user dictionary
 #@/db_name	dust_flypy
 #@/db_type	userdb
-#@/rime_version	1.9.0
-#@/tick	2168
+#@/rime_version	1.11.2
+#@/tick	1031
 #@/user_id	bc54eb90-dfc3-4ad5-9cc1-8d1b050ca8b0
-a 	啊	c=1 d=0.985112 t=2168
-a 	阿	c=1 d=0.955997 t=2168
-a lai 	阿莱	c=0 d=0.0985112 t=2168
-a lai fu 	阿莱夫	c=1 d=0.99005 t=2168
-a li 	阿里	c=1 d=1 t=2168
-a li yun 	阿里云	c=2 d=1.94176 t=2168
-ai 	埃	c=1 d=0.97531 t=2168
-ai shang le 	爱上了	c=1 d=0.99005 t=2168
-an jian 	按键	c=1 d=0.615697 t=2168
-an jing 	安静	c=1 d=0.99005 t=2168
-an xia qu 	按下去	c=1 d=0.618783 t=2168
-an zhuang 	安装	c=3 d=2.83917 t=2168
-ao de sai 	奥德赛	c=1 d=0.995012 t=2168
-ao li gei 	奥力给	c=1 d=1 t=2168
-ba 	把	c=6 d=3.89498 t=2168
-ba bi lun 	巴比伦	c=4 d=3.89716 t=2168
-ba bie 	巴别	c=1 d=0.985112 t=2168
-ba la 	巴拉	c=0 d=0.0995012 t=2168
-ba li 	巴黎	c=1 d=0.995012 t=2168
-ba ni 	把你	c=3 d=2.52943 t=2168
-ban ben long yi 	坂本龙一	c=1 d=1 t=2168
-ban fei 	班费	c=1 d=0.927743 t=2168
-ban zhu ren 	班主任	c=4 d=3.88268 t=2168
-bang wo 	帮我	c=5 d=3.74475 t=2168
-bao 	保	c=1 d=0.913931 t=2168
-bao chi 	保持	c=3 d=1.78983 t=2168
-bao kuo 	包括	c=2 d=1.09313 t=2168
-bao you 	保有	c=1 d=0.70822 t=2168
-bao zheng 	保证	c=1 d=1 t=2168
-bei 	被	c=2 d=1.8481 t=2168
-bei an 	备案	c=1 d=1 t=2168
-bei can 	悲惨	c=1 d=0.995012 t=2168
-bei jing 	背景	c=1 d=0.955997 t=2168
-bei jing se 	背景色	c=1 d=0.960789 t=2168
-bei jing shi fan 	北京师范	c=2 d=1.80121 t=2168
-bei kao 	备考	c=4 d=3.58275 t=2168
-bei ke lai 	贝克莱	c=1 d=0.831104 t=2168
-bei ou 	北欧	c=1 d=0.88692 t=2168
-bei zhu 	备注	c=1 d=0.965605 t=2168
-ben ke 	本科	c=1 d=0.33454 t=2168
-ben ren 	本人	c=5 d=3.71728 t=2168
-ben xiang 	本想	c=1 d=0.995012 t=2168
-bi ji 	笔记	c=5 d=3.92051 t=2168
-bi jiao ji 	比较级	c=1 d=1 t=2168
-bi sheng 	毕生	c=1 d=0.726149 t=2168
-bi shi 	笔试	c=1 d=0.980199 t=2168
-bi ye 	毕业	c=1 d=0.316637 t=2168
-bi zhi 	壁纸	c=1 d=0.995012 t=2168
-bian 	便	c=1 d=0.970446 t=2168
-bian 	变	c=1 d=0.995012 t=2168
-bian 	边	c=1 d=0.965605 t=2168
-bian cheng 	变成	c=1 d=0.980199 t=2168
-bian hao 	编号	c=2 d=1.99005 t=2168
-bian hua qiu 	变化球	c=1 d=0.97531 t=2168
-bian huan 	变换	c=0 d=0.0339596 t=2168
-bian ji 	编辑	c=1 d=1 t=2168
-bian ma 	编码	c=1 d=0.99005 t=2168
-bian xie 	编写	c=1 d=0.529935 t=2168
-bian yi 	编译	c=1 d=1 t=2168
-biao ge 	表格	c=1 d=1 t=2168
-biao shi 	表示	c=2 d=1.88355 t=2168
-biao ti 	标题	c=3 d=2.94606 t=2168
-bing 	并	c=2 d=1.5811 t=2168
-bing bu 	并不	c=1 d=0.650509 t=2168
-bing bu wen ding 	并不稳定	c=1 d=0.729789 t=2168
-bo er duo 	波尔多	c=0 d=0.0878095 t=2168
-bo er he si 	博尔赫斯	c=9 d=7.39445 t=2168
-bo ke 	博客	c=1 d=0.802519 t=2168
-bu 	不	c=1 d=0.83527 t=2168
-bu bi yao 	不必要	c=1 d=0.970446 t=2168
-bu deng 	不等	c=1 d=0.960789 t=2168
-bu er qiao ya 	布尔乔亚	c=1 d=1 t=2168
-bu fen 	部分	c=1 d=0.491644 t=2168
-bu neng 	不能	c=1 d=0.878095 t=2168
-bu shi 	不是	c=1 d=0.869358 t=2168
-bu shi wo 	不是我	c=1 d=0.960789 t=2168
-bu tong 	不通	c=1 d=0.960789 t=2168
-bu yao 	不要	c=1 d=0.878095 t=2168
-bu zhi dao 	不知道	c=1 d=0.965605 t=2168
-cai ce 	猜测	c=1 d=0.67368 t=2168
-cai hong 	彩虹	c=1 d=0.980199 t=2168
-cai piao 	彩票	c=3 d=2.92168 t=2168
-can 	参	c=1 d=0.941765 t=2168
-can kao 	参考	c=2 d=1.93143 t=2168
-can zhuo shang 	餐桌上	c=1 d=0.88692 t=2168
-ce 	册	c=1 d=0.99005 t=2168
-ce shi 	测试	c=1 d=0.774916 t=2168
-ceng jing 	曾经	c=1 d=0.995012 t=2168
-cha 	查	c=1 d=0.856415 t=2168
-cha kan 	查看	c=1 d=0.995012 t=2168
-cha la tu si te la ru shi shuo 	查拉图斯特拉如是说	c=1 d=0.891366 t=2168
-cha xun 	查询	c=1 d=0.97531 t=2168
-cha zi 	叉子	c=1 d=0.99005 t=2168
-chan 	禅	c=3 d=2.92654 t=2168
-chan pin 	产品	c=2 d=1.34901 t=2168
-chan quan 	产权	c=1 d=0.822835 t=2168
-chang shi le 	尝试了	c=1 d=0.826959 t=2168
-chao ji 	超级	c=5 d=3.91782 t=2168
-chao ji he fen bu 	超几何分布	c=2 d=1.97521 t=2168
-chen mo 	沉默	c=5 d=4.16309 t=2168
-chen zong 	陈宗	c=0 d=0.0301194 t=2168
-chen zong ming 	陈宗明	c=8 d=6.28602 t=2168
-cheng bang 	城邦	c=1 d=0.965605 t=2168
-cheng xu 	程序	c=1 d=0.535261 t=2168
-chong fen xing 	充分性	c=1 d=0.995012 t=2168
-chong feng 	重逢	c=1 d=0.99005 t=2168
-chong qi 	重启	c=2 d=1.72858 t=2168
-chong qi zhi hou 	重启之后	c=1 d=0.99005 t=2168
-chong shang 	崇尚	c=1 d=0.826959 t=2168
-chong xie 	重写	c=1 d=0.923116 t=2168
-chong xin 	重新	c=1 d=0.995012 t=2168
-chu ban she 	出版社	c=1 d=0.985112 t=2168
-chu deng 	初等	c=2 d=0.995012 t=2168
-chu fa 	触发	c=1 d=0.733447 t=2168
-chu qu 	除去	c=1 d=0.97531 t=2168
-chu sheng 	出生	c=1 d=0.287941 t=2168
-chu xian 	出现	c=4 d=2.91042 t=2168
-chuan shu 	传输	c=1 d=1 t=2168
-chuang kou 	窗口	c=0 d=0.0946485 t=2168
-chuang kou xia 	窗口下	c=1 d=0.951229 t=2168
-chuang lian 	窗帘	c=1 d=0.99005 t=2168
-chuang xin 	创新	c=1 d=0.362402 t=2168
-chuang ye 	创业	c=1 d=0.364219 t=2168
-chun 	纯	c=1 d=0.737123 t=2168
-chun wen ben 	纯文本	c=3 d=2.28219 t=2168
-chun yin yue 	纯音乐	c=2 d=1.97516 t=2168
-ci hui 	词汇	c=1 d=0.995012 t=2168
-ci qu 	此曲	c=1 d=0.980199 t=2168
-ci tong 	刺痛	c=0 d=0.099005 t=2168
-ci tong zhe 	刺痛着	c=1 d=0.995012 t=2168
-ci xing 	词性	c=1 d=1 t=2168
-cong 	从	c=1 d=0.913931 t=2168
-cu jin 	促进	c=1 d=0.486752 t=2168
-cun zai 	存在	c=2 d=1.59849 t=2168
-da 	大	c=1 d=0.995012 t=2168
-da 	打	c=1 d=0.946485 t=2168
-da bu xiang tong 	大不相同	c=1 d=0.927743 t=2168
-da dao 	大道	c=1 d=0.88692 t=2168
-da gai 	大概	c=1 d=0.865022 t=2168
-da sheng 	大声	c=1 d=0.960789 t=2168
-da xiao 	大小	c=3 d=2.93123 t=2168
-da xue 	大学	c=3 d=2.08689 t=2168
-da xue sheng 	大学生	c=2 d=0.730318 t=2168
-da ya 	打压	c=1 d=0.980199 t=2168
-dai ru 	代入	c=1 d=0.995012 t=2168
-dai shu 	代数	c=2 d=1.51427 t=2168
-dan ren 	担任	c=1 d=0.398519 t=2168
-dan ren pang 	单人旁	c=1 d=0.995012 t=2168
-dan shi 	但是	c=1 d=0.695521 t=2168
-dan shi wo hen 	但是我很	c=1 d=0.985112 t=2168
-dan wei yuan 	单位圆	c=1 d=1 t=2168
-dang 	当	c=1 d=0.99005 t=2168
-dang qian 	当前	c=1 d=0.985112 t=2168
-dang qie jin dang 	当且仅当	c=1 d=1 t=2168
-dang shi 	当时	c=1 d=0.995012 t=2168
-dang wei 	挡位	c=1 d=0.951229 t=2168
-dang wo 	当我	c=1 d=0.995012 t=2168
-dao 	到	c=5 d=4.03773 t=2168
-dao lun 	导论	c=2 d=1.99501 t=2168
-dao qian 	道歉	c=1 d=0.771052 t=2168
-dao qian xin 	道歉信	c=2 d=1.53884 t=2168
-dao sheng he fu 	稻盛和夫	c=1 d=1 t=2168
-dao ting tu shuo 	道听途说	c=1 d=0.941765 t=2168
-dao xue an 	导学案	c=3 d=2.85012 t=2168
-dao zhi 	导致	c=2 d=1.89449 t=2168
-de 	地	c=1 d=0.923116 t=2168
-de 	得	c=1 d=0.99005 t=2168
-de 	的	c=110 d=31.1201 t=2168
-de fang 	德方	c=1 d=1 t=2168
-de lei si dun 	德累斯顿	c=1 d=0.99005 t=2168
-de mo gen 	德摩根	c=1 d=0.995012 t=2168
-de mu ge 	德穆革	c=1 d=1 t=2168
-deng 	等	c=2 d=1.14344 t=2168
-deng dai 	等待	c=1 d=0.951229 t=2168
-deng zi qi 	邓紫琪	c=4 d=3.95037 t=2168
-di 	第	c=1 d=0.995012 t=2168
-di ceng 	底层	c=2 d=1.10888 t=2168
-di dai 	地带	c=1 d=0.946485 t=2168
-di ka er 	笛卡尔	c=1 d=0.778801 t=2168
-di li 	地理	c=2 d=1.92711 t=2168
-di san juan 	第三卷	c=1 d=0.995012 t=2168
-di yi duan 	第一段	c=1 d=0.951229 t=2168
-dian dao 	颠倒	c=1 d=0.904837 t=2168
-dian hua 	电话	c=1 d=0.292293 t=2168
-dian qi gong cheng 	电气工程	c=1 d=0.329559 t=2168
-dian zi 	电子	c=3 d=2.94581 t=2168
-diao yong 	调用	c=2 d=1.77619 t=2168
-die 	蝶	c=2 d=1.97521 t=2168
-die zi 	叠字	c=1 d=1 t=2168
-ding 	定	c=1 d=0.822835 t=2168
-ding li 	定理	c=3 d=2.86384 t=2168
-ding yi 	定义	c=3 d=2.85514 t=2168
-ding yue 	订阅	c=2 d=1.97516 t=2168
-dong de 	懂得	c=1 d=0.980199 t=2168
-dong jie 	冻结	c=3 d=2.42103 t=2168
-dong jie qing kuang 	冻结情况	c=1 d=0.83527 t=2168
-dong ting 	动听	c=1 d=0.904837 t=2168
-dong xue 	洞穴	c=1 d=0.873716 t=2168
-dong zuo 	动作	c=1 d=0.97531 t=2168
-dou 	都	c=1 d=0.786628 t=2168
-dou ban 	豆瓣	c=3 d=2.92244 t=2168
-dou shi 	都是	c=2 d=1.68042 t=2168
-dou yao 	都要	c=1 d=0.852144 t=2168
-du ben 	读本	c=1 d=0.97531 t=2168
-du hou gan 	读后感	c=10 d=8.16602 t=2168
-du li si kao 	独立思考	c=1 d=1 t=2168
-du li xing jian yan 	独立性检验	c=2 d=1.99501 t=2168
-du qi 	毒气	c=1 d=1 t=2168
-du shi 	都市	c=1 d=0.941765 t=2168
-du shu 	读书	c=6 d=5.36601 t=2168
-du zhuan 	杜撰	c=0 d=0.0985112 t=2168
-du zhuan ji 	杜撰集	c=1 d=0.99005 t=2168
-duan le 	断了	c=1 d=0.937067 t=2168
-dui 	对	c=4 d=3.33602 t=2168
-dui chen 	对称	c=1 d=0.985112 t=2168
-dui chen zhou 	对称轴	c=1 d=0.941765 t=2168
-dui hua 	对话	c=1 d=0.752014 t=2168
-dui xiang 	对象	c=2 d=1.86593 t=2168
-dui yu 	对于	c=1 d=0.891366 t=2168
-duo mi nuo 	多米诺	c=1 d=0.99005 t=2168
-duo shao 	多少	c=1 d=0.99005 t=2168
-er 	二	c=1 d=0.995012 t=2168
-er 	尔	c=2 d=1.94099 t=2168
-er 	而	c=1 d=0.878095 t=2168
-er ci 	二次	c=1 d=0.985112 t=2168
-er fei 	而非	c=1 d=0.882497 t=2168
-er shi shou 	二十首	c=1 d=0.99005 t=2168
-er shi yi 	二十亿	c=1 d=0.980199 t=2168
-er xiang 	二项	c=2 d=1.95556 t=2168
-fa biao 	发表	c=1 d=0.790571 t=2168
-fa lv 	法律	c=1 d=0.985112 t=2168
-fa sheng 	发声	c=4 d=3.57666 t=2168
-fa sheng 	发生	c=2 d=1.85586 t=2168
-fa xian 	发现	c=5 d=3.11833 t=2168
-fan gao 	梵高	c=1 d=0.995012 t=2168
-fan kui 	反馈	c=1 d=0.423162 t=2168
-fan suo 	繁琐	c=1 d=1 t=2168
-fan yi 	翻译	c=3 d=2.95052 t=2168
-fan ying 	反应	c=1 d=1 t=2168
-fan zheng fa 	反证法	c=1 d=1 t=2168
-fang fa 	方法	c=2 d=1.19676 t=2168
-fang shi 	方式	c=1 d=0.960789 t=2168
-fang yuan 	方圆	c=1 d=1 t=2168
-fang zhen 	仿真	c=1 d=0.937067 t=2168
-fei 	非	c=4 d=3.23746 t=2168
-fei 	飞	c=1 d=0.995012 t=2168
-fei bao li 	非暴力	c=1 d=0.985112 t=2168
-fei de luo 	斐德罗	c=1 d=0.985112 t=2168
-fei er 	飞儿	c=3 d=2.9358 t=2168
-fei man 	费曼	c=1 d=0.995012 t=2168
-fei shou ji hao 	非手机号	c=1 d=1 t=2168
-fei tu 	废土	c=1 d=0.980199 t=2168
-fei xing 	飞行	c=1 d=0.960789 t=2168
-fei xue xiao 	非学校	c=0 d=0.0941765 t=2168
-fei xue xiao hua 	非学校化	c=2 d=1.70606 t=2168
-fei yu 	飞鱼	c=6 d=5.53141 t=2168
-fen bu 	分布	c=3 d=2.96536 t=2168
-fen ci 	分词	c=1 d=0.909373 t=2168
-fen lei 	分类	c=1 d=1 t=2168
-fen lei bian liang 	分类变量	c=1 d=0.99005 t=2168
-fen xi 	分析	c=4 d=2.81461 t=2168
-fen xiang 	分享	c=3 d=2.42162 t=2168
-fo jiao 	佛教	c=1 d=0.970446 t=2168
-fu 	夫	c=0 d=0.0985112 t=2168
-fu 	富	c=1 d=0.970446 t=2168
-fu bian han shu 	复变函数	c=1 d=0.337902 t=2168
-fu cong 	服从	c=1 d=1 t=2168
-fu shang 	附上	c=1 d=0.927743 t=2168
-fu shi jiao xue 	复式教学	c=1 d=1 t=2168
-fu wu 	服务	c=1 d=1 t=2168
-fu wu qi 	服务器	c=2 d=1.87451 t=2168
-fu xi 	复习	c=4 d=3.62596 t=2168
-fu xian 	复现	c=1 d=0.755784 t=2168
-fu ze 	负责	c=2 d=0.781733 t=2168
-gai 	改	c=1 d=0.980199 t=2168
-gai lei 	该类	c=1 d=0.951229 t=2168
-gai lv lun 	概率论	c=1 d=0.351692 t=2168
-gai zuo ye 	改作业	c=1 d=0.995012 t=2168
-gan 	感	c=1 d=0.900325 t=2168
-gan wu 	感悟	c=2 d=1.82581 t=2168
-gang qin qu 	钢琴曲	c=1 d=0.980199 t=2168
-gao deng 	高等	c=3 d=1.92972 t=2168
-gao er 	高二	c=2 d=1.90284 t=2168
-gao han 	高喊	c=1 d=0.965605 t=2168
-gao kao 	高考	c=4 d=3.76883 t=2168
-gao tan kuo lun 	高谈阔论	c=1 d=0.946485 t=2168
-gao xiao 	高效	c=5 d=4.75403 t=2168
-gao xin qu 	高新区	c=1 d=1 t=2168
-gao zhong 	高中	c=5 d=2.7692 t=2168
-ge 	个	c=1 d=0.970446 t=2168
-ge 	各	c=1 d=0.97531 t=2168
-ge 	哥	c=1 d=0.970446 t=2168
-ge dan 	歌单	c=2 d=1.97521 t=2168
-ge er 	格尔	c=1 d=0.946485 t=2168
-ge ming 	革命	c=4 d=3.93408 t=2168
-ge ren 	个人	c=2 d=0.996052 t=2168
-ge shi 	格式	c=2 d=1.61304 t=2168
-ge ti 	个体	c=1 d=0.985112 t=2168
-gei 	给	c=3 d=2.81427 t=2168
-gei jiao shi 	给教师	c=3 d=2.80028 t=2168
-gei wo 	给我	c=2 d=1.71777 t=2168
-gen jin 	跟进	c=1 d=0.418952 t=2168
-gen ju 	根据	c=1 d=0.97531 t=2168
-geng xin 	更新	c=5 d=4.05469 t=2168
-gong 	贡	c=0 d=0.0882497 t=2168
-gong cheng shi 	工程师	c=1 d=0.402524 t=2168
-gong gao 	公告	c=1 d=1 t=2168
-gong ju 	工具	c=1 d=1 t=2168
-gong ju xiang 	工具箱	c=1 d=1 t=2168
-gong li 	公理	c=2 d=1.96062 t=2168
-gong lve 	攻略	c=1 d=0.965605 t=2168
-gong neng 	功能	c=1 d=0.980199 t=2168
-gong she 	公社	c=1 d=1 t=2168
-gong shi 	公示	c=1 d=1 t=2168
-gong si 	公司	c=1 d=0.40657 t=2168
-gong zhu 	公主	c=1 d=0.99005 t=2168
-gou ci 	构词	c=1 d=1 t=2168
-gou tong 	沟通	c=1 d=0.99005 t=2168
-gu du 	孤独	c=4 d=3.59245 t=2168
-gu pai 	骨牌	c=1 d=0.995012 t=2168
-guai ren 	怪人	c=1 d=0.995012 t=2168
-guan bi 	关闭	c=1 d=0.960789 t=2168
-guan fang 	官方	c=1 d=0.900325 t=2168
-guan fang bao 	官方包	c=1 d=1 t=2168
-guan jian 	关键	c=1 d=0.932394 t=2168
-guan xi 	关系	c=1 d=1 t=2168
-guan yu 	关于	c=1 d=0.923116 t=2168
-guang 	广	c=1 d=0.995012 t=2168
-guang biao 	光标	c=1 d=0.937067 t=2168
-guang fan 	广泛	c=1 d=0.650509 t=2168
-guang nian 	光年	c=1 d=0.985112 t=2168
-guang nian zhi wai 	光年之外	c=1 d=1 t=2168
-guang xi 	广西	c=2 d=1.30229 t=2168
-gui na 	归纳	c=2 d=1.66641 t=2168
-gun dong 	滚动	c=2 d=1.20956 t=2168
-guo liang 	过量	c=1 d=0.951229 t=2168
-guo shang 	过上	c=1 d=0.99005 t=2168
-guo zhai 	国债	c=1 d=0.995012 t=2168
-hai ci 	海词	c=1 d=0.99005 t=2168
-hai you 	还有	c=2 d=1.42862 t=2168
-hai zi 	海子	c=2 d=1.97032 t=2168
-han shu 	函数	c=2 d=1.97531 t=2168
-hao 	号	c=1 d=0.995012 t=2168
-hao fa 	毫发	c=0 d=0.0985112 t=2168
-hao fa wu shuang 	毫发无爽	c=1 d=0.99005 t=2168
-hao hao de 	好好的	c=1 d=0.771052 t=2168
-he 	和	c=20 d=8.97713 t=2168
-he lie bian 	核裂变	c=1 d=1 t=2168
-he qu 	合取	c=1 d=1 t=2168
-he tong 	合同	c=1 d=0.99005 t=2168
-he you hua 	和优化	c=1 d=0.427415 t=2168
-hong ri 	红日	c=4 d=3.73578 t=2168
-hong zha 	轰炸	c=1 d=1 t=2168
-hou duan 	后端	c=2 d=1.58925 t=2168
-hou ji 	后记	c=1 d=0.995012 t=2168
-hou mian 	后面	c=1 d=0.932394 t=2168
-hou xu 	后续	c=1 d=0.955997 t=2168
-hou xuan 	候选	c=1 d=0.951229 t=2168
-hou xuan ci 	候选词	c=3 d=2.63557 t=2168
-hu lan he 	呼兰河	c=1 d=0.869358 t=2168
-hu lan he zhuan 	呼兰河传	c=2 d=1.71138 t=2168
-hu le 	糊了	c=1 d=0.794534 t=2168
-hu wen 	忽闻	c=1 d=0.946485 t=2168
-hua 	化	c=1 d=1.05978 t=2168
-hua zhi 	画质	c=1 d=0.99005 t=2168
-huan 	环	c=1 d=0.99005 t=2168
-huan jing 	环境	c=1 d=1 t=2168
-hui 	会	c=6 d=3.61411 t=2168
-hui da 	回答	c=2 d=1.61208 t=2168
-hui gun 	回滚	c=3 d=2.27973 t=2168
-hui se 	晦涩	c=1 d=0.995012 t=2168
-hui wang 	回望	c=1 d=0.932394 t=2168
-hui yi 	回忆	c=1 d=0.941765 t=2168
-hui zong 	汇总	c=2 d=1.96536 t=2168
-huo 	或	c=2 d=1.81293 t=2168
-huo dong 	活动	c=2 d=1.29848 t=2168
-ji 	集	c=0 d=0.0985112 t=2168
-ji ben 	基本	c=1 d=0.99005 t=2168
-ji ben bian huan 	基本变换	c=1 d=0.341298 t=2168
-ji cheng 	集成	c=2 d=1.99501 t=2168
-ji chu 	基础	c=4 d=3.46801 t=2168
-ji da 	极大	c=0 d=0.070822 t=2168
-ji da re qing 	极大热情	c=1 d=0.71177 t=2168
-ji dian 	绩点	c=1 d=0.321422 t=2168
-ji guan 	籍贯	c=1 d=0.298197 t=2168
-ji ke 	即可	c=2 d=1.91693 t=2168
-ji neng 	技能	c=1 d=0.438235 t=2168
-ji qi 	及其	c=1 d=0.331211 t=2168
-ji qing 	激情	c=1 d=0.995012 t=2168
-ji shu 	计数	c=1 d=0.995012 t=2168
-ji suan ji 	计算机	c=3 d=1.75895 t=2168
-ji yu 	寄语	c=3 d=2.93131 t=2168
-jia 	加	c=0 d=0.0995012 t=2168
-jia 	家	c=1 d=0.937067 t=2168
-jia de na 	加德纳	c=1 d=0.900325 t=2168
-jia li lve 	伽利略	c=1 d=0.759572 t=2168
-jia shang 	加上	c=1 d=0.814647 t=2168
-jia ting 	家庭	c=1 d=0.970446 t=2168
-jia yan 	假言	c=1 d=0.995012 t=2168
-jia you 	加油	c=2 d=1.96062 t=2168
-jia zhang 	家长	c=1 d=0.995012 t=2168
-jian bi hua 	简笔画	c=2 d=1.9802 t=2168
-jian cha 	检查	c=1 d=0.941765 t=2168
-jian jie 	简介	c=1 d=0.995012 t=2168
-jian li 	简历	c=2 d=0.568729 t=2168
-jian mo 	建模	c=1 d=0.373439 t=2168
-jian pan 	键盘	c=4 d=2.72959 t=2168
-jian rong 	兼容	c=2 d=1.97516 t=2168
-jian shao 	减少	c=1 d=0.904837 t=2168
-jian shen 	健身	c=3 d=2.88782 t=2168
-jian shi 	简史	c=5 d=4.32471 t=2168
-jian yi 	建议	c=4 d=3.76526 t=2168
-jian zi sheng 	尖子生	c=1 d=0.97531 t=2168
-jiang 	将	c=1 d=0.946485 t=2168
-jiang jie shi 	蒋介石	c=1 d=0.995012 t=2168
-jiang yi 	讲义	c=1 d=0.99005 t=2168
-jiao cai 	教材	c=4 d=3.72744 t=2168
-jiao huan qun 	交换群	c=1 d=0.995012 t=2168
-jiao shi 	教师	c=8 d=5.69149 t=2168
-jiao shi zi ge zheng 	教师资格证	c=2 d=1.8883 t=2168
-jiao yu 	教育	c=8 d=5.17781 t=2168
-jiao yu shi 	教育史	c=1 d=0.603506 t=2168
-jiao yu wang 	教育网	c=1 d=1 t=2168
-jiao yu xue 	教育学	c=2 d=1.18019 t=2168
-jiao yu yan jiu 	教育研究	c=1 d=0.606531 t=2168
-jiao zi 	教资	c=1 d=0.985112 t=2168
-jie 	劫	c=1 d=0.97531 t=2168
-jie 	解	c=4 d=3.77888 t=2168
-jie duan 	阶段	c=1 d=0.891366 t=2168
-jie gou 	结构	c=1 d=0.579842 t=2168
-jie jue 	解决	c=1 d=0.946485 t=2168
-jie shao 	介绍	c=1 d=0.637628 t=2168
-jie tu 	截图	c=1 d=1 t=2168
-jie xi 	解析	c=1 d=0.970446 t=2168
-jie xia lai 	接下来	c=1 d=0.891366 t=2168
-jin 	斤	c=1 d=0.970446 t=2168
-jin cheng 	进程	c=1 d=0.831104 t=2168
-jin dang 	仅当	c=1 d=1 t=2168
-jin ru 	进入	c=1 d=0.97531 t=2168
-jin sha 	金莎	c=3 d=2.87548 t=2168
-jin tou 	尽头	c=1 d=0.985112 t=2168
-jin xing 	进行	c=1 d=1 t=2168
-jin zheng en 	金正恩	c=1 d=0.995012 t=2168
-jing chang 	经常	c=2 d=0.974691 t=2168
-jing dian 	经典	c=1 d=0.680451 t=2168
-jing du 	精读	c=1 d=0.995012 t=2168
-jing li 	经历	c=3 d=1.66871 t=2168
-jing sai 	竞赛	c=1 d=0.375311 t=2168
-jing shen 	精神	c=0 d=0.0752014 t=2168
-jing xiang 	镜像	c=1 d=0.99005 t=2168
-jiu gou le 	就够了	c=3 d=2.86951 t=2168
-jiu hao le 	就好了	c=1 d=0.970446 t=2168
-jiu shi 	就是	c=2 d=1.73893 t=2168
-jiu shi wu tiao 	九十五条	c=1 d=0.99005 t=2168
-jiu zhi yu 	就职于	c=1 d=0.390628 t=2168
-ju ren zhuan 	巨人传	c=1 d=0.726149 t=2168
-ju xiang hua 	具象化	c=1 d=1 t=2168
-ju zhu zheng 	居住证	c=1 d=1 t=2168
-jue ding 	决定	c=1 d=0.869358 t=2168
-jue ding lun 	决定论	c=1 d=0.852144 t=2168
-jun fang 	军方	c=1 d=0.985112 t=2168
-jun xun 	军训	c=1 d=0.970446 t=2168
-ka 	喀	c=0 d=0.0995012 t=2168
-ka ba la 	喀巴拉	c=1 d=1 t=2168
-ka fei 	咖啡	c=1 d=1 t=2168
-ka fu ka 	卡夫卡	c=2 d=1.98511 t=2168
-ka pian 	卡片	c=1 d=1 t=2168
-ka si 	卡死	c=1 d=0.657047 t=2168
-kai fa 	开发	c=1 d=0.429557 t=2168
-kai qi 	开启	c=1 d=0.932394 t=2168
-kai shi 	开始	c=1 d=0.900325 t=2168
-kai yuan 	开源	c=0 d=0.0752014 t=2168
-kai yuan jing shen 	开源精神	c=1 d=0.755784 t=2168
-kan 	看	c=1 d=0.740818 t=2168
-kan kan 	看看	c=2 d=1.4308 t=2168
-kan xing xing 	看星星	c=0 d=0.0946485 t=2168
-kan xing xing de 	看星星的	c=1 d=0.951229 t=2168
-kang shi tan 	康士坦	c=1 d=0.965605 t=2168
-kao shi 	考试	c=4 d=4.01076 t=2168
-kao shi ren yuan 	考试人员	c=1 d=1 t=2168
-kao ya 	烤鸭	c=1 d=0.960789 t=2168
-kao yan 	考研	c=2 d=1.75247 t=2168
-ke ben 	课本	c=1 d=1 t=2168
-ke bu ke yi 	可不可以	c=2 d=1.83739 t=2168
-ke cheng 	课程	c=1 d=0.324652 t=2168
-ke da xun fei 	科大讯飞	c=1 d=1 t=2168
-ke hu 	客户	c=1 d=0.421052 t=2168
-ke ji 	科技	c=1 d=0.384812 t=2168
-ke mu 	科目	c=1 d=0.99005 t=2168
-ke mu er 	科目二	c=1 d=0.980199 t=2168
-ke neng 	可能	c=1 d=0.895834 t=2168
-ke su lu 	克苏鲁	c=1 d=1 t=2168
-ke xue 	科学	c=5 d=4.29547 t=2168
-ke yi 	可以	c=5 d=3.28908 t=2168
-kong bu 	恐怖	c=1 d=0.995012 t=2168
-kong jian 	空间	c=4 d=3.0491 t=2168
-kong ju 	恐惧	c=2 d=1.16974 t=2168
-ku 	库	c=3 d=2.33012 t=2168
-kua fu 	夸父	c=1 d=1 t=2168
-kua fu zhu ri 	夸父逐日	c=1 d=0.980199 t=2168
-kuai dao 	快到	c=1 d=0.900325 t=2168
-kuai jie jian 	快捷键	c=1 d=1 t=2168
-kuai le de ke xue 	快乐的科学	c=1 d=0.895834 t=2168
-kuai su 	快速	c=9 d=6.99186 t=2168
-kuai zi shou 	侩子手	c=1 d=1 t=2168
-lai ao 	莱奥	c=0 d=0.0878095 t=2168
-lai ao bo er duo 	莱奥波尔多	c=1 d=0.882497 t=2168
-lai bin 	来宾	c=3 d=1.55695 t=2168
-lai ri fang chang 	来日方长	c=1 d=0.97531 t=2168
-lai wu 	来物	c=2 d=1.64565 t=2168
-lan qiu 	篮球	c=1 d=1 t=2168
-lang man 	浪漫	c=1 d=0.955997 t=2168
-lao dong 	劳动	c=1 d=0.99005 t=2168
-lao shi 	老师	c=1 d=0.960789 t=2168
-le 	了	c=2 d=1.79753 t=2168
-le tian 	乐天	c=1 d=1 t=2168
-le yu 	乐于	c=1 d=0.744532 t=2168
-leng tai 	棱台	c=1 d=0.99005 t=2168
-li 	里	c=1 d=0.985112 t=2168
-li de shu ren 	立德树人	c=1 d=0.918512 t=2168
-li er ke 	里尔克	c=1 d=0.980199 t=2168
-li jie 	理解	c=2 d=1.55395 t=2168
-li kai ni 	离开你	c=1 d=0.951229 t=2168
-li ke qin 	李克勤	c=3 d=2.8353 t=2168
-li san 	离散	c=1 d=0.554327 t=2168
-li si ben 	里斯本	c=3 d=2.68293 t=2168
-li xiang 	理想	c=1 d=0.729789 t=2168
-li xiang guo 	理想国	c=1 d=1 t=2168
-lian biao 	链表	c=0 d=0.0995012 t=2168
-lian jie 	连接	c=1 d=0.895834 t=2168
-lian xi 	练习	c=1 d=1 t=2168
-lian xi 	联系	c=1 d=0.290835 t=2168
-liang ge 	两个	c=2 d=1.85183 t=2168
-liang zhi 	良质	c=1 d=0.995012 t=2168
-liang zhong 	两种	c=1 d=0.740818 t=2168
-liao jie 	了解	c=1 d=0.537944 t=2168
-liao yuan 	燎原	c=1 d=0.965605 t=2168
-lie 	列	c=2 d=1.91751 t=2168
-lie biao 	列表	c=2 d=1.88839 t=2168
-lie lian biao 	列链表	c=1 d=1 t=2168
-lin yu 	邻域	c=1 d=0.965605 t=2168
-ling dian 	零点	c=1 d=0.995012 t=2168
-ling hun 	灵魂	c=1 d=0.878095 t=2168
-ling yu 	领域	c=1 d=0.980199 t=2168
-liu liang ka 	流量卡	c=1 d=1 t=2168
-liu pai 	流派	c=1 d=0.970446 t=2168
-liu zhu 	留住	c=3 d=2.54211 t=2168
-lu 	卢	c=0 d=0.0882497 t=2168
-lu gong nei si 	卢贡内斯	c=1 d=0.88692 t=2168
-lu man 	卢曼	c=1 d=0.995012 t=2168
-lun 	论	c=1 d=0.794534 t=2168
-lun gang 	论纲	c=1 d=0.995012 t=2168
-lun li xue 	伦理学	c=1 d=0.995012 t=2168
-lun tan 	论坛	c=1 d=1 t=2168
-luo ji 	逻辑	c=4 d=2.09151 t=2168
-luo ji xue 	逻辑学	c=1 d=1 t=2168
-luo ri 	落日	c=1 d=1 t=2168
-luo te 	洛特	c=1 d=1 t=2168
-lv 	律	c=1 d=1 t=2168
-lv hua na 	氯化钠	c=1 d=0.946485 t=2168
-lv meng 	绿盟	c=1 d=0.382893 t=2168
-lv meng ke ji 	绿盟科技	c=1 d=0.392586 t=2168
-lve da yu 	略大于	c=1 d=0.980199 t=2168
-ma 	马	c=1 d=0.965605 t=2168
-mai 	买	c=1 d=1 t=2168
-man fen 	满分	c=1 d=0.99005 t=2168
-man hua 	漫话	c=2 d=1.77564 t=2168
-mang shi 	盲试	c=1 d=0.99005 t=2168
-mao hao 	冒号	c=1 d=0.995012 t=2168
-mei ge 	每个	c=1 d=0.955997 t=2168
-mei guo 	美国	c=3 d=2.94585 t=2168
-mei hao 	美好	c=1 d=0.88692 t=2168
-mei ri 	每日	c=4 d=2.854 t=2168
-mei xue 	美学	c=3 d=2.31155 t=2168
-mei yong 	没用	c=1 d=0.909373 t=2168
-mei you 	没有	c=6 d=4.60173 t=2168
-men 	们	c=1 d=0.995012 t=2168
-meng 	梦	c=1 d=0.99005 t=2168
-meng die 	梦蝶	c=1 d=1 t=2168
-meng tian 	蒙田	c=1 d=0.755784 t=2168
-mi er 	密尔	c=1 d=0.937067 t=2168
-mi shi 	迷失	c=1 d=1 t=2168
-mian ji 	面积	c=1 d=0.995012 t=2168
-mian qiang 	勉强	c=1 d=0.995012 t=2168
-mian shi 	面试	c=1 d=0.99005 t=2168
-ming 	明	c=0 d=0.0301194 t=2168
-ming bai 	明白	c=1 d=0.559898 t=2168
-ming ti 	命题	c=4 d=3.61845 t=2168
-ming xi 	明细	c=1 d=0.932394 t=2168
-mo hu 	模糊	c=1 d=0.960789 t=2168
-mo kuai 	模块	c=2 d=1.13776 t=2168
-mo luo 	没落	c=2 d=1.97521 t=2168
-mo nian 	默念	c=1 d=0.718924 t=2168
-mo shao 	末梢	c=1 d=0.904837 t=2168
-mo shi 	模式	c=2 d=1.9459 t=2168
-mo tai 	模态	c=1 d=0.995012 t=2168
-mo tuo che 	摩托车	c=2 d=1.9459 t=2168
-mou 	某	c=1 d=1 t=2168
-mou ge 	某个	c=1 d=0.909373 t=2168
-mu 	木	c=1 d=0.97531 t=2168
-mu qian 	目前	c=3 d=2.14021 t=2168
-na ge 	哪个	c=1 d=0.970446 t=2168
-na lai 	拿来	c=1 d=0.810584 t=2168
-na tian 	那天	c=1 d=0.891366 t=2168
-na xie 	那些	c=3 d=2.62243 t=2168
-nan 	男	c=1 d=0.308819 t=2168
-nan ning 	南宁	c=2 d=1.95101 t=2168
-nan ning shi 	南宁市	c=2 d=1.94605 t=2168
-nan sheng 	男生	c=1 d=1 t=2168
-nan xing 	男性	c=1 d=0.995012 t=2168
-nan yi 	难以	c=1 d=0.752014 t=2168
-ne 	呢	c=1 d=0.97531 t=2168
-nei si 	内斯	c=0 d=0.0882497 t=2168
-neng li 	能力	c=1 d=0.479505 t=2168
-ni 	你	c=1 d=0.995012 t=2168
-ni cang 	匿藏	c=1 d=0.985112 t=2168
-ni hao 	你好	c=23 d=18.6879 t=2168
-nian 	年	c=3 d=2.73322 t=2168
-nian yue 	年月	c=1 d=0.289384 t=2168
-niao 	鸟	c=1 d=0.927743 t=2168
-nie 	聂	c=2 d=1.91678 t=2168
-nie lu da 	聂鲁达	c=2 d=1.9216 t=2168
-nie pan 	涅槃	c=1 d=1 t=2168
-nu li 	努力	c=1 d=0.860708 t=2168
-nv 	女	c=1 d=0.918512 t=2168
-nv hai 	女孩	c=1 d=0.99005 t=2168
-nv sheng 	女生	c=1 d=0.980199 t=2168
-ou lu 	欧路	c=1 d=0.995012 t=2168
-pa chong 	爬虫	c=1 d=0.414783 t=2168
-pai lie 	排列	c=1 d=0.985112 t=2168
-pai zhong lv 	排中律	c=1 d=1 t=2168
-pei 	佩	c=1 d=0.995012 t=2168
-pei suo a 	佩索阿	c=2 d=1.84646 t=2168
-pei zhi 	配置	c=8 d=7.46222 t=2168
-peng ke 	朋克	c=1 d=0.985112 t=2168
-peng you 	朋友	c=1 d=0.869358 t=2168
-peng you a 	朋友啊	c=1 d=0.860708 t=2168
-pi 	皮	c=1 d=0.937067 t=2168
-pi liang 	批量	c=1 d=0.980199 t=2168
-pi xiang 	皮箱	c=1 d=0.97531 t=2168
-pin lv 	频率	c=1 d=0.878095 t=2168
-ping bi 	屏蔽	c=1 d=0.955997 t=2168
-ping bi 	评比	c=1 d=0.960789 t=2168
-ping jia 	评价	c=2 d=1.98511 t=2168
-ping mu shang 	屏幕上	c=1 d=0.882497 t=2168
-po zhe hao 	破折号	c=1 d=1 t=2168
-pu tong 	普通	c=4 d=3.67119 t=2168
-pu tong hua 	普通话	c=5 d=4.55194 t=2168
-qi 	七	c=1 d=0.985112 t=2168
-qi 	其	c=3 d=2.38453 t=2168
-qi an 	奇案	c=1 d=0.878095 t=2168
-qi dai 	期待	c=1 d=0.985112 t=2168
-qi dong 	启动	c=3 d=2.71644 t=2168
-qi fa 	启发	c=1 d=0.99005 t=2168
-qi shi 	其实	c=1 d=0.99005 t=2168
-qi xiang 	气象	c=4 d=3.9016 t=2168
-qi yong 	启用	c=4 d=3.71112 t=2168
-qi zhong 	其中	c=1 d=0.955997 t=2168
-qian shui ting 	潜水艇	c=1 d=0.985112 t=2168
-qian yan 	前言	c=1 d=0.99005 t=2168
-qiao dan 	乔丹	c=2 d=1.95072 t=2168
-qie 	且	c=2 d=1.96079 t=2168
-qie dao 	切到	c=1 d=0.941765 t=2168
-qin mi 	亲密	c=1 d=0.995012 t=2168
-qing 	请	c=1 d=0.873716 t=2168
-qing 	轻	c=4 d=3.19457 t=2168
-qing che shu lu 	轻车熟路	c=2 d=1.80516 t=2168
-qing dan 	清单	c=1 d=1 t=2168
-qing kuang 	情况	c=1 d=0.695737 t=2168
-qing shu 	情书	c=1 d=0.960789 t=2168
-qing yu 	轻语	c=1 d=0.995012 t=2168
-qiong lin 	琼林	c=1 d=0.995012 t=2168
-qiu 	秋	c=1 d=0.941765 t=2168
-qiu 	酋	c=1 d=1 t=2168
-qiu jin 	囚禁	c=1 d=0.980199 t=2168
-qiu zhi 	求知	c=1 d=0.704688 t=2168
-qiu zhi 	求职	c=2 d=0.575997 t=2168
-qu 	去	c=3 d=2.17984 t=2168
-qu wei 	趣味	c=2 d=1.85558 t=2168
-qu xin 	去心	c=1 d=0.960789 t=2168
-quan guo 	全国	c=1 d=0.367879 t=2168
-quan ji 	全集	c=1 d=0.970446 t=2168
-qun xing 	群星	c=2 d=1.97521 t=2168
-ran hou 	然后	c=4 d=3.24691 t=2168
-rang 	让	c=2 d=1.73458 t=2168
-rang wo 	让我	c=1 d=0.97531 t=2168
-rang wo men 	让我们	c=2 d=1.9362 t=2168
-rang zi ji 	让自己	c=1 d=0.985112 t=2168
-re ai 	热爱	c=1 d=0.83527 t=2168
-re cheng 	热诚	c=1 d=1 t=2168
-re qing 	热情	c=0 d=0.070822 t=2168
-ren 	人	c=3 d=2.65825 t=2168
-ren ding 	认定	c=1 d=0.995012 t=2168
-ren lei 	人类	c=6 d=4.45259 t=2168
-ren sheng 	人生	c=1 d=1 t=2168
-ren yuan 	人员	c=0 d=0.0995012 t=2168
-ren zheng 	认证	c=1 d=0.960789 t=2168
-ri 	日	c=1 d=0.985112 t=2168
-ri bao 	日报	c=1 d=1 t=2168
-ri ben 	日本	c=1 d=0.97531 t=2168
-ri qi 	日期	c=1 d=0.955997 t=2168
-ri zi 	日子	c=1 d=0.995012 t=2168
-ru 	如	c=1 d=0.904837 t=2168
-ru ci 	如此	c=1 d=0.960789 t=2168
-ru guo 	如果	c=2 d=1.8534 t=2168
-ru he 	如何	c=11 d=8.7805 t=2168
-ru kou 	入口	c=1 d=0.99005 t=2168
-ru o 	如哦	c=1 d=0.970446 t=2168
-ruan jian 	软件	c=1 d=0.631284 t=2168
-sai bo peng ke 	赛博朋克	c=1 d=0.97531 t=2168
-san 	三	c=1 d=0.985112 t=2168
-san bu qu 	三部曲	c=1 d=1 t=2168
-san duan lun 	三段论	c=1 d=1 t=2168
-san wen 	散文	c=1 d=0.99005 t=2168
-san yue 	三月	c=1 d=0.970446 t=2168
-sang 	丧	c=3 d=2.9605 t=2168
-sao miao qi 	扫描器	c=1 d=0.410656 t=2168
-shan yao shi 	闪耀时	c=2 d=1.98511 t=2168
-shang 	上	c=4 d=2.51544 t=2168
-shang de 	上的	c=1 d=0.909373 t=2168
-shang hai 	上海	c=1 d=0.97531 t=2168
-shang lu 	上路	c=1 d=0.985112 t=2168
-shang xia 	上下	c=1 d=0.640824 t=2168
-shao 	少	c=1 d=0.99005 t=2168
-she hui 	社会	c=5 d=4.24421 t=2168
-she ji 	设计	c=1 d=0.951229 t=2168
-she zhi 	设置	c=3 d=2.92741 t=2168
-shen 	神	c=1 d=1 t=2168
-shen hua 	神话	c=3 d=2.74966 t=2168
-shen me 	什么	c=6 d=4.76435 t=2168
-shen mi 	神秘	c=1 d=0.882497 t=2168
-shen shang 	身上	c=2 d=1.88391 t=2168
-shen ti 	身体	c=1 d=0.985112 t=2168
-shen ying 	身影	c=1 d=0.941765 t=2168
-shen zhi 	甚至	c=2 d=1.89307 t=2168
-sheng huo 	生活	c=1 d=1 t=2168
-sheng ji 	升级	c=1 d=0.951229 t=2168
-shi 	事	c=2 d=1.82823 t=2168
-shi 	时	c=2 d=1.76658 t=2168
-shi 	是	c=15 d=8.37975 t=2168
-shi de 	使得	c=2 d=1.77828 t=2168
-shi de 	是的	c=1 d=0.895834 t=2168
-shi fen xi 	实分析	c=1 d=0.995012 t=2168
-shi ge 	是个	c=1 d=0.960789 t=2168
-shi ge 	诗歌	c=1 d=1 t=2168
-shi gen 	实根	c=1 d=0.970446 t=2168
-shi guan 	使馆	c=1 d=1 t=2168
-shi hui 	实惠	c=1 d=0.980199 t=2168
-shi jian 	实践	c=2 d=1.87528 t=2168
-shi jian 	时间	c=1 d=0.97531 t=2168
-shi jie 	世界	c=7 d=5.82353 t=2168
-shi ke 	时刻	c=1 d=0.847894 t=2168
-shi le yuan 	失乐园	c=1 d=0.782705 t=2168
-shi liu 	十六	c=0 d=0.0985112 t=2168
-shi liu shi qi shi ji 	十六十七世纪	c=1 d=0.99005 t=2168
-shi nei 	室内	c=1 d=0.965605 t=2168
-shi qi 	时期	c=1 d=0.97531 t=2168
-shi qi shi ji 	十七世纪	c=0 d=0.0985112 t=2168
-shi qu 	失去	c=1 d=0.878095 t=2168
-shi xi 	实习	c=1 d=0.965605 t=2168
-shi xuan 	诗选	c=5 d=4.74705 t=2168
-shi yong 	使用	c=9 d=4.13653 t=2168
-shi zai 	实在	c=1 d=0.985112 t=2168
-shi zhe 	使者	c=1 d=0.737123 t=2168
-shou hang 	首行	c=2 d=1.93208 t=2168
-shou ji hao 	手机号	c=0 d=0.0995012 t=2168
-shou xian 	首先	c=2 d=1.3373 t=2168
-shou zhi 	收支	c=1 d=0.960789 t=2168
-shu 	书	c=7 d=5.35061 t=2168
-shu biao 	鼠标	c=2 d=1.20508 t=2168
-shu chu 	输出	c=2 d=1.67477 t=2168
-shu dan 	书单	c=1 d=0.99005 t=2168
-shu ji 	书籍	c=3 d=2.57572 t=2168
-shu li luo ji 	数理逻辑	c=2 d=1.46943 t=2168
-shu lian 	熟练	c=2 d=0.967724 t=2168
-shu lun 	数论	c=1 d=0.516851 t=2168
-shu ru 	输入	c=6 d=4.49552 t=2168
-shu xian 	竖线	c=2 d=1.97516 t=2168
-shu xing 	属性	c=2 d=1.88924 t=2168
-shu xue 	数学	c=28 d=13.9145 t=2168
-shu zhi 	熟知	c=1 d=0.548812 t=2168
-shu zhi fen xi 	数值分析	c=1 d=0.353455 t=2168
-shu zhi ji suan 	数值计算	c=1 d=0.551563 t=2168
-shu zhong 	书中	c=2 d=1.6665 t=2168
-shuan shang 	拴上	c=1 d=0.571209 t=2168
-shuang 	双	c=0 d=0.0995012 t=2168
-shuang 	爽	c=0 d=0.0985112 t=2168
-shuang yuan ge ming 	双元革命	c=1 d=1 t=2168
-shui mian 	睡眠	c=6 d=5.75722 t=2168
-shui mian fa 	睡眠法	c=4 d=3.86393 t=2168
-shuo 	说	c=2 d=1.79741 t=2168
-si 	斯	c=1 d=0.932394 t=2168
-si 	死	c=2 d=1.80516 t=2168
-si chuan 	四川	c=1 d=0.32628 t=2168
-si da jie kong 	四大皆空	c=1 d=0.995012 t=2168
-si ge 	四个	c=1 d=0.88692 t=2168
-si ji 	四级	c=2 d=1.97025 t=2168
-si ji 	死机	c=1 d=1 t=2168
-si kao 	思考	c=2 d=1.64891 t=2168
-si le 	死了	c=1 d=1 t=2168
-si tan fu 	斯坦福	c=5 d=4.73032 t=2168
-si wang 	死亡	c=2 d=1.82532 t=2168
-si wei 	思维	c=1 d=0.474734 t=2168
-si xun 	死讯	c=1 d=0.995012 t=2168
-si yuan 	思源	c=1 d=1 t=2168
-sou suo yin qing 	搜索引擎	c=1 d=0.960789 t=2168
-su da lv 	苏打绿	c=7 d=6.0007 t=2168
-su huo mu lin si ji 	苏霍姆林斯基	c=1 d=1 t=2168
-su she 	宿舍	c=1 d=0.985112 t=2168
-su ya lei si 	苏亚雷斯	c=1 d=0.995012 t=2168
-su zhi 	素质	c=1 d=0.97531 t=2168
-su zhou 	苏州	c=1 d=0.995012 t=2168
-suan bu suan 	算不算	c=1 d=0.995012 t=2168
-sui 	随	c=3 d=1.86004 t=2168
-sui pian 	碎片	c=1 d=0.814647 t=2168
-suo gan 	所感	c=0 d=0.0778801 t=2168
-suo gan suo xiang 	所感所想	c=1 d=0.782705 t=2168
-suo jin 	缩进	c=2 d=1.94176 t=2168
-suo xiang 	所想	c=0 d=0.0778801 t=2168
-suo xue 	所学	c=1 d=0.763379 t=2168
-suo yi 	所以	c=1 d=0.923116 t=2168
-suo yi chong 	蓑衣虫	c=1 d=0.918512 t=2168
-suo you 	所有	c=3 d=2.68998 t=2168
-suo zhi 	所知	c=1 d=0.900325 t=2168
-ta 	塔	c=1 d=0.99005 t=2168
-ta 	她	c=3 d=2.68448 t=2168
-ta 	它	c=3 d=2.09115 t=2168
-ta de 	它的	c=1 d=0.980199 t=2168
-tang e 	塘鹅	c=1 d=1 t=2168
-te 	特	c=1 d=0.985112 t=2168
-teng xun 	腾讯	c=1 d=0.985112 t=2168
-ti 	题	c=1 d=0.465334 t=2168
-ti dai 	替代	c=1 d=0.951229 t=2168
-ti dao 	提到	c=1 d=0.798516 t=2168
-ti dao le 	提到了	c=1 d=0.878095 t=2168
-ti jian 	体检	c=1 d=1 t=2168
-ti sheng 	提升	c=1 d=0.995012 t=2168
-ti shou pang 	提手旁	c=1 d=0.99005 t=2168
-tian 	天	c=1 d=0.99005 t=2168
-tian qi 	天气	c=2 d=1.99501 t=2168
-tian wai 	天外	c=3 d=2.59508 t=2168
-tian wai lai wu 	天外来物	c=3 d=2.57579 t=2168
-tian zhu jiao tu 	天主教徒	c=1 d=0.985112 t=2168
-tiao 	条	c=1 d=0.97531 t=2168
-tiao zheng 	调整	c=3 d=1.80869 t=2168
-tong guo 	通过	c=3 d=1.90827 t=2168
-tong ku 	痛苦	c=1 d=0.970446 t=2168
-tong shi 	同时	c=1 d=0.909373 t=2168
-tong yang 	同样	c=1 d=0.965605 t=2168
-tu biao 	图标	c=1 d=0.951229 t=2168
-tu long zhi ji 	屠龙之技	c=1 d=0.995012 t=2168
-tu pian 	图片	c=2 d=1.96536 t=2168
-tui jian 	推荐	c=1 d=0.995012 t=2168
-tui li 	推理	c=1 d=0.980199 t=2168
-tui lun 	推论	c=2 d=1.94111 t=2168
-wa 	瓦	c=1 d=0.941765 t=2168
-wai po 	外婆	c=1 d=0.837458 t=2168
-wai po de 	外婆的	c=2 d=1.53116 t=2168
-wan quan 	完全	c=1 d=0.932394 t=2168
-wang 	网	c=3 d=2.84563 t=2168
-wang ji 	忘记	c=1 d=0.882497 t=2168
-wang kou 	网口	c=1 d=1 t=2168
-wang luo 	网络	c=1 d=0.798516 t=2168
-wang ri 	往日	c=0 d=0.0985112 t=2168
-wang ri zhi ying 	往日之影	c=1 d=0.99005 t=2168
-wang shang 	网上	c=1 d=0.778801 t=2168
-wang tong 	网通	c=3 d=2.98506 t=2168
-wei 	为	c=3 d=2.6687 t=2168
-wei ci 	谓词	c=1 d=0.995012 t=2168
-wei er si te la si 	维尔斯特拉斯	c=1 d=1 t=2168
-wei ji fen 	微积分	c=2 d=0.617048 t=2168
-wei ma 	喂马	c=1 d=1 t=2168
-wei shen me 	为什么	c=1 d=0.985112 t=2168
-wei xin 	微信	c=1 d=0.99005 t=2168
-wei xiu 	维修	c=1 d=1.06412 t=2168
-wei xiu yi shu 	维修艺术	c=1 d=0.99005 t=2168
-wei yi 	唯一	c=1 d=0.995012 t=2168
-wei yi 	惟一	c=1 d=1 t=2168
-wei yu 	谓语	c=1 d=1 t=2168
-wen 	问	c=1 d=0.946485 t=2168
-wen ben 	文本	c=1 d=0.637628 t=2168
-wen dang 	文档	c=1 d=0.995012 t=2168
-wen jian 	文件	c=2 d=1.9415 t=2168
-wen ming 	文明	c=4 d=3.77845 t=2168
-wen rou 	温柔	c=1 d=0.99005 t=2168
-wen ti 	问题	c=7 d=4.50774 t=2168
-wen xia 	问下	c=1 d=0.941765 t=2168
-wen xian 	文献	c=1 d=1 t=2168
-wo 	我	c=13 d=6.89764 t=2168
-wo de 	我的	c=2 d=1.58001 t=2168
-wo hen 	我很	c=0 d=0.0980199 t=2168
-wo hen chou 	我很丑	c=1 d=0.980199 t=2168
-wo men 	我们	c=2 d=1.81421 t=2168
-wo yi jing 	我已经	c=1 d=0.985112 t=2168
-wo yong 	我用	c=3 d=2.59776 t=2168
-wu 	无	c=1 d=1.0593 t=2168
-wu fan ying 	无反应	c=2 d=1.19596 t=2168
-wu li 	物理	c=1 d=0.71177 t=2168
-wu qiong 	无穷	c=2 d=1.54188 t=2168
-wu shu ge 	无数个	c=1 d=1 t=2168
-wu xian 	无限	c=1 d=0.932394 t=2168
-wu xu lie biao 	无序列表	c=1 d=0.941765 t=2168
-wu yi shi 	无意识	c=1 d=0.965605 t=2168
-xi 	西	c=3 d=2.98012 t=2168
-xi an 	西安	c=2 d=0.781295 t=2168
-xi fang 	西方	c=8 d=7.24623 t=2168
-xi fang wen ming 	西方文明	c=2 d=1.83705 t=2168
-xi guan 	习惯	c=2 d=1.33746 t=2168
-xi huan 	喜欢	c=2 d=1.43132 t=2168
-xi qu 	析取	c=2 d=1.76942 t=2168
-xi ti 	习题	c=2 d=1.99501 t=2168
-xi tong 	系统	c=2 d=1.07379 t=2168
-xi wang 	希望	c=3 d=2.75639 t=2168
-xi xi 	嘻嘻	c=1 d=1 t=2168
-xi xi 	嬉戏	c=1 d=0.980199 t=2168
-xi xi fu si 	西西弗斯	c=1 d=0.97531 t=2168
-xi yi fu 	洗衣服	c=1 d=1 t=2168
-xia 	下	c=1 d=0.965605 t=2168
-xia ri 	夏日	c=1 d=0.99005 t=2168
-xia wu 	下午	c=1 d=0.895834 t=2168
-xian gei 	献给	c=1 d=0.985112 t=2168
-xian xiang 	现象	c=2 d=1.3898 t=2168
-xian xing 	现行	c=1 d=0.348192 t=2168
-xian xing dai shu 	线性代数	c=1 d=0.349938 t=2168
-xian zai 	现在	c=1 d=1 t=2168
-xiang 	像	c=1 d=0.980199 t=2168
-xiang 	想	c=1 d=0.937067 t=2168
-xiang deng 	相等	c=1 d=0.980199 t=2168
-xiang fan 	相反	c=1 d=0.980199 t=2168
-xiang fan de 	相反的	c=1 d=0.985112 t=2168
-xiang guan 	相关	c=1 d=0.869358 t=2168
-xiang liang 	向量	c=2 d=1.98012 t=2168
-xiang mu 	项目	c=3 d=2.3037 t=2168
-xiang ni 	向你	c=1 d=0.927743 t=2168
-xiang shi 	像是	c=1 d=0.65377 t=2168
-xiang su 	像素	c=1 d=0.995012 t=2168
-xiang xiang li 	想象力	c=1 d=1 t=2168
-xiang xin 	相信	c=2 d=1.73438 t=2168
-xiao 	小	c=1 d=0.995012 t=2168
-xiao he 	小鹤	c=1 d=0.985112 t=2168
-xiao shi 	消失	c=1 d=0.839457 t=2168
-xiao xi 	消息	c=1 d=0.985112 t=2168
-xiao zi 	小子	c=2 d=1.98012 t=2168
-xie 	写	c=5 d=3.3411 t=2168
-xie yi pian 	写一篇	c=1 d=0.941765 t=2168
-xin 	信	c=1 d=0.774916 t=2168
-xin 	心	c=3 d=2.33962 t=2168
-xin 	新	c=1 d=0.99005 t=2168
-xin cun 	新村	c=1 d=1 t=2168
-xin hao 	信号	c=1 d=0.343009 t=2168
-xin ke xue 	新科学	c=1 d=0.744532 t=2168
-xin li shi 	心理师	c=1 d=0.923116 t=2168
-xin li xue 	心理学	c=1 d=0.615697 t=2168
-xin qing 	心情	c=1 d=0.748264 t=2168
-xin xin 	信心	c=1 d=0.965605 t=2168
-xing 	形	c=1 d=0.995012 t=2168
-xing 	星	c=4 d=3.74369 t=2168
-xing bie 	性别	c=1 d=0.29671 t=2168
-xing chen 	星辰	c=2 d=1.57345 t=2168
-xing er shang 	形而上	c=1 d=0.965605 t=2168
-xing ji 	行纪	c=0 d=0.0831104 t=2168
-xing ming 	姓名	c=1 d=0.286505 t=2168
-xing qu 	兴趣	c=2 d=0.873768 t=2168
-xing xing 	星星	c=2 d=1.84163 t=2168
-xing yue 	星月	c=4 d=3.83267 t=2168
-xing yue shen hua 	星月神话	c=2 d=1.89985 t=2168
-xing yun 	幸运	c=1 d=0.869358 t=2168
-xiong 	熊	c=1 d=0.99005 t=2168
-xiu mian 	休眠	c=1 d=0.995012 t=2168
-xu hao 	序号	c=1 d=0.951229 t=2168
-xu yan 	序言	c=2 d=1.96536 t=2168
-xu yao 	需要	c=1 d=0.860708 t=2168
-xuan ze 	选择	c=3 d=1.9362 t=2168
-xuan zhong 	选中	c=2 d=1.96536 t=2168
-xue 	学	c=2 d=1.9802 t=2168
-xue ke wang 	学科网	c=1 d=0.995012 t=2168
-xue kun sheng 	学困生	c=1 d=0.932394 t=2168
-xue li 	学历	c=1 d=0.323033 t=2168
-xue qi 	学期	c=1 d=0.946485 t=2168
-xue sheng 	学生	c=3 d=2.53793 t=2168
-xue xi 	学习	c=4 d=3.20722 t=2168
-xue xi fa 	学习法	c=1 d=1 t=2168
-xue xiao 	学校	c=3 d=2.7091 t=2168
-xue xiao hua 	学校化	c=1 d=0.99005 t=2168
-xue xiao hua 	学校花	c=1 d=0.985112 t=2168
-xue ye shui ping 	学业水平	c=1 d=0.99005 t=2168
-xue zhi qian 	薛之谦	c=5 d=4.76733 t=2168
-xue zi 	学子	c=1 d=0.946485 t=2168
-xun 	训	c=1 d=0.97531 t=2168
-ya 	呀	c=1 d=0.951229 t=2168
-ya 	桠	c=1 d=0.913931 t=2168
-yan fa 	研发	c=1 d=0.400517 t=2168
-yan fa zhong xin 	研发中心	c=2 d=0.785212 t=2168
-yan se 	颜色	c=2 d=1.99501 t=2168
-yan wo 	燕窝	c=9 d=8.22656 t=2168
-yang tai 	阳台	c=1 d=0.995012 t=2168
-yang wang 	仰望	c=1 d=0.913931 t=2168
-yao 	要	c=4 d=3.48204 t=2168
-yao gun 	摇滚	c=2 d=1.97025 t=2168
-yao qiu 	要求	c=1 d=0.97531 t=2168
-yao ren 	咬人	c=1 d=1 t=2168
-ye 	也	c=3 d=2.17251 t=2168
-ye 	夜	c=3 d=2.73205 t=2168
-ye 	页	c=1 d=0.97531 t=2168
-ye che 	夜车	c=4 d=3.42981 t=2168
-ye mian 	页面	c=2 d=1.20997 t=2168
-yi 	一	c=1 d=0.980199 t=2168
-yi 	以	c=4 d=1.98445 t=2168
-yi bai tiao 	一百条	c=1 d=0.980199 t=2168
-yi ben 	译本	c=1 d=1 t=2168
-yi ben shu 	一本书	c=4 d=3.29236 t=2168
-yi ci 	一次	c=1 d=0.690734 t=2168
-yi dian 	一点	c=1 d=0.818731 t=2168
-yi fan 	伊凡	c=1 d=0.980199 t=2168
-yi ge 	一个	c=9 d=7.72085 t=2168
-yi ge jia 	一个加	c=1 d=1 t=2168
-yi hu lu hua piao 	依葫芦画瓢	c=1 d=0.790571 t=2168
-yi hua 	异化	c=1 d=0.97531 t=2168
-yi ji 	以及	c=1 d=0.778801 t=2168
-yi jing 	已经	c=2 d=1.76498 t=2168
-yi lei 	一类	c=1 d=0.895834 t=2168
-yi li qi 	伊里奇	c=1 d=0.985112 t=2168
-yi li ya te 	伊利亚特	c=1 d=1 t=2168
-yi lun 	一轮	c=1 d=0.97531 t=2168
-yi pian 	一篇	c=4 d=3.0812 t=2168
-yi qi 	以其	c=1 d=0.718924 t=2168
-yi qian zi 	一千字	c=1 d=0.869358 t=2168
-yi qie 	一切	c=3 d=2.58267 t=2168
-yi quan 	一圈	c=1 d=0.786628 t=2168
-yi ran 	依然	c=2 d=1.4982 t=2168
-yi shu 	艺术	c=1 d=1.06895 t=2168
-yi shu shi 	艺术史	c=1 d=0.909373 t=2168
-yi wan nian qian 	亿万年前	c=1 d=0.932394 t=2168
-yi wen 	译文	c=1 d=0.980199 t=2168
-yi xia 	一下	c=1 d=0.865022 t=2168
-yi xiang 	意向	c=3 d=2.06948 t=2168
-yi xie 	一些	c=5 d=3.83688 t=2168
-yi yang 	一样	c=1 d=0.99005 t=2168
-yi yi 	意义	c=1 d=0.913931 t=2168
-yi yuan 	意愿	c=1 d=0.869358 t=2168
-yi zhan 	一战	c=1 d=0.995012 t=2168
-yi zhong 	一种	c=1 d=0.941765 t=2168
-yin 	音	c=1 d=0.99005 t=2168
-yin er 	因而	c=1 d=0.683861 t=2168
-yin li 	引理	c=2 d=1.92669 t=2168
-yin wei 	因为	c=3 d=2.25389 t=2168
-yin yong ge shi 	引用格式	c=1 d=1 t=2168
-yin yue 	音乐	c=3 d=2.83667 t=2168
-ying shi 	影视	c=1 d=0.918512 t=2168
-ying wen 	英文	c=6 d=5.62095 t=2168
-ying yu 	英语	c=2 d=1.85214 t=2168
-yong 	用	c=5 d=3.33518 t=2168
-yong dao 	用到	c=1 d=0.995012 t=2168
-yong de 	用的	c=3 d=2.72527 t=2168
-yong heng 	永恒	c=1 d=1 t=2168
-yong hu 	用户	c=1 d=0.99005 t=2168
-yong hu ming 	用户名	c=1 d=0.995012 t=2168
-you 	又	c=1 d=0.852144 t=2168
-you 	有	c=5 d=3.36304 t=2168
-you ai 	尤爱	c=1 d=0.65377 t=2168
-you ge 	有个	c=1 d=0.873716 t=2168
-you hua 	优化	c=0 d=0.0425283 t=2168
-you ling 	幽灵	c=1 d=0.995012 t=2168
-you ru 	犹如	c=1 d=0.965605 t=2168
-you xian 	有限	c=1 d=0.913931 t=2168
-you xiang 	邮箱	c=2 d=1.2982 t=2168
-you xu 	有序	c=1 d=0.951229 t=2168
-you yong 	有用	c=2 d=1.9362 t=2168
-yu 	与	c=8 d=5.98427 t=2168
-yu fa 	语法	c=1 d=0.918512 t=2168
-yu jia 	瑜伽	c=3 d=2.89769 t=2168
-yu lu 	语录	c=1 d=0.985112 t=2168
-yu ming 	域名	c=1 d=0.995012 t=2168
-yu ni 	与你	c=1 d=0.97531 t=2168
-yu zhou 	宇宙	c=1 d=0.99005 t=2168
-yuan 	元	c=0 d=0.0995012 t=2168
-yuan fang 	远方	c=1 d=0.970446 t=2168
-yuan li 	原理	c=6 d=3.70363 t=2168
-yuan ren zhi 	元认知	c=3 d=2.22801 t=2168
-yuan xiao 	院校	c=2 d=1.18698 t=2168
-yuan xing zhe 	远行者	c=1 d=0.980199 t=2168
-yuan yi 	愿意	c=1 d=0.891366 t=2168
-yue 	月	c=2 d=1.94605 t=2168
-yue du 	阅读	c=16 d=11.2774 t=2168
-yue han 	约翰	c=1 d=0.932394 t=2168
-yue tuan 	乐团	c=2 d=1.97521 t=2168
-yue ya 	月牙	c=1 d=0.941765 t=2168
-yue ya wan 	月牙湾	c=3 d=2.95072 t=2168
-yun 	云	c=2 d=1.95566 t=2168
-yun luo 	陨落	c=1 d=0.965605 t=2168
-yun pan 	云盘	c=1 d=1 t=2168
-yun yong 	运用	c=1 d=0.442639 t=2168
-zai 	再	c=2 d=1.79127 t=2168
-zai 	在	c=12 d=6.9637 t=2168
-zai fei yi hui er 	再飞一会儿	c=1 d=1 t=2168
-zai jian 	再见	c=2 d=1.77652 t=2168
-zai xiao 	在校	c=1 d=0.995012 t=2168
-zan shi 	暂时	c=1 d=0.980199 t=2168
-zao bao 	早报	c=1 d=0.985112 t=2168
-zao chen 	早晨	c=1 d=1 t=2168
-ze 	则	c=1 d=0.960789 t=2168
-ze shi 	则是	c=1 d=0.985112 t=2168
-zen me 	怎么	c=1 d=1 t=2168
-zeng jin 	增进	c=1 d=0.937067 t=2168
-zhai 	翟	c=1 d=0.995012 t=2168
-zhai chao 	摘抄	c=3 d=2.64562 t=2168
-zhai chu 	摘除	c=1 d=0.831104 t=2168
-zhan 	占	c=2 d=1.94605 t=2168
-zhan zheng 	战争	c=1 d=0.995012 t=2168
-zhang 	章	c=1 d=1 t=2168
-zhang hao 	账号	c=1 d=0.814647 t=2168
-zhang jie 	章节	c=1 d=0.980199 t=2168
-zhang wo 	掌握	c=2 d=1.24689 t=2168
-zhao bu dao 	找不到	c=1 d=0.99005 t=2168
-zhao le 	找了	c=1 d=0.782705 t=2168
-zhao pian 	照片	c=1 d=0.995012 t=2168
-zhao zhao mu mu 	朝朝暮暮	c=1 d=0.99005 t=2168
-zhe 	着	c=3 d=2.3729 t=2168
-zhe 	这	c=1 d=0.45612 t=2168
-zhe ge 	这个	c=4 d=2.99738 t=2168
-zhe xue 	哲学	c=2 d=1.8376 t=2168
-zhe yang 	这样	c=3 d=2.84096 t=2168
-zhe zhong 	这种	c=1 d=0.722527 t=2168
-zhen 	镇	c=1 d=0.995012 t=2168
-zhen li 	真理	c=1 d=0.99005 t=2168
-zhen xiu 	珍馐	c=1 d=0.895834 t=2168
-zheng 	正	c=1 d=0.913931 t=2168
-zheng chang 	正常	c=1 d=0.579842 t=2168
-zheng chu 	整除	c=1 d=1 t=2168
-zheng ge 	整个	c=1 d=0.985112 t=2168
-zheng he 	整合	c=1 d=0.951229 t=2168
-zheng yi 	正义	c=1 d=1 t=2168
-zhi 	之	c=4 d=3.79714 t=2168
-zhi 	只	c=1 d=0.852144 t=2168
-zhi ci 	至此	c=1 d=1 t=2168
-zhi de 	值得	c=1 d=0.995012 t=2168
-zhi hou 	之后	c=1 d=0.965605 t=2168
-zhi hu 	知乎	c=2 d=1.90256 t=2168
-zhi jin 	至今	c=1 d=0.955997 t=2168
-zhi nan 	指南	c=1 d=0.97531 t=2168
-zhi shang 	智商	c=1 d=0.778801 t=2168
-zhi shi 	只是	c=1 d=0.904837 t=2168
-zhi shi 	指示	c=1 d=0.927743 t=2168
-zhi shi 	知识	c=10 d=5.1129 t=2168
-zhi shu 	质数	c=1 d=0.99005 t=2168
-zhi xue wang 	智学网	c=2 d=1.99501 t=2168
-zhi ying 	之影	c=0 d=0.0985112 t=2168
-zhi you 	只有	c=1 d=0.946485 t=2168
-zhi yu 	值域	c=1 d=0.937067 t=2168
-zhi zhang 	纸张	c=1 d=0.99005 t=2168
-zhong 	中	c=2 d=1.8385 t=2168
-zhong guo 	中国	c=3 d=2.80844 t=2168
-zhong hua min guo 	中华民国	c=1 d=1 t=2168
-zhong ji 	终极	c=1 d=0.99005 t=2168
-zhong jie 	中介	c=1 d=0.860708 t=2168
-zhong jie 	终结	c=1 d=0.865022 t=2168
-zhong kao 	中考	c=2 d=1.94111 t=2168
-zhong wai 	中外	c=1 d=0.600496 t=2168
-zhong wen 	中文	c=4 d=3.73935 t=2168
-zhong xin 	中心	c=1 d=0.980199 t=2168
-zhong ya 	中亚	c=0 d=0.0831104 t=2168
-zhong ya xing ji 	中亚行纪	c=1 d=0.83527 t=2168
-zhou 	周	c=1 d=0.97531 t=2168
-zhou ce 	周测	c=1 d=0.985112 t=2168
-zhou dui chen 	轴对称	c=1 d=0.970446 t=2168
-zhou ji hua 	周计划	c=1 d=1 t=2168
-zhou qi xing 	周期性	c=1 d=0.995012 t=2168
-zhu ce 	注册	c=1 d=0.995012 t=2168
-zhu ci 	主词	c=1 d=0.99005 t=2168
-zhu fu 	祝福	c=1 d=1 t=2168
-zhu shi 	注视	c=1 d=0.980199 t=2168
-zhu shi 	注释	c=1 d=0.995012 t=2168
-zhu yi 	主义	c=2 d=1.58569 t=2168
-zhu yi dao 	注意到	c=1 d=0.687289 t=2168
-zhu yu 	主语	c=1 d=1 t=2168
-zhuan 	传	c=1 d=0.873716 t=2168
-zhuan yan 	专研	c=1 d=0.677057 t=2168
-zhuan ye 	专业	c=6 d=4.80514 t=2168
-zhuang zhou 	庄周	c=1 d=0.995012 t=2168
-zhui meng chi zi xin 	追梦赤子心	c=1 d=0.985112 t=2168
-zhui qiu 	追求	c=3 d=2.42667 t=2168
-zhun bei 	准备	c=1 d=0.847894 t=2168
-zhun ze 	准则	c=1 d=0.774916 t=2168
-zhuo mian 	桌面	c=3 d=2.23136 t=2168
-zhuo shang 	桌上	c=1 d=1 t=2168
-zhuo shao 	灼烧	c=0 d=0.0960789 t=2168
-zhuo shao zhe 	灼烧着	c=1 d=0.965605 t=2168
-zhuo sheng 	擢升	c=1 d=1 t=2168
-zi 	字	c=3 d=2.31498 t=2168
-zi dan 	子弹	c=1 d=0.995012 t=2168
-zi dong 	自动	c=3 d=2.97024 t=2168
-zi dong hua 	自动化	c=1 d=0.332871 t=2168
-zi ge 	资格	c=1 d=1.07976 t=2168
-zi ge wang 	资格网	c=1 d=0.980199 t=2168
-zi ge zheng 	资格证	c=2 d=1.84736 t=2168
-zi hao gan 	自豪感	c=1 d=0.97531 t=2168
-zi ji 	自己	c=1 d=0.852144 t=2168
-zi jin cheng 	子进程	c=1 d=0.97531 t=2168
-zi mian 	字面	c=1 d=0.909373 t=2168
-zi mu 	字母	c=2 d=1.96561 t=2168
-zi mu lu 	子目录	c=1 d=0.960789 t=2168
-zi ti 	字体	c=6 d=5.51307 t=2168
-zi xue 	自学	c=2 d=1.07194 t=2168
-zong e 	总额	c=1 d=1 t=2168
-zong he 	综合	c=1 d=0.970446 t=2168
-zong shang 	综上	c=1 d=1 t=2168
-zou zhi er 	走之儿	c=1 d=0.99005 t=2168
-zu fang 	租房	c=1 d=0.985112 t=2168
-zu he 	组合	c=3 d=2.92615 t=2168
-zuan yan 	钻研	c=1 d=0.687289 t=2168
-zui hou 	最后	c=1 d=0.985112 t=2168
-zui jin 	最近	c=1 d=0.585669 t=2168
-zun zhao 	遵照	c=1 d=0.913931 t=2168
-zun zhong 	尊重	c=1 d=0.814647 t=2168
-zuo 	做	c=1 d=0.904837 t=2168
-zuo pin 	作品	c=1 d=1 t=2168
-zuo tian 	昨天	c=1 d=0.865022 t=2168
-zuo wei 	作为	c=1 d=0.99005 t=2168
-zuo yi ge 	做一个	c=1 d=0.985112 t=2168
-zuo you 	左右	c=1 d=0.923116 t=2168
+a 	啊	c=4 d=1.78299 t=1031
+a 	阿	c=1 d=0.995012 t=1031
+a duo ni si 	阿多尼斯	c=1 d=0.726149 t=1031
+a la si jia wan 	阿拉斯加湾	c=2 d=1.96531 t=1031
+a li 	阿里	c=1 d=0.980199 t=1031
+a li yun pan 	阿里云盘	c=1 d=0.985112 t=1031
+ai 	爱	c=4 d=3.54532 t=1031
+ai ni 	爱你	c=1 d=0.909373 t=1031
+ai qing 	爱情	c=1 d=0.694197 t=1031
+an pai 	安排	c=1 d=0.985112 t=1031
+an zhuang 	安装	c=1 d=1 t=1031
+ao mi 	奥秘	c=1 d=0.718924 t=1031
+ba ge da 	巴格达	c=1 d=0.752014 t=1031
+bai du wang pan 	百度网盘	c=1 d=0.97531 t=1031
+ban sheng yuan 	半生缘	c=1 d=0.960789 t=1031
+ban wei 	班委	c=1 d=0.960789 t=1031
+bao 	保	c=1 d=1 t=1031
+bao rong 	包容	c=0 d=0.0362402 t=1031
+bao rong wo 	包容我	c=2 d=1.09037 t=1031
+bao you 	保有	c=1 d=0.771052 t=1031
+bei 	被	c=2 d=1.12597 t=1031
+bei ke 	备课	c=1 d=1 t=1031
+ben di 	本地	c=1 d=0.66034 t=1031
+ben lai 	本来	c=1 d=0.927743 t=1031
+ben ren 	本人	c=1 d=0.97531 t=1031
+bi ji 	笔记	c=2 d=1.95101 t=1031
+bi mo 	笔墨	c=1 d=0.767206 t=1031
+bi ran 	必然	c=2 d=0.659413 t=1031
+bi sheng 	必胜	c=1 d=0.839457 t=1031
+bi shi 	笔试	c=1 d=0.937067 t=1031
+bian fu xia 	蝙蝠侠	c=2 d=1.96042 t=1031
+bian ji 	编辑	c=1 d=0.985112 t=1031
+bian jie 	辩解	c=1 d=0.900325 t=1031
+bian shi 	便是	c=1 d=0.913931 t=1031
+biao ben 	标本	c=1 d=0.600496 t=1031
+bie 	别	c=1 d=0.755784 t=1031
+bie guai wo 	别怪我	c=1 d=0.946485 t=1031
+bo hui 	驳回	c=2 d=1.69581 t=1031
+bo ke 	博客	c=1 d=0.941765 t=1031
+bu 	不	c=1 d=0.985112 t=1031
+bu cun 	不存	c=1 d=0.960789 t=1031
+bu fen 	部分	c=1 d=0.985112 t=1031
+bu hui 	不会	c=1 d=0.346456 t=1031
+bu mian 	不眠	c=1 d=0.683861 t=1031
+bu neng 	不能	c=1 d=0.790571 t=1031
+bu pao 	不跑	c=1 d=0.937067 t=1031
+bu shan chang 	不擅长	c=1 d=0.856415 t=1031
+bu sheng qi 	不升旗	c=1 d=0.99005 t=1031
+bu shi 	不时	c=1 d=0.519442 t=1031
+bu shu 	部署	c=2 d=1.88872 t=1031
+bu tai 	不太	c=1 d=0.99005 t=1031
+bu xiang lai 	不想来	c=1 d=0.960789 t=1031
+bu xiang yong 	不想用	c=1 d=0.694197 t=1031
+bu yao 	不要	c=1 d=0.677057 t=1031
+bu yi 	布衣	c=0 d=0.0733447 t=1031
+bu yi pang 	布衣旁	c=1 d=0.737123 t=1031
+bu zhi 	不知	c=1 d=0.970446 t=1031
+bu zhi chi 	不支持	c=1 d=0.960789 t=1031
+bu zi jue 	不自觉	c=1 d=0.970446 t=1031
+bu zu 	不足	c=1 d=0.985112 t=1031
+ca 	擦	c=1 d=0.955997 t=1031
+cai 	才	c=1 d=0.767206 t=1031
+cai liao 	材料	c=2 d=1.73091 t=1031
+ceng shi 	曾是	c=1 d=0.794534 t=1031
+cha 	差	c=0 d=0.0946485 t=1031
+cha bu duo 	差不多	c=1 d=0.995012 t=1031
+cha hei ban 	差黑板	c=1 d=0.951229 t=1031
+cha kan 	查看	c=1 d=0.806541 t=1031
+chang pian 	唱片	c=1 d=0.451581 t=1031
+che luo 	扯落	c=1 d=0.729789 t=1031
+chen 	陈	c=1 d=0.918512 t=1031
+chen shui 	沉睡	c=1 d=0.748264 t=1031
+chen zhong 	沉重	c=1 d=0.960789 t=1031
+chen zong 	陈宗	c=0 d=0.097531 t=1031
+chen zong ming 	陈宗明	c=9 d=6.47028 t=1031
+cheng 	成	c=1 d=1 t=1031
+cheng le 	成了	c=1 d=0.83527 t=1031
+cheng shi 	城市	c=1 d=0.763379 t=1031
+cheng wei 	成为	c=2 d=1.42446 t=1031
+cheng zhang 	成长	c=1 d=0.995012 t=1031
+cheng zhi wei 	称之为	c=1 d=0.318224 t=1031
+chong dong 	冲动	c=1 d=0.927743 t=1031
+chong xie 	重写	c=1 d=0.965605 t=1031
+chong xin 	重新	c=1 d=0.869358 t=1031
+chu lian 	初恋	c=1 d=0.402524 t=1031
+chu shou 	出售	c=1 d=0.704688 t=1031
+chuan guo 	穿过	c=1 d=0.965605 t=1031
+chuan lai 	传来	c=1 d=0.932394 t=1031
+chui xia 	垂下	c=1 d=0.97531 t=1031
+ci 	此	c=1 d=0.946485 t=1031
+ci qu 	此曲	c=2 d=1.89319 t=1031
+cong 	从	c=1 d=0.941765 t=1031
+cun 	村	c=1 d=0.301194 t=1031
+cun min 	村民	c=0 d=0.029523 t=1031
+cun min wei 	村民委	c=1 d=0.29671 t=1031
+cun zai 	存在	c=1 d=0.71177 t=1031
+da 	大	c=1 d=0.970446 t=1031
+da nao 	大脑	c=1 d=0.946485 t=1031
+da xiao 	大笑	c=1 d=0.522046 t=1031
+da zhi 	大致	c=1 d=0.995012 t=1031
+dai ban qing dan 	待办清单	c=1 d=0.980199 t=1031
+dai hua 	带花	c=0 d=0.0418952 t=1031
+dai hua hui jia 	带花回家	c=1 d=0.421052 t=1031
+dai kuan 	带宽	c=1 d=0.918512 t=1031
+dan shi 	但是	c=1 d=0.97531 t=1031
+dan yuan 	但愿	c=2 d=0.701806 t=1031
+dang 	当	c=1 d=0.937067 t=1031
+dang qian 	当前	c=1 d=0.951229 t=1031
+dao 	到	c=1 d=0.941765 t=1031
+dao shu biao 	导数表	c=2 d=1.99501 t=1031
+de 	地	c=4 d=2.20827 t=1031
+de 	得	c=1 d=0.980199 t=1031
+de 	的	c=62 d=19.3067 t=1031
+deng dai 	等待	c=1 d=0.802519 t=1031
+deng lu 	登录	c=1 d=0.970446 t=1031
+deng zi qi 	邓紫棋	c=1 d=0.941765 t=1031
+di chui 	低垂	c=1 d=0.839457 t=1031
+di fang 	地方	c=1 d=0.726149 t=1031
+di fang 	提防	c=1 d=0.729789 t=1031
+di ge li si 	底格里斯	c=1 d=1 t=1031
+di yi ye 	第一页	c=1 d=0.965605 t=1031
+di zhi 	地址	c=1 d=0.913931 t=1031
+dian ying wang 	电影网	c=1 d=0.99005 t=1031
+ding dian 	定点	c=0 d=0.0574072 t=1031
+ding wang 	盯望	c=1 d=0.56836 t=1031
+dong xi 	东西	c=3 d=2.61542 t=1031
+dou ban 	豆瓣	c=1 d=0.970446 t=1031
+dui wo 	对我	c=1 d=0.701173 t=1031
+er 	二	c=1 d=0.927743 t=1031
+er 	而	c=1 d=0.355226 t=1031
+er chu 	而出	c=1 d=0.913931 t=1031
+er ni 	而你	c=1 d=0.543351 t=1031
+er xiang 	而向	c=1 d=0.321422 t=1031
+fa ru xue 	发如雪	c=1 d=0.995012 t=1031
+fan 	樊	c=1 d=0.965605 t=1031
+fan fang xiang 	反方向	c=1 d=0.99005 t=1031
+fang wen 	访问	c=1 d=1 t=1031
+fang xiang 	芳香	c=1 d=0.822835 t=1031
+fei 	飞	c=2 d=1.99501 t=1031
+fei hua 	废话	c=1 d=0.955997 t=1031
+fei niao 	飞鸟	c=3 d=3.0565 t=1031
+fei niao yun 	飞鸟云	c=8 d=7.82316 t=1031
+fen fen miao miao 	分分秒秒	c=1 d=0.379083 t=1031
+fen li 	分离	c=0 d=0.0995012 t=1031
+feng 	风	c=3 d=2.28066 t=1031
+feng huang zhen 	凤凰镇	c=1 d=0.293758 t=1031
+feng xi 	缝隙	c=1 d=0.980199 t=1031
+feng xian 	缝线	c=1 d=0.748264 t=1031
+feng zi 	疯子	c=1 d=0.99005 t=1031
+fu shi shan xia 	富士山下	c=1 d=0.970446 t=1031
+fu wu qi 	服务器	c=1 d=0.637628 t=1031
+gai 	该	c=1 d=0.856415 t=1031
+gao deng 	高等	c=1 d=0.995012 t=1031
+gao su 	告诉	c=1 d=0.951229 t=1031
+gao wu ren 	告五人	c=2 d=1.88391 t=1031
+ge qian 	搁浅	c=1 d=0.980199 t=1031
+ge ren 	个人	c=5 d=3.66358 t=1031
+ge sheng 	各省	c=1 d=0.752014 t=1031
+gen mu lu 	根目录	c=2 d=1.33083 t=1031
+gong gao 	公告	c=1 d=0.771052 t=1031
+gong wu 	共舞	c=1 d=0.759572 t=1031
+gu wei 	故为	c=1 d=0.951229 t=1031
+gua lai 	刮来	c=1 d=1 t=1031
+gui hun 	鬼魂	c=1 d=0.715338 t=1031
+gui ji 	轨迹	c=1 d=0.985112 t=1031
+gui lei 	归类	c=1 d=1 t=1031
+gun hui 	滚回	c=1 d=0.918512 t=1031
+guo ran 	果然	c=1 d=0.965605 t=1031
+hai 	海	c=2 d=1.94176 t=1031
+hai di 	海底	c=1 d=0.995012 t=1031
+hao 	号	c=1 d=0.302704 t=1031
+hao 	好	c=1 d=0.951229 t=1031
+he 	和	c=5 d=2.97186 t=1031
+he an 	河岸	c=1 d=0.704688 t=1031
+he chu 	何处	c=1 d=0.995012 t=1031
+he pan 	河畔	c=1 d=0.755784 t=1031
+he shui 	河水	c=1 d=0.694197 t=1031
+hei an 	黑暗	c=1 d=0.737123 t=1031
+hei an qi shi 	黑暗骑士	c=2 d=1.96062 t=1031
+hei ban 	黑板	c=0 d=0.0946485 t=1031
+hou 	后	c=1 d=0.960789 t=1031
+hou che 	候车	c=1 d=0.494109 t=1031
+hou mian 	后面	c=1 d=0.913931 t=1031
+hu kou ben 	户口本	c=1 d=0.960789 t=1031
+hua 	华	c=1 d=0.941765 t=1031
+hua 	画	c=1 d=0.814647 t=1031
+hua chen yu 	华晨宇	c=1 d=0.97531 t=1031
+hua zi hua si 	华兹华斯	c=4 d=3.88253 t=1031
+huan jing 	环境	c=1 d=0.955997 t=1031
+huan yuan 	换源	c=1 d=0.909373 t=1031
+hui bei 	会被	c=1 d=0.839457 t=1031
+hui da 	回答	c=1 d=0.650509 t=1031
+hui hua 	绘画	c=1 d=0.810584 t=1031
+hui jia 	回家	c=0 d=0.0418952 t=1031
+hui yi 	会议	c=1 d=0.965605 t=1031
+huo che 	火车	c=1 d=0.489192 t=1031
+huo shan 	火山	c=1 d=0.900325 t=1031
+ji fen 	积分	c=1 d=0.97531 t=1031
+ji hu 	几乎	c=1 d=0.932394 t=1031
+ji ke 	即可	c=2 d=1.63029 t=1031
+ji shi 	及时	c=1 d=0.532592 t=1031
+ji yi 	记忆	c=1 d=0.371577 t=1031
+ji you 	己有	c=1 d=0.353455 t=1031
+jia 	甲	c=1 d=0.97531 t=1031
+jian dan 	简单	c=1 d=0.99005 t=1031
+jian du 	监督	c=2 d=1.95064 t=1031
+jian duan 	简短	c=1 d=0.644036 t=1031
+jian jie 	简介	c=1 d=1 t=1031
+jian jie 	简洁	c=1 d=0.937067 t=1031
+jian qie ban 	剪切板	c=1 d=1 t=1031
+jian wen di 	建文帝	c=2 d=1.99501 t=1031
+jiang 	将	c=2 d=0.99005 t=1031
+jiang de 	讲的	c=1 d=1 t=1031
+jiang wo 	将我	c=1 d=0.927743 t=1031
+jiang yao 	将要	c=1 d=0.946485 t=1031
+jiao shi 	教室	c=3 d=2.8032 t=1031
+jiao shi 	教师	c=5 d=3.19159 t=1031
+jiao yu 	教育	c=3 d=2.91813 t=1031
+jiao zi 	教资	c=1 d=0.715338 t=1031
+jie guo 	结果	c=1 d=0.814647 t=1031
+jie xian 	界线	c=1 d=0.941765 t=1031
+jie yong 	借用	c=1 d=0.951229 t=1031
+jing dong 	京东	c=4 d=3.71242 t=1031
+jing dong 	惊动	c=1 d=0.941765 t=1031
+jing dong yun 	京东云	c=3 d=2.91179 t=1031
+jing li 	精力	c=1 d=0.980199 t=1031
+jing shen 	精神	c=1 d=0.932394 t=1031
+jing xiang 	颈项	c=1 d=0.847894 t=1031
+jiu 	就	c=1 d=0.932394 t=1031
+jiu ai 	旧爱	c=1 d=0.40657 t=1031
+jiu chan 	纠缠	c=1 d=0.722527 t=1031
+jiu xiang 	就像	c=2 d=1.8398 t=1031
+ju feng 	飓风	c=1 d=0.985112 t=1031
+jun wang 	君王	c=2 d=1.98511 t=1031
+kan 	看	c=1 d=0.744532 t=1031
+kan dao 	看到	c=1 d=0.748264 t=1031
+kan si 	看似	c=1 d=0.995012 t=1031
+kan xia 	砍下	c=1 d=0.625002 t=1031
+ke sou 	咳嗽	c=1 d=0.701173 t=1031
+ke yi 	可以	c=2 d=1.62774 t=1031
+kong zhong 	空中	c=1 d=0.574072 t=1031
+ku 	库	c=1 d=1 t=1031
+ku qi 	哭泣	c=1 d=0.71177 t=1031
+ku wei 	枯萎	c=1 d=0.955997 t=1031
+kua ke 	夸克	c=1 d=0.99005 t=1031
+kuai le 	快乐	c=1 d=0.344728 t=1031
+kuan da 	宽大	c=1 d=0.704688 t=1031
+la qu 	拉取	c=1 d=0.995012 t=1031
+lai 	来	c=1 d=0.97531 t=1031
+lai bin 	来宾	c=4 d=3.91746 t=1031
+lan 	蓝	c=1 d=0.99005 t=1031
+lang man 	浪漫	c=1 d=0.873716 t=1031
+lao xin fei shen 	劳心费神	c=1 d=0.980199 t=1031
+le 	了	c=4 d=2.49737 t=1031
+lei shui 	泪水	c=2 d=1.91683 t=1031
+li 	李	c=1 d=0.951229 t=1031
+li kai 	离开	c=1 d=0.423162 t=1031
+li xiang 	理想	c=1 d=1 t=1031
+li you 	理由	c=1 d=0.88692 t=1031
+liang 	良	c=1 d=0.985112 t=1031
+liang qing qu 	良庆区	c=5 d=3.66413 t=1031
+lie chu 	列出	c=1 d=0.97531 t=1031
+lie kai 	裂开	c=1 d=0.425283 t=1031
+lie ying 	猎鹰	c=1 d=0.582748 t=1031
+ling gan 	灵感	c=1 d=0.955997 t=1031
+ling hun a 	灵魂啊	c=1 d=0.752014 t=1031
+ling shui 	陵水	c=1 d=0.946485 t=1031
+ling wo 	令我	c=1 d=0.937067 t=1031
+liu cheng 	流程	c=1 d=0.774916 t=1031
+liu xing 	流行	c=1 d=1 t=1031
+liu yi 	留意	c=1 d=0.683861 t=1031
+long 	龙	c=1 d=0.995012 t=1031
+luan ma 	乱码	c=1 d=0.946485 t=1031
+lun dun 	伦敦	c=1 d=0.995012 t=1031
+luo xue 	洛雪	c=3 d=2.96729 t=1031
+luo xue 	落雪	c=1 d=0.980199 t=1031
+luo xue yin yue 	洛雪音乐	c=1 d=0.965605 t=1031
+lv xing tuan 	旅行团	c=1 d=0.99005 t=1031
+ma 	吗	c=1 d=0.873716 t=1031
+ma que 	麻雀	c=1 d=0.923116 t=1031
+man huai 	满怀	c=1 d=0.891366 t=1031
+mei 	美	c=1 d=0.729789 t=1031
+mei ge yue 	每个月	c=1 d=0.951229 t=1031
+mei ri 	每日	c=1 d=0.970446 t=1031
+mei you 	没有	c=4 d=2.26529 t=1031
+meng long 	朦胧	c=1 d=0.913931 t=1031
+meng long 	蒙眬	c=1 d=0.909373 t=1031
+mi ma 	密码	c=1 d=0.99005 t=1031
+mi yue 	密钥	c=1 d=1 t=1031
+mian qian 	面前	c=1 d=0.680451 t=1031
+ming 	明	c=0 d=0.097531 t=1031
+ming ling 	命令	c=1 d=0.687289 t=1031
+ming zi 	名字	c=1 d=0.701173 t=1031
+miu wu 	谬误	c=1 d=0.331211 t=1031
+mo ban 	模板	c=2 d=1.88362 t=1031
+mo shi 	模式	c=1 d=0.995012 t=1031
+mo wen wei 	莫文蔚	c=1 d=0.965605 t=1031
+mou xie 	某些	c=1 d=0.822835 t=1031
+mu bu zhuan jing 	目不转睛	c=1 d=0.562705 t=1031
+mu qian 	目前	c=1 d=0.625002 t=1031
+na duo 	那多	c=1 d=0.786628 t=1031
+na duo mei gui 	那朵玫瑰	c=1 d=0.790571 t=1031
+na ge ren 	那个人	c=1 d=0.960789 t=1031
+na han 	呐喊	c=1 d=0.458406 t=1031
+na li 	那里	c=1 d=0.965605 t=1031
+na xie 	那些	c=1 d=0.704688 t=1031
+na yang 	那样	c=1 d=0.904837 t=1031
+nai 	奶	c=1 d=1 t=1031
+nai xin 	耐心	c=1 d=0.362402 t=1031
+nan 	男	c=1 d=0.965605 t=1031
+nan ren 	男人	c=1 d=0.831104 t=1031
+nei cun 	内存	c=1 d=0.913931 t=1031
+ni 	你	c=6 d=3.41041 t=1031
+ni hai shi 	你还是	c=1 d=0.970446 t=1031
+ni hong 	霓虹	c=1 d=0.856415 t=1031
+ni men 	你们	c=1 d=0.740818 t=1031
+ni ya 	你呀	c=1 d=0.937067 t=1031
+niao er 	鸟儿	c=1 d=0.767206 t=1031
+niao long 	鸟笼	c=0 d=0.0554327 t=1031
+nv ren 	女人	c=1 d=0.839457 t=1031
+o 	噢	c=1 d=0.937067 t=1031
+ou er 	偶尔	c=1 d=0.763379 t=1031
+pang 	旁	c=0 d=0.0733447 t=1031
+pang da 	庞大	c=1 d=0.657047 t=1031
+pao chu 	抛出	c=1 d=0.88692 t=1031
+pei zhi 	配置	c=2 d=1.89489 t=1031
+pen fa 	喷发	c=1 d=0.909373 t=1031
+piao xiang 	飘向	c=1 d=0.822835 t=1031
+ping xi 	平息	c=1 d=0.97531 t=1031
+po sui 	破碎	c=1 d=0.852144 t=1031
+qi 	齐	c=2 d=1.9802 t=1031
+qi feng le 	起风了	c=1 d=0.946485 t=1031
+qi miao neng li ge 	奇妙能力歌	c=1 d=0.97531 t=1031
+qi shi 	其实	c=1 d=0.985112 t=1031
+qi xiang 	气象	c=1 d=1 t=1031
+qian mian 	前面	c=1 d=0.923116 t=1031
+qian shui ting 	潜水艇	c=3 d=2.89215 t=1031
+qian yi 	迁移	c=1 d=1 t=1031
+qian ze 	谴责	c=0 d=0.0755784 t=1031
+qian ze wo 	谴责我	c=1 d=0.759572 t=1031
+qiang lie 	强烈	c=1 d=0.918512 t=1031
+qiao dan 	乔丹	c=3 d=2.88304 t=1031
+qiao he 	巧合	c=1 d=0.323033 t=1031
+qing 	请	c=3 d=1.62515 t=1031
+qing chen 	清晨	c=1 d=0.472367 t=1031
+qing fu 	情妇	c=1 d=0.918512 t=1031
+qing fu de 	轻浮的	c=1 d=0.923116 t=1031
+qing jia 	请假	c=8 d=7.21129 t=1031
+qing jie qu 	清洁区	c=1 d=0.985112 t=1031
+qing jin 	倾尽	c=1 d=0.763379 t=1031
+qing liang 	轻量	c=2 d=1.99005 t=1031
+qing rang wo 	请让我	c=2 d=1.86993 t=1031
+qing song 	轻松	c=1 d=1 t=1031
+qu 	曲	c=1 d=0.951229 t=1031
+que 	却	c=1 d=0.831104 t=1031
+rang 	让	c=1 d=0.985112 t=1031
+rang wo 	让我	c=1 d=0.99005 t=1031
+ren 	人	c=5 d=3.34078 t=1031
+ren ding 	认定	c=3 d=2.29016 t=1031
+ren he 	任何	c=2 d=1.21206 t=1031
+ren shen gong ji 	人身攻击	c=1 d=1 t=1031
+ren you 	任由	c=1 d=0.895834 t=1031
+ren zai 	人在	c=1 d=0.477114 t=1031
+ren zheng 	认证	c=1 d=0.722527 t=1031
+reng zai 	仍在	c=1 d=0.479505 t=1031
+ri chu 	日出	c=1 d=0.798516 t=1031
+ri ji 	日记	c=1 d=1.09451 t=1031
+ri luo 	日落	c=1 d=0.806541 t=1031
+rong 	荣	c=1 d=0.960789 t=1031
+ru fang 	乳房	c=1 d=0.759572 t=1031
+ru guo 	如果	c=2 d=1.67584 t=1031
+ru men 	入门	c=1 d=1 t=1031
+ru xia 	如下	c=1 d=0.995012 t=1031
+ruo zhe 	弱者	c=1 d=0.852144 t=1031
+san 	三	c=1 d=0.932394 t=1031
+sao di 	扫地	c=1 d=0.900325 t=1031
+sao ma 	扫码	c=1 d=0.965605 t=1031
+sha mo 	沙漠	c=1 d=0.524663 t=1031
+shan 	山	c=1 d=0.299692 t=1031
+shan dian 	闪电	c=1 d=0.865022 t=1031
+shan yue 	山岳	c=1 d=0.932394 t=1031
+shang 	上	c=3 d=1.96053 t=1031
+shang kou 	伤口	c=2 d=0.782705 t=1031
+she ding 	设定	c=2 d=1.2915 t=1031
+shen fen zheng 	身份证	c=1 d=0.951229 t=1031
+shen me 	什么	c=2 d=1.90737 t=1031
+shen pang 	身旁	c=1 d=0.923116 t=1031
+shen pi 	审批	c=1 d=0.810584 t=1031
+shen qing 	申请	c=3 d=2.54238 t=1031
+shen sheng 	神圣	c=1 d=1.02665 t=1031
+shen sheng fen li 	神圣分离	c=1 d=1 t=1031
+shen ti 	身体	c=1 d=0.955997 t=1031
+shen yuan 	深渊	c=1 d=0.794534 t=1031
+shen yuan 	深远	c=1 d=0.790571 t=1031
+shen yuan li 	深渊里	c=1 d=0.45612 t=1031
+sheng 	生	c=1 d=0.305746 t=1031
+sheng huo 	生活	c=1 d=1 t=1031
+sheng qi 	生气	c=1 d=0.357007 t=1031
+shi 	是	c=5 d=3.17297 t=1031
+shi er dian 	十二点	c=1 d=0.985112 t=1031
+shi ge 	是个	c=1 d=0.913931 t=1031
+shi ge 	诗歌	c=4 d=3.28966 t=1031
+shi jian 	时间	c=2 d=0.970446 t=1031
+shi ke 	时刻	c=3 d=2.97025 t=1031
+shi pei 	适配	c=1 d=0.97531 t=1031
+shi ren 	诗人	c=1 d=0.909373 t=1031
+shi shi 	世事	c=2 d=1.60188 t=1031
+shi tu 	视图	c=1 d=0.995012 t=1031
+shi wei 	视为	c=1 d=0.400517 t=1031
+shi yong 	使用	c=2 d=1.99501 t=1031
+shi zhong 	始终	c=1 d=0.551563 t=1031
+shou zhi 	手指	c=1 d=0.438235 t=1031
+shu 	书	c=1 d=0.715338 t=1031
+shu lou 	疏漏	c=1 d=0.382893 t=1031
+shu mu 	树木	c=2 d=0.85109 t=1031
+shu shang 	书商	c=1 d=0.722527 t=1031
+shu shui 	熟睡	c=1 d=0.481909 t=1031
+shu xie 	书写	c=1 d=0.774916 t=1031
+shu xue 	数学	c=2 d=1.9605 t=1031
+shuai tui 	衰退	c=1 d=0.367879 t=1031
+shuang chun 	双唇	c=1 d=0.744532 t=1031
+shui 	水	c=1 d=0.540641 t=1031
+shui xing ji 	水星记	c=1 d=0.995012 t=1031
+si 	四	c=1 d=0.937067 t=1031
+si cheng 	四成	c=1 d=0.733447 t=1031
+si cheng 	撕成	c=1 d=0.740818 t=1031
+si ge nv sheng 	四个女生	c=1 d=0.980199 t=1031
+si hu 	似乎	c=1 d=0.687289 t=1031
+si zhe 	死者	c=1 d=0.360595 t=1031
+si zhi jiao 	四只脚	c=1 d=0.615697 t=1031
+song shang 	送上	c=1 d=0.535261 t=1031
+su 	苏	c=2 d=1.71138 t=1031
+su she 	宿舍	c=1 d=0.980199 t=1031
+sui pian 	碎片	c=1 d=0.744532 t=1031
+sui ran 	虽然	c=1 d=0.588605 t=1031
+suo shuo 	所说	c=1 d=0.980199 t=1031
+suo you ren 	所有人	c=1 d=0.847894 t=1031
+suo zai 	所在	c=2 d=1.31759 t=1031
+ta 	它	c=2 d=0.900325 t=1031
+ta men 	他们	c=2 d=1.76641 t=1031
+ta men 	它们	c=3 d=1.94972 t=1031
+tai 	太	c=1 d=0.680451 t=1031
+tang ruo 	倘若	c=1 d=0.32628 t=1031
+ti 	替	c=1 d=0.891366 t=1031
+ti jiao 	提交	c=2 d=1.41642 t=1031
+tian dui 	填对	c=1 d=0.83527 t=1031
+tian kong 	天空	c=1 d=0.826959 t=1031
+tian wai 	天外	c=1 d=0.970446 t=1031
+tian xie 	填写	c=1 d=0.904837 t=1031
+tiao 	调	c=0 d=0.0951229 t=1031
+tiao zuo wei 	调座位	c=1 d=0.955997 t=1031
+tie gui 	铁轨	c=1 d=0.802519 t=1031
+ting dao 	听到	c=1 d=0.904837 t=1031
+ting jian 	听见	c=1 d=0.690734 t=1031
+tong bu 	同步	c=3 d=2.22132 t=1031
+tong ji 	统计	c=1 d=0.970446 t=1031
+tong xiang 	通向	c=1 d=0.786628 t=1031
+tong yi 	同一	c=0 d=0.11284 t=1031
+tong yi ding dian 	同一定点	c=1 d=0.57695 t=1031
+tong yi niao long 	同一鸟笼	c=1 d=0.557106 t=1031
+tou xiang 	投降	c=1 d=0.869358 t=1031
+tou zi 	骰子	c=2 d=1.65444 t=1031
+tu pian 	图片	c=1 d=0.980199 t=1031
+tuan yuan 	团员	c=1 d=0.97531 t=1031
+tuo di 	拖地	c=1 d=0.904837 t=1031
+tuo pan 	托盘	c=1 d=0.782705 t=1031
+wan an 	晚安	c=1 d=0.767206 t=1031
+wan wu 	万物	c=2 d=1.18733 t=1031
+wang luo 	网络	c=2 d=1.98506 t=1031
+wang pan 	网盘	c=1 d=0.995012 t=1031
+wang shang 	网上	c=1 d=0.786628 t=1031
+wei 	为	c=11 d=5.90377 t=1031
+wei 	委	c=0 d=0.029523 t=1031
+wei ceng gai bian 	未曾改变	c=1 d=0.548812 t=1031
+wei ji fen 	微积分	c=1 d=1 t=1031
+wei su wei huo shan 	维苏威火山	c=1 d=0.904837 t=1031
+wei yi 	唯一	c=1 d=0.955997 t=1031
+wen 	文	c=1 d=0.937067 t=1031
+wen jian 	文件	c=2 d=1.30769 t=1031
+wen jian jia 	文件夹	c=2 d=1.34743 t=1031
+wen ti 	问题	c=2 d=0.916488 t=1031
+wo 	我	c=30 d=12.1186 t=1031
+wo de 	我的	c=5 d=3.45378 t=1031
+wo deng dai 	我等待	c=1 d=0.810584 t=1031
+wo fa xian 	我发现	c=1 d=0.822835 t=1031
+wo men 	我们	c=2 d=1.86667 t=1031
+wo zhe li 	我这里	c=1 d=0.782705 t=1031
+wu 	五	c=1 d=0.941765 t=1031
+wu 	无	c=1 d=0.873716 t=1031
+wu 	物	c=1 d=0.980199 t=1031
+wu dian 	五点	c=1 d=0.474734 t=1031
+wu fa 	无法	c=2 d=1.69655 t=1031
+wu li 	五里	c=4 d=2.92504 t=1031
+wu qing feng 	吴青峰	c=1 d=0.951229 t=1031
+wu qu 	舞曲	c=1 d=0.449329 t=1031
+wu suo bu zai 	无所不在	c=1 d=0.794534 t=1031
+wu ye 	午夜	c=1 d=0.980199 t=1031
+wu yue tian 	五月天	c=1 d=0.970446 t=1031
+wu yun 	乌云	c=1 d=0.88692 t=1031
+xi lie 	系列	c=1 d=0.995012 t=1031
+xi tong 	系统	c=1 d=0.985112 t=1031
+xi wang 	希望	c=4 d=3.29995 t=1031
+xia 	下	c=1 d=0.313486 t=1031
+xia zai 	下载	c=1 d=1 t=1031
+xian gei 	献给	c=3 d=2.85867 t=1031
+xian mu 	羡慕	c=1 d=0.995012 t=1031
+xian shi 	显示	c=1 d=0.995012 t=1031
+xian zai 	现在	c=1 d=0.826959 t=1031
+xiang 	像	c=7 d=5.72832 t=1031
+xiang 	向	c=9 d=4.98209 t=1031
+xiang 	想	c=3 d=2.7732 t=1031
+xiang mu 	项目	c=3 d=2.71614 t=1031
+xiang mu guan li 	项目管理	c=1 d=1 t=1031
+xiang mu zhi 	项目制	c=1 d=0.985112 t=1031
+xiang ni 	想你	c=1 d=0.955997 t=1031
+xiang qi 	想起	c=1 d=0.995012 t=1031
+xiang wo 	像我	c=1 d=0.927743 t=1031
+xiang xie 	想写	c=1 d=0.995012 t=1031
+xiao bu wu 	小步舞	c=1 d=0.447088 t=1031
+xiao xing xing 	小星星	c=1 d=0.311923 t=1031
+xie 	写	c=1 d=0.778801 t=1031
+xin 	心	c=1 d=0.995012 t=1031
+xin 	辛	c=1 d=0.304221 t=1031
+xin huan 	新欢	c=1 d=0.398519 t=1031
+xin xi 	信息	c=2 d=1.69198 t=1031
+xin yuan 	心愿	c=1 d=0.97531 t=1031
+xin zhi 	信纸	c=1 d=0.737123 t=1031
+xin zhi 	心智	c=1 d=0.729789 t=1031
+xing 	星	c=1 d=0.965605 t=1031
+xing chen 	星辰	c=6 d=5.40102 t=1031
+xing xing 	星星	c=1 d=0.900325 t=1031
+xing yue shen hua 	星月神话	c=1 d=1 t=1031
+xing zhuang 	形状	c=1 d=0.869358 t=1031
+xiu gai 	修改	c=2 d=1.56892 t=1031
+xiu tan 	嗅探	c=1 d=0.995012 t=1031
+xiu xue 	休学	c=3 d=2.88375 t=1031
+xiu xue 	修学	c=1 d=0.923116 t=1031
+xu yao 	需要	c=2 d=1.47468 t=1031
+xuan lan 	绚烂	c=1 d=0.860708 t=1031
+xuan yun 	眩晕	c=1 d=0.941765 t=1031
+xuan ze 	选择	c=1 d=0.891366 t=1031
+xue wei 	学位	c=1 d=0.99005 t=1031
+xue xi 	学习	c=1 d=0.99005 t=1031
+xue zhi qian 	薛之谦	c=1 d=0.99005 t=1031
+ya dao 	压倒	c=1 d=0.932394 t=1031
+yan 	言	c=1 d=0.955997 t=1031
+yan shi 	岩石	c=1 d=0.909373 t=1031
+yang lian 	杨炼	c=1 d=0.995012 t=1031
+yao 	尧	c=1 d=0.29523 t=1031
+yao gun 	摇滚	c=1 d=0.995012 t=1031
+ye 	也	c=1 d=0.955997 t=1031
+ye 	夜	c=1 d=0.715338 t=1031
+ye 	页	c=2 d=1.83815 t=1031
+ye huo 	野火	c=1 d=0.985112 t=1031
+ye wan 	夜晚	c=4 d=2.82551 t=1031
+ye zao shu 	椰枣树	c=1 d=0.965605 t=1031
+yi 	一	c=1 d=0.99005 t=1031
+yi 	已	c=2 d=1.52355 t=1031
+yi chi 	一匙	c=1 d=0.537944 t=1031
+yi dao 	一道	c=1 d=0.782705 t=1031
+yi dong duan 	移动端	c=2 d=1.91693 t=1031
+yi ge 	一个	c=2 d=1.81965 t=1031
+yi hang shi 	一行诗	c=1 d=0.960789 t=1031
+yi ji 	以及	c=1 d=0.970446 t=1031
+yi jian 	意见	c=1 d=0.856415 t=1031
+yi ju 	依据	c=1 d=0.847894 t=1031
+yi ju 	衣裾	c=1 d=0.740818 t=1031
+yi ke 	一颗	c=1 d=0.310367 t=1031
+yi lv 	一缕	c=1 d=0.818731 t=1031
+yi mei ying bi 	一枚硬币	c=1 d=1 t=1031
+yi pian 	一篇	c=2 d=1.48905 t=1031
+yi ran 	依然	c=1 d=0.882497 t=1031
+yi shi wu cheng 	一事无成	c=1 d=0.965605 t=1031
+yi si 	意思	c=1 d=0.927743 t=1031
+yi yang 	一样	c=3 d=2.31188 t=1031
+yi zhi 	一只	c=1 d=1 t=1031
+yin 	印	c=1 d=0.298197 t=1031
+yin fu 	音符	c=1 d=0.755784 t=1031
+yin wei 	因为	c=1 d=0.904837 t=1031
+yin wo 	因我	c=1 d=0.348192 t=1031
+yin yue 	音乐	c=2 d=2.09986 t=1031
+yin yue yuan 	音乐源	c=1 d=0.970446 t=1031
+ying 	颖	c=1 d=0.701173 t=1031
+ying pan 	硬盘	c=1 d=0.923116 t=1031
+ying wen 	英文	c=1 d=1 t=1031
+yong bao 	拥抱	c=1 d=0.946485 t=1031
+yong chu 	涌出	c=1 d=0.980199 t=1031
+yong lai 	用来	c=1 d=0.965605 t=1031
+yong qi 	勇气	c=2 d=0.733447 t=1031
+yong you ni 	拥有你	c=1 d=0.985112 t=1031
+yong yu 	用于	c=1 d=0.970446 t=1031
+yong yue 	咏月	c=1 d=1 t=1031
+you 	又	c=1 d=0.97531 t=1031
+you 	有	c=2 d=0.831104 t=1031
+you ge 	有个	c=1 d=0.628135 t=1031
+you ji 	邮寄	c=1 d=0.895834 t=1031
+you ke neng 	有可能	c=1 d=0.818731 t=1031
+you que dian 	优缺点	c=1 d=1 t=1031
+you ru 	犹如	c=1 d=0.937067 t=1031
+you sheng zhi nian 	有生之年	c=1 d=0.869358 t=1031
+you yi 	犹疑	c=1 d=0.798516 t=1031
+yu 	玉	c=2 d=1.43587 t=1031
+yu 	羽	c=1 d=1 t=1031
+yu 	雨	c=1 d=0.878095 t=1031
+yu dong jie dao 	玉洞街道	c=5 d=3.6825 t=1031
+yu long 	玉龙	c=3 d=2.01324 t=1031
+yu long wu li 	玉龙五里	c=1 d=1 t=1031
+yu ming 	域名	c=1 d=0.99005 t=1031
+yu yan 	语言	c=1 d=0.941765 t=1031
+yu zhou 	宇宙	c=1 d=0.88692 t=1031
+yuan 	源	c=2 d=1.94872 t=1031
+yuan fang 	远方	c=1 d=0.410656 t=1031
+yuan liang 	原谅	c=3 d=1.36285 t=1031
+yuan liang wo 	原谅我	c=3 d=1.6429 t=1031
+yue du 	阅读	c=2 d=1.83946 t=1031
+yue guo 	越过	c=1 d=0.927743 t=1031
+yun 	云	c=1 d=0.985925 t=1031
+yun fu wu qi 	云服务器	c=2 d=1.90362 t=1031
+yun wu 	云雾	c=1 d=0.83527 t=1031
+zai 	在	c=11 d=4.23182 t=1031
+ze 	则	c=1 d=0.960789 t=1031
+zha dao 	扎到	c=1 d=0.436049 t=1031
+zhai chao 	摘抄	c=1 d=0.99005 t=1031
+zhan 	站	c=1 d=0.491644 t=1031
+zhan li 	战栗	c=1 d=0.960789 t=1031
+zhan zheng 	战争	c=1 d=0.414783 t=1031
+zhang ai 	障碍	c=1 d=0.932394 t=1031
+zhang chi bang 	长翅膀	c=1 d=0.927743 t=1031
+zhao dao 	找到	c=2 d=1.71498 t=1031
+zhe 	着	c=2 d=0.814647 t=1031
+zhe bu 	这不	c=1 d=0.97531 t=1031
+zhe dian 	这点	c=1 d=0.985112 t=1031
+zhe ge 	这个	c=2 d=1.32896 t=1031
+zhe li 	这里	c=1 d=0.737123 t=1031
+zhe xie nian lai 	这些年来	c=1 d=0.546074 t=1031
+zhe yang 	这样	c=1 d=0.932394 t=1031
+zhen 	震	c=1 d=0.985112 t=1031
+zhen li 	真理	c=1 d=0.67032 t=1031
+zheng fan mian 	正反面	c=1 d=0.955997 t=1031
+zheng jiu 	拯救	c=1 d=0.985112 t=1031
+zheng li 	整理	c=1 d=0.995012 t=1031
+zheng shu 	证书	c=1 d=0.995012 t=1031
+zhi 	之	c=1 d=0.71177 t=1031
+zhi 	志	c=1 d=0.970446 t=1031
+zhi 	致	c=1 d=0.697676 t=1031
+zhi chu 	之处	c=1 d=0.33454 t=1031
+zhi chu 	掷出	c=2 d=0.794534 t=1031
+zhi dao 	知道	c=1 d=0.860708 t=1031
+zhi du 	只读	c=1 d=0.995012 t=1031
+zhi hu 	知乎	c=2 d=1.97521 t=1031
+zhi jian 	之间	c=1 d=0.810584 t=1031
+zhi neng 	只能	c=1 d=0.960789 t=1031
+zhi qian 	致歉	c=10 d=5.3922 t=1031
+zhi shi 	知识	c=1 d=0.980199 t=1031
+zhi xie 	只写	c=1 d=0.955997 t=1031
+zhi xue wang 	智学网	c=1 d=1 t=1031
+zhi you 	只有	c=1 d=0.869358 t=1031
+zhong 	中	c=2 d=0.989016 t=1031
+zhong 	钟	c=1 d=1 t=1031
+zhong sheng 	众生	c=1 d=0.923116 t=1031
+zhong sheng 	钟声	c=1 d=0.927743 t=1031
+zhou 	周	c=1 d=0.980199 t=1031
+zhou ce 	周测	c=1 d=0.995012 t=1031
+zhou jie lun 	周杰伦	c=1 d=0.985112 t=1031
+zhu jian 	逐渐	c=1 d=0.366045 t=1031
+zhu shi zhe 	注视着	c=1 d=0.818731 t=1031
+zhuan 	转	c=1 d=0.932394 t=1031
+zhuan xue 	转学	c=1 d=0.97531 t=1031
+zhui lie 	追猎	c=1 d=0.506617 t=1031
+zhui sui 	追随	c=1 d=0.918512 t=1031
+zhuo zi 	桌子	c=1 d=0.609571 t=1031
+zi 	自	c=1 d=0.99005 t=1031
+zi ci 	字词	c=1 d=0.748264 t=1031
+zi dan 	子弹	c=1 d=1.08955 t=1031
+zi dan ri ji 	子弹日记	c=1 d=1 t=1031
+zi dian 	字典	c=1 d=1 t=1031
+zi ge zheng 	资格证	c=1 d=0.729789 t=1031
+zi ji 	自己	c=7 d=5.55231 t=1031
+zi tuo guan 	自托管	c=1 d=0.985112 t=1031
+zi xing 	自行	c=1 d=0.704688 t=1031
+zi yan 	字眼	c=1 d=0.970446 t=1031
+zou jin ni 	走近你	c=1 d=0.960789 t=1031
+zui yuan chu 	最远处	c=1 d=0.891366 t=1031
+zun yan 	尊严	c=1 d=0.690734 t=1031
+zuo 	做	c=1 d=0.865022 t=1031
+zuo shen me 	做什么	c=1 d=0.860708 t=1031
+zuo wei 	座位	c=0 d=0.0951229 t=1031
